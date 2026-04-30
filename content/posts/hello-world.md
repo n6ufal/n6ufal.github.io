@@ -4,7 +4,7 @@ draft = false
 title = 'Hello World!'
 +++
 
-![ ](/images/helloworld.jpg)
+{{< figure src="/images/helloworld.jpg" alt="hello world" width="300" class="center" >}}
 
 I made this site as a bit of a personal outlet. Somewhere to learn, mess around with Python, and just dump whatever’s been sitting in my head.
 
