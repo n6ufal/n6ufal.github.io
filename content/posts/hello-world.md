@@ -8,12 +8,30 @@ cover:
   relative: false
 ---
 
-I made this site as a bit of a personal outlet. Somewhere to learn, mess around with Python, and just dump whatever’s been sitting in my head.
+I made this site as a personal outlet. Somewhere to learn, mess around, and dump whatever's been sitting in my head.
 
-Lately I’ve been getting pulled into this whole AI “vibe coding” thing, and it kind of woke up that nerdy side of me that likes building stuff just for the sake of it. That’s how [Letter Demon](https://github.com/n6ufal/Letter-Demon) came to exist. To be clear, I didn’t actually code it myself. It was mostly Claude Sonnet 4.5 and VS Code Copilot. But the idea, the approach, and the structure of the app were mine.
+It started when I got the GitHub Student Pack and figured — why dump stuff on Medium when I could just have my own thing? So I built it. Hugo, GitHub Pages, custom domain. Figured it out as I went. When it finally worked — that feeling of _I made this_ was kind of hard to beat. I love it and here's HEADSPACE.
 
-I think a lot of it comes from how much I’ve always liked word games. Scrabble, spelling bees, anything like that. I even got into an English version of Shiritori at some point, that Japanese game where you keep chaining words from the last letter.
+Lately though, I've been getting pulled into the whole AI "vibe coding" thing, and it's been messing with how I think about building something. I don't code — never have. It used to feel straightforward: you build something, you own the process. Now it's more like… you describe something clearly enough, shape it, push it in the right direction, and it starts to exist.
 
-Music’s a big part of me. It’s always been there. If you ask what I listen to, the answer is usually “depends on the day.” Lately it’s been deep prog house, jerk, grunge, dream pop, shoegaze, a bit of midwest emo, and some post-hardcore.
+That's how [Letter Demon](https://github.com/n6ufal/Letter-Demon) came to be.
 
-Anyway, this is probably more rambling than a first post needs. I’ll figure it out as I go.
+I didn't write most of the code. Claude Sonnet 4.5 and VS Code Copilot did that. What I did was decide what it should be, how it should behave, what it was trying to become. The logic, the constraints, the structure — I figured those out.
+
+So I keep coming back to this question: what does it even mean to "build" something now?
+
+If you don't write every line, but you design the system, guide it, make the calls — is it still yours? Or is authorship becoming more about direction than execution?
+
+I genuinely don't know.
+
+Maybe that's part of why I've always liked word games. Scrabble, spelling bees, and that Japanese word game Shiritori — where each word has to start with the last letter of the previous one. You work within whatever constraint you're handed, respond to it, and something comes out the other side that neither player fully planned.
+
+Tbh, this feels a bit like that.
+
+Outside of that, music's always running. What I'm into shifts constantly — lately it's been deep prog house, jerk, grunge, dream pop, shoegaze, midwest emo, post-hardcore. All over the place.
+
+No strict plan for this site. Probably a mix of small projects, half-baked ideas, and things I'm working through in real time.
+
+That's fine. Not everything needs to be finished to be worth putting out there.
+
+More soon.
