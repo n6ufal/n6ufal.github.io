@@ -1,12 +1,12 @@
-+++
-date = '2026-04-30'
-draft = false
-title = 'Hello World!'
-+++
-
-<div style="text-align: center;">
-  <img src="/images/helloworld.jpg" alt="i see you" width="300">
-</div>
+---
+title: "Hello World!"
+date: 2026-04-30
+draft: false
+cover:
+  image: "/images/helloworld.jpg"
+  alt: "cover"
+  relative: false
+---
 
 I made this site as a bit of a personal outlet. Somewhere to learn, mess around with Python, and just dump whatever’s been sitting in my head.
 
