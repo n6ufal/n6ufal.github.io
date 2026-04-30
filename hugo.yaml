@@ -26,6 +26,8 @@ params:
       url: "https://open.spotify.com/user/fjvvc8gihy2bj471qal9zrg6v?si=d1a9d119f8714ee6"
     - name: x
       url: "https://twitter.com/n6ufal"
+    - name: last.fm
+      url: "https://www.last.fm/user/alifnaufal"
 
   showReadingTime: true
 
