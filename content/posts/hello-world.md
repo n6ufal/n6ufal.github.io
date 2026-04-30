@@ -4,7 +4,7 @@ draft = false
 title = 'Hello World!'
 +++
 
-First post. More soon.
+![ ](/images/helloworld.jpg)
 
 I made this site as a bit of a personal outlet. Somewhere to learn, mess around with Python, and just dump whatever’s been sitting in my head.
 
