@@ -14,3 +14,5 @@ in English, Indonesian, or somewhere in between.
 
 You can find my amateur works on [GitHub](https://github.com/n6ufal).  
 Reach me at alifnaufal@duck.com
+
+<img src="/images/goth.jpg" alt="i'm blessed" width="300">
