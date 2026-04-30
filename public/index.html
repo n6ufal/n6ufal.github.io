@@ -6,12 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Rent Free</title>
+<title>HEADSPACE.</title>
 
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.20b87f8afdd068fecab91f0f265319ec77940d5d2c926e4b18daa372ffd42669.css" integrity="sha256-ILh/iv3QaP7KuR8PJlMZ7HeUDV0skm5LGNqjcv/UJmk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a57ce7a0f8536ded82b19d679a4246c450646cb608ed49c3025d197a9238d5ee.css" integrity="sha256-pXznoPhTbe2CsZ1nmkJGxFBkbLYI7UnDAl0ZepI41e4=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -66,13 +66,15 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script>
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body class="list" id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Rent Free (Alt + H)">Rent Free</a>
+            <a href="http://localhost:1313/" accesskey="h" title="HEADSPACE. (Alt + H)">HEADSPACE.</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
@@ -156,6 +158,47 @@
                 </span>
             </a>
         </div>
+
+        
+        <div id="lastfm-tracks" style="margin-top: 1.5rem; text-align: center;">
+          <p style="font-size: 0.85rem; color: var(--secondary);">Loading recent tracks...</p>
+        </div>
+        <script>
+          const apiKey = "0e7245c9a19b6563e2a301c91f053c54";
+          const user = "alifnaufal";
+          const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${user}&api_key=${apiKey}&format=json&limit=5`;
+
+          fetch(url)
+            .then(res => res.json())
+            .then(data => {
+              const tracks = data.recenttracks.track.slice(0, 5);
+              const container = document.getElementById("lastfm-tracks");
+
+              let html = `<p style="font-family: 'Outfit', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--secondary); margin-bottom: 0.75rem;">Recently played</p><ul style="list-style: none; padding: 0; margin: 0;">`;
+
+              tracks.forEach(track => {
+                const isNowPlaying = track["@attr"]?.nowplaying === "true";
+                const name = track.name;
+                const artist = track.artist["#text"];
+                const trackUrl = track.url;
+
+                html += `
+                  <li style="margin-bottom: 0.4rem; font-size: 0.875rem; font-family: 'Outfit', sans-serif;">
+                    ${isNowPlaying ? `<span style="color: #A3BE8C; margin-right: 0.4rem;">▶</span>` : `<span style="color: var(--secondary); margin-right: 0.4rem;">♪</span>`}
+                    <a href="${trackUrl}" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none;">
+                      ${name} <span style="color: var(--secondary);">— ${artist}</span>
+                    </a>
+                  </li>`;
+              });
+
+              html += `</ul>`;
+              container.innerHTML = html;
+            })
+            .catch(() => {
+              document.getElementById("lastfm-tracks").innerHTML = `<p style="font-size: 0.85rem; color: var(--secondary);">Couldn't load tracks.</p>`;
+            });
+        </script>
+
     </div>
 </div>
 

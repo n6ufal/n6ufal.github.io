@@ -1,0 +1,144 @@
+/* ══════════════════════════════════════════
+   FONTS
+══════════════════════════════════════════ */
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+}
+
+code, pre, kbd {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+
+/* ══════════════════════════════════════════
+   NORD COLOR VARIABLES
+══════════════════════════════════════════ */
+
+:root {
+  --nord0: #2E3440;
+  --nord1: #3B4252;
+  --nord2: #434C5E;
+  --nord3: #4C566A;
+  --nord4: #D8DEE9;
+  --nord5: #E5E9F0;
+  --nord6: #ECEFF4;
+  --nord7: #8FBCBB;
+  --nord8: #88C0D0;
+  --nord9: #81A1C1;
+  --nord10: #5E81AC;
+  --nord11: #BF616A;
+  --nord12: #D08770;
+  --nord13: #EBCB8B;
+  --nord14: #A3BE8C;
+  --nord15: #B48EAD;
+}
+
+
+/* ══════════════════════════════════════════
+   NORD LIGHT (default)
+══════════════════════════════════════════ */
+
+:root {
+  --theme: #ECEFF4;
+  --entry: #E5E9F0;
+  --primary: #2E3440;
+  --secondary: #4C566A;
+  --tertiary: #D8DEE9;
+  --content: #3B4252;
+  --hljs-bg: #3B4252;
+  --code-bg: #E5E9F0;
+  --border: #D8DEE9;
+}
+
+
+/* ══════════════════════════════════════════
+   NORD DARK
+══════════════════════════════════════════ */
+
+.dark {
+  --theme: #2E3440;
+  --entry: #3B4252;
+  --primary: #ECEFF4;
+  --secondary: #D8DEE9;
+  --tertiary: #434C5E;
+  --content: #E5E9F0;
+  --hljs-bg: #3B4252;
+  --code-bg: #434C5E;
+  --border: #4C566A;
+}
+
+
+/* ══════════════════════════════════════════
+   POST TYPOGRAPHY
+══════════════════════════════════════════ */
+
+.post-content {
+  font-family: 'Fraunces', serif;
+  font-size: 1.0625rem; /* 17px */
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.post-content h1 { font-size: 2rem; }
+.post-content h2 { font-size: 1.5rem; }
+.post-content h3 { font-size: 1.25rem; }
+
+/* Slightly smaller secondary text */
+.post-meta,
+.post-footer,
+.breadcrumbs {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--secondary);
+}
+
+
+/* ══════════════════════════════════════════
+   SITE HEADER TITLE
+══════════════════════════════════════════ */
+
+header .logo a {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+}
+
+
+/* ══════════════════════════════════════════
+   CODE BLOCKS
+══════════════════════════════════════════ */
+
+.post-content code {
+  font-size: 0.9rem;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  background: var(--code-bg);
+}
+
+.post-content pre code {
+  font-size: 0.875rem;
+  padding: 0;
+  background: transparent;
+}
