@@ -4,7 +4,9 @@ draft = false
 title = 'Hello World!'
 +++
 
-{{< figure src="/images/helloworld.jpg" alt="hello world" width="300" class="center" >}}
+<div style="text-align: center;">
+  <img src="/images/helloworld.jpg" alt="i see you" width="300">
+</div>
 
 I made this site as a bit of a personal outlet. Somewhere to learn, mess around with Python, and just dump whatever’s been sitting in my head.
 
