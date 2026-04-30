@@ -1,0 +1,28 @@
+baseURL: "https://alifnaufal.me/"
+languageCode: "en-us"
+title: "Alif Naufal"
+theme: "PaperMod"
+
+pagination:
+  pagerSize: 5
+
+params:
+  homeInfoParams:
+    Title: "hi, i'm alif"
+    Content: "big on music, obsessed with the outdoors, and probably thinking about pastries. this is where i dump my thoughts on just about everything."
+  
+  socialIcons:
+    - name: github
+      url: "https://github.com/n6ufal"
+
+  showReadingTime: true
+  showPostsOnHomePage: true
+
+menu:
+  main:
+    - name: Posts
+      url: /posts/
+      weight: 1
+    - name: About
+      url: /about/
+      weight: 2
