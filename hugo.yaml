@@ -8,7 +8,7 @@ pagination:
 
 params:
   defaultTheme: auto
-  disableThemeToggle: false
+  disableThemeToggle: true
   showReadingTime: true
 
   profileMode:

@@ -55,11 +55,7 @@
     </style>
 </noscript>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.querySelector("html").dataset.theme = 'dark';
     } else {
         document.querySelector("html").dataset.theme = 'light';
@@ -74,28 +70,6 @@
     <nav class="header-nav">
         <div class="logo">
             <a href="http://localhost:1313/" accesskey="h" title="HEADSPACE. (Alt + H)">HEADSPACE.</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
         </div>
         <ul id="menu" class="menu">
             <li>
@@ -132,11 +106,11 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>I made this site as a bit of a personal outlet. Somewhere to learn, mess around with Python, and just dump whatever’s been sitting in my head.
-Lately I’ve been getting pulled into this whole AI “vibe coding” thing, and it kind of woke up that nerdy side of me that likes building stuff just for the sake of it. That’s how Letter Demon came to exist. To be clear, I didn’t actually code it myself. It was mostly Claude Sonnet 4.5 and VS Code Copilot. But the idea, the approach, and the structure of the app were mine.
+    <p>I made this site as a personal outlet. Somewhere to learn, mess around, and dump whatever’s been sitting in my head.
+It started when I got the GitHub Student Pack and figured — why dump stuff on Medium when I could just have my own thing? So I built it. Hugo, GitHub Pages, custom domain. Figured it out as I went. When it finally worked — that feeling of I made this was kind of hard to beat. I love it and here’s HEADSPACE.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-04-30 00:00:00 +0000 UTC'>April 30, 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
+  <footer class="entry-footer"><span title='2026-04-30 00:00:00 +0000 UTC'>April 30, 2026</span>&nbsp;·&nbsp;<span>2 min</span></footer>
   <a class="entry-link" aria-label="post link to Hello World!" href="http://localhost:1313/posts/hello-world/"></a>
 </article>
     </main>
