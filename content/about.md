@@ -7,8 +7,10 @@ draft: false
 Alif Naufal, based in Indonesia.
 
 I study English Literature but spend most of my time thinking about music, 
-tech, and ideas that don't fit neatly into either. This blog is where I 
-write about whatever's currently taking up space in my head.
+tech, and ideas that don't fit neatly into either. 
+
+This is where I write about whatever's currently living rent-free in my head —
+in English, Indonesian, or somewhere in between.
 
 You can find my amateur works on [GitHub](https://github.com/n6ufal).  
 Reach me at alifnaufal@duck.com
