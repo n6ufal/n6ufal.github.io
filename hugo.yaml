@@ -7,16 +7,27 @@ pagination:
   pagerSize: 5
 
 params:
-  homeInfoParams:
-    Title: "hi, i'm alif"
-    Content: "big on music, obsessed with the outdoors, and probably thinking about pastries. this is where i dump my thoughts on just about everything."
-  
+  profileMode:
+    enabled: true
+    title: "Alif Naufal"
+    subtitle: "big on music, obsessed with the outdoors, and probably thinking about pastries. this is where i dump my thoughts on just about everything."
+    imageUrl: "/images/avatar.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: "Alif Naufal"
+    buttons:
+      - name: Posts
+        url: /posts/
+
   socialIcons:
     - name: github
       url: "https://github.com/n6ufal"
+    - name: spotify
+      url: "https://open.spotify.com/user/fjvvc8gihy2bj471qal9zrg6v?si=d1a9d119f8714ee6"
+    - name: x
+      url: "https://twitter.com/n6ufal"
 
   showReadingTime: true
-  showPostsOnHomePage: true
 
 menu:
   main:
