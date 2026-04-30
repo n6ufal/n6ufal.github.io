@@ -10,7 +10,7 @@ params:
   profileMode:
     enabled: true
     title: "Alif Naufal"
-    subtitle: "big on music, obsessed with the outdoors, and probably thinking about pastries. this is where i dump my thoughts on just about everything."
+    subtitle: "Into music, movies, animals, and the outdoors. Probably thinking about pastries. This is where my thoughts go when they have nowhere else to be."
     imageUrl: "/images/avatar.jpg"
     imageWidth: 120
     imageHeight: 120
