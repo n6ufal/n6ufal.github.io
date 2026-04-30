@@ -19,9 +19,6 @@ params:
     imageWidth: 120
     imageHeight: 120
     imageTitle: "n6ufal"
-    buttons:
-      - name: Posts
-        url: /posts/
 
   socialIcons:
     - name: github
