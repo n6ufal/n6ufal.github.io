@@ -13,14 +13,9 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;Alif Naufal, based in Indonesia — also known online as n6ufal.&lt;/p&gt;
-&lt;p&gt;I study English Literature but spend most of my time thinking about music,
-tech, and ideas that don&amp;rsquo;t fit neatly into either.&lt;/p&gt;
-&lt;p&gt;This is where I write about whatever&amp;rsquo;s currently living rent-free in my head —
-in English, Indonesian, or somewhere in between.&lt;/p&gt;
-&lt;p&gt;You can find my amateur works on &lt;a href=&#34;https://github.com/n6ufal&#34;&gt;GitHub&lt;/a&gt;.&lt;br&gt;
-Reach me at &lt;a href=&#34;mailto:alifnaufal@duck.com&#34;&gt;alifnaufal@duck.com&lt;/a&gt;&lt;/p&gt;
-&lt;img src=&#34;http://localhost:1313/images/goth.jpg&#34; alt=&#34;blessed&#34; width=&#34;300&#34; style=&#34;display: block; margin: 0 auto;&#34;&gt;</description>
+      <description>&lt;p&gt;Hi, I’m Alif Naufal, based in Indonesia — you might know me online as n6ufal.&lt;/p&gt;
+&lt;p&gt;I studied English Literature. These days I’m learning whatever catches my attention, building small things when the idea sticks, and overthinking more than I probably should.&lt;/p&gt;
+&lt;p&gt;Most of what I write here sits somewhere between random thoughts and things I’m trying to figure out in real time. I tend to lose ideas I thought were interesting, so this is my way of keeping track of what I’m thinking and feeling.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello World!</title>
@@ -29,6 +24,20 @@ Reach me at &lt;a href=&#34;mailto:alifnaufal@duck.com&#34;&gt;alifnaufal@duck.c
       <guid>http://localhost:1313/posts/hello-world/</guid>
       <description>&lt;p&gt;I made this site as a bit of a personal outlet. Somewhere to learn, mess around with Python, and just dump whatever’s been sitting in my head.&lt;/p&gt;
 &lt;p&gt;Lately I’ve been getting pulled into this whole AI “vibe coding” thing, and it kind of woke up that nerdy side of me that likes building stuff just for the sake of it. That’s how &lt;a href=&#34;https://github.com/n6ufal/Letter-Demon&#34;&gt;Letter Demon&lt;/a&gt; came to exist. To be clear, I didn’t actually code it myself. It was mostly Claude Sonnet 4.5 and VS Code Copilot. But the idea, the approach, and the structure of the app were mine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Now</title>
+      <link>http://localhost:1313/now/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/now/</guid>
+      <description>&lt;h2 id=&#34;thinking-about&#34;&gt;Thinking about&lt;/h2&gt;
+&lt;p&gt;There’s a serious situation happening at my campus involving verbal and sexual abuse. It’s been weighing on me and my friends.&lt;/p&gt;
+&lt;p&gt;Some of them are actively helping mediate and facilitate between the victims and the campus authorities in case things escalate. This isn’t something small.&lt;/p&gt;
+&lt;p&gt;I’ll write more about my point of view soon.&lt;/p&gt;
+&lt;h2 id=&#34;listening-to&#34;&gt;Listening to&lt;/h2&gt;
+&lt;p&gt;Deep prog house, dream pop, shoegaze, midwest emo, post-hardcore.&lt;/p&gt;
+&lt;h2 id=&#34;note&#34;&gt;Note&lt;/h2&gt;
+&lt;p&gt;This page changes whenever I feel like it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -7,31 +7,31 @@ pagination:
   pagerSize: 5
 
 params:
+  defaultTheme: auto
+  disableThemeToggle: false
+  showReadingTime: true
+
   profileMode:
     enabled: true
     title: "Alif Naufal"
-    subtitle: "Into music, movies, animals, and the outdoors. Probably thinking about pastries. This is where my thoughts go when they have nowhere else to be."
+    subtitle: "Music, movies, animals, the outdoors. Pastries, always.<br><em>HEADSPACE. is where the noise goes.</em>"
     imageUrl: "/images/avatar.jpg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: "Alif Naufal"
+    imageTitle: "n6ufal"
     buttons:
       - name: Posts
         url: /posts/
-  defaultTheme: auto
-  disableThemeToggle: false
 
   socialIcons:
     - name: github
       url: "https://github.com/n6ufal"
     - name: spotify
-      url: "https://open.spotify.com/user/fjvvc8gihy2bj471qal9zrg6v?si=d1a9d119f8714ee6"
+      url: "https://open.spotify.com/user/fjvvc8gihy2bj471qal9zrg6v"
     - name: x
       url: "https://twitter.com/n6ufal"
     - name: lastfm
       url: "https://www.last.fm/user/alifnaufal"
-
-  showReadingTime: true
 
 menu:
   main:
@@ -41,6 +41,9 @@ menu:
     - name: About
       url: /about/
       weight: 2
+    - name: Now
+      url: /now/
+      weight: 3
 
 markup:
   goldmark:
