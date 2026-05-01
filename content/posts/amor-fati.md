@@ -16,23 +16,23 @@ cover:
 
 Accepting the world as it is sits at the heart of Stoicism, and it comes down to one idea: control. A lot of what happens to us — other people's behavior, our health, the economy — is simply outside our hands. The Stoics weren't interested in pretending otherwise. Their argument was that fighting the unchangeable is just wasted energy, so point your efforts at what you can actually influence.
 
-When you stop resisting what you can't change, it loses its grip on you. That's not passivity — it's a deliberate choice about where your attention goes.
+When you stop resisting what you can't change, it loses its grip on you and it's a deliberate choice about where your attention goes.
 
 One tell that you're not accepting something: the word "should." _He should have done better. Things shouldn't be this way._ Whenever that word shows up, there's usually an expectation attached to something you never controlled to begin with.
 
-Pain is the clearest example. It's not a malfunction — it's part of the deal. You can't have gratitude, love, or genuine happiness without also being available to loss and suffering. They come as a package. The Stoics didn't see that as pessimism; they saw it as honesty.
+Pain is the clearest example. You can't have gratitude, love, or genuine happiness without also being available to loss and suffering. They come as a package. The Stoics didn't see that as pessimism; they saw it as honesty.
 
 ---
 
 ### Courage
 
-To the Stoics, courage isn't the absence of fear. It's acting in line with your values _despite_ fear, doubt, or uncertainty. The obstacles don't disappear — you just stop letting them be the deciding factor.
+To the Stoics, courage isn't the absence of fear. It's acting in line with your values _despite_ fear, doubt, or uncertainty. The obstacles don't disappear. You just stop letting them be the deciding factor.
 
 Tied closely to courage is fortitude: the capacity to endure discomfort — mental or physical — without caving to despair. Courage keeps you moving when moving is hard.
 
 > _"The one thing you can't take away from me is the way I choose to respond to what you do to me. The last of one's freedoms is to choose one's attitude in any given circumstance."_ — Viktor Frankl
 
-The Stoic method for building courage is pretty direct: seek out discomfort, don't avoid it. Confront the things you're afraid of. Not because it's fun, but because it shows you, empirically, that you can handle them. Your fears stop being abstract threats and start being things you've already navigated. The comfort zone expands by being pushed, not protected.
+The Stoic method for building courage is pretty direct: seek out discomfort, don't avoid it. Confront the things you're afraid of. Not because it's fun, but because it shows you, empirically, that you can handle them. Your fears stop being abstract threats and start being things you've already navigated. The comfort zone expands by being pushed.
 
 > _"A gem cannot be polished without friction, nor a man without trials."_ — Seneca
 
@@ -68,7 +68,7 @@ Wisdom is considered the most important of the four virtues. It's the capacity t
 
 It starts with one core claim: virtue — being genuinely good — is the only thing with real value. Everything else falls into two buckets: things that are bad, and things that are indifferent. Money, power, pleasure, status — these are indifferent. Not inherently good or bad. They can go either way. The mistake is treating them as though they have moral weight of their own.
 
-Wisdom also includes knowing what you control and what you don't. That clarity isn't just philosophical — it's practical. When you can draw that line clearly, you stop wasting energy on the wrong things and start directing it where it can actually land.
+Wisdom also includes knowing what you control and what you don't. When you can draw that line clearly, you stop wasting energy on the wrong things and start directing it where it can actually land.
 
 Without it, you'll struggle to stay consistent. The universe changes constantly — that's not a flaw in the system, it _is_ the system. If you haven't made peace with that, every major change will feel like an attack.
 
@@ -124,7 +124,7 @@ He laid it out plainly: two kinds of things exist in life. Things you control �
 >
 > _Working within our sphere of control, we are naturally free, independent, and strong. Beyond that sphere, we are weak, limited, and dependent. If you pin your hopes on things outside your control, taking upon yourself things which rightfully belong to others, you are liable to stumble, fall, suffer, and blame both gods and men. But if you focus your attention only on what is truly your own concern, and leave to others what concerns them, then you will be in charge of your interior life. No one will be able to harm or hinder you. You will blame no one, and have no enemies. If you wish to have peace and contentment, release your attachment to all things outside your control._ — Epictetus
 
-Once this sinks in, your wellbeing stops being tied to external outcomes. You don't stop caring about the world — you just stop letting it be the referee for whether you're okay. And as you build the four virtues — wisdom, courage, justice, temperance — that stability becomes something you construct and maintain, not something you're granted or denied by circumstance.
+Once this sinks in, your wellbeing stops being tied to external outcomes. You don't stop caring about the world — you stop letting it be the referee for whether you're okay. And as you build the four virtues — wisdom, courage, justice, temperance — that stability becomes something you construct and maintain, not something you're granted or denied by circumstance.
 
 ---
 
@@ -140,13 +140,11 @@ Reddit made it worse. I'd hit some ragebait post, get pulled in, and spend twent
 
 Twitter was the same. Ragebait everywhere, and I kept taking it.
 
-Every time.
-
-Then there were the conversations I'd replay for hours after they happened. Not important ones. Just normal exchanges where I'd say something and then think —
+Then there were the conversations I'd replay for hours after they happened. Normal exchanges where I'd say something and then think —
 
 *wait, how did that land?*
 
-And that was enough to start the loop. Replaying it, picking apart the wording, guessing how it might've been interpreted. No new information and ust going in circles.
+And that was enough to start the loop. Replaying it, picking apart the wording, guessing how it might've been interpreted. No new information and just going in circles.
 
 Then I'd flip to the future and start building contingency plans for problems that hadn't happened yet and probably wouldn't.
 
@@ -154,9 +152,7 @@ Then I'd flip to the future and start building contingency plans for problems th
 
 At some point I noticed something obvious: the more I engaged with that stuff, the more it showed up. Rage clicks turned into more rage. Outrage kept getting pushed because it works.
 
-**I was feeding it.**
-
-So I started curating. Slowly. Muted keywords, blocked accounts, unfollowed anything that reliably made me feel worse. Replaced it with things that were lighter. Still interesting, just not constantly negative.
+So I started curating what I consume. Muted keywords, blocked accounts, unfollowed anything that reliably made me feel worse. Replaced it with things that were lighter. Still interesting and not constantly negative.
 
 After a few weeks, the feed changed. And the noise in my head went down with it.
 
@@ -172,9 +168,7 @@ What I was doing before wasn't staying informed. It was sitting in the same stre
 
 The Stoic angle helps a bit. Curating inputs isn't avoidance. It's deciding what gets your attention — one of the few things you actually control.
 
-The tradeoff is real. You risk narrowing your view. But you also stop letting an algorithm set your mood for the day.
-
-I'd rather be aware of that tradeoff than ignore it.
+The tradeoff is real. You risk narrowing your view. But you also stop letting an algorithm set your mood for the day. To be honest with you, I'd rather be aware of that tradeoff than ignore it.
 
 It also took me a while to notice a bigger pattern:
 
