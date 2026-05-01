@@ -20,7 +20,9 @@ When you stop resisting what you can't change, it loses its grip on you and it's
 
 One tell that you're not accepting something: the word "should." _He should have done better. Things shouldn't be this way._ Whenever that word shows up, there's usually an expectation attached to something you never controlled to begin with.
 
-Pain is the clearest example. You can't have gratitude, love, or genuine happiness without also being available to loss and suffering. They come as a package. The Stoics didn't see that as pessimism; they saw it as honesty.
+Pain is the clearest example. 
+
+You can't have gratitude, love, or genuine happiness without also being available to loss and suffering.
 
 ---
 
