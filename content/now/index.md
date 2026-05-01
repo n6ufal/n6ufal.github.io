@@ -1,6 +1,5 @@
 ---
 title: "Now"
-date: 2026-04-30
 draft: false
 ---
 
@@ -14,7 +13,7 @@ I’ll write more about my point of view soon.
 
 ## Listening to
 
-Deep prog house, dream pop, shoegaze, midwest emo, post-hardcore.
+Currently obsessed with RÜFÜS DU SOL — “Innerbloom” is an all-timer.
 
 ## Note
 

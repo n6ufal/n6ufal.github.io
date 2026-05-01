@@ -27,20 +27,6 @@
 &lt;p&gt;It started when I got the GitHub Student Pack and figured — why dump stuff on Medium when I could just have my own thing? So I built it. Hugo, GitHub Pages, custom domain. Figured it out as I went. When it finally worked — that feeling of &lt;em&gt;I made this&lt;/em&gt; was kind of hard to beat. I love it and here&amp;rsquo;s HEADSPACE.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Now</title>
-      <link>http://localhost:1313/now/</link>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/now/</guid>
-      <description>&lt;h2 id=&#34;thinking-about&#34;&gt;Thinking about&lt;/h2&gt;
-&lt;p&gt;There’s a serious situation happening at my campus involving verbal and sexual abuse. It’s been weighing on me and my friends.&lt;/p&gt;
-&lt;p&gt;Some of them are actively helping mediate and facilitate between the victims and the campus authorities in case things escalate. This isn’t something small.&lt;/p&gt;
-&lt;p&gt;I’ll write more about my point of view soon.&lt;/p&gt;
-&lt;h2 id=&#34;listening-to&#34;&gt;Listening to&lt;/h2&gt;
-&lt;p&gt;Deep prog house, dream pop, shoegaze, midwest emo, post-hardcore.&lt;/p&gt;
-&lt;h2 id=&#34;note&#34;&gt;Note&lt;/h2&gt;
-&lt;p&gt;This page changes whenever I feel like it.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -49,6 +35,20 @@
 &lt;p&gt;English Lit grad. Into music and film — prog house, shoegaze, dream pop, midwest emo, post-hardcore, basically anything that makes noise, and Christopher Nolan movies, except Tenet. I loathe that one, tf Nolan?&lt;/p&gt;
 &lt;p&gt;I have strong opinions about extraterrestrials, interdimensional stuff, and secret black government projects. I&amp;rsquo;ve been with my girlfriend for seven years. I love you.&lt;/p&gt;
 &lt;p&gt;Currently learning Python and how to build a site from scratch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Now</title>
+      <link>http://localhost:1313/now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/now/</guid>
+      <description>&lt;h2 id=&#34;thinking-about&#34;&gt;Thinking about&lt;/h2&gt;
+&lt;p&gt;There’s a serious situation happening at my campus involving verbal and sexual abuse. It’s been weighing on me and my friends.&lt;/p&gt;
+&lt;p&gt;Some of them are actively helping mediate and facilitate between the victims and the campus authorities in case things escalate. This isn’t something small.&lt;/p&gt;
+&lt;p&gt;I’ll write more about my point of view soon.&lt;/p&gt;
+&lt;h2 id=&#34;listening-to&#34;&gt;Listening to&lt;/h2&gt;
+&lt;p&gt;Currently obsessed with RÜFÜS DU SOL — “Innerbloom” is an all-timer.&lt;/p&gt;
+&lt;h2 id=&#34;note&#34;&gt;Note&lt;/h2&gt;
+&lt;p&gt;This page changes whenever I feel like it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
