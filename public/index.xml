@@ -4,6 +4,11 @@
     <title>HEADSPACE.</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on HEADSPACE.</description>
+    <image>
+      <title>HEADSPACE.</title>
+      <url>http://localhost:1313/images/avatar.jpg</url>
+      <link>http://localhost:1313/images/avatar.jpg</link>
+    </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>
@@ -33,8 +38,8 @@
       <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;Hi. I&amp;rsquo;m Alif Naufal — n6ufal online, based in Indonesia.&lt;/p&gt;
 &lt;p&gt;English Lit grad. Into music and film — prog house, shoegaze, dream pop, midwest emo, post-hardcore, basically anything that makes noise, and Christopher Nolan movies, except Tenet. I loathe that one, tf Nolan?&lt;/p&gt;
-&lt;p&gt;I have strong opinions about extraterrestrials, interdimensional stuff, and secret black government projects. I&amp;rsquo;ve been with my girlfriend for seven years. I love you.&lt;/p&gt;
-&lt;p&gt;Currently learning Python and how to build a site from scratch.&lt;/p&gt;</description>
+&lt;p&gt;Currently learning Python, HTML, and Markdown.&lt;/p&gt;
+&lt;p&gt;HEADSPACE. started as a notes app and got out of hand. I lose ideas faster than I can hold onto them, so this is me keeping track. Posts in English, Indonesian, or whatever language the thought shows up in.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Now</title>

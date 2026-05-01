@@ -4,6 +4,11 @@
     <title>Tags on HEADSPACE.</title>
     <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on HEADSPACE.</description>
+    <image>
+      <title>HEADSPACE.</title>
+      <url>http://localhost:1313/images/avatar.jpg</url>
+      <link>http://localhost:1313/images/avatar.jpg</link>
+    </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />

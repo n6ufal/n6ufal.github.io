@@ -4,6 +4,11 @@
     <title>Posts on HEADSPACE.</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on HEADSPACE.</description>
+    <image>
+      <title>HEADSPACE.</title>
+      <url>http://localhost:1313/images/avatar.jpg</url>
+      <link>http://localhost:1313/images/avatar.jpg</link>
+    </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>

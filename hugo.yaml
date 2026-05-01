@@ -10,6 +10,11 @@ params:
   defaultTheme: auto
   disableThemeToggle: true
   showReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  canonicalURL: "https://alifnaufal.me"
+  images: ["/images/avatar.jpg"]
 
   profileMode:
     enabled: true
@@ -18,7 +23,7 @@ params:
     imageUrl: "/images/avatar.jpg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: "n6ufal"
+    imageTitle: "Alif Naufal"
 
   socialIcons:
     - name: github

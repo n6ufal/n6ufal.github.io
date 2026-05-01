@@ -11,16 +11,14 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/hello-world/</loc>
     <lastmod>2026-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/now/</loc>
-    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/now/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>
