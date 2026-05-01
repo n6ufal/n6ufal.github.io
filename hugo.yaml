@@ -13,6 +13,10 @@ params:
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
+  ShowBreadCrumbs: true
+  ShowToc: true
+  TocOpen: false
+  Description: "Alif Naufal's personal blog. Life, music, and whatever else."
   canonicalURL: "https://alifnaufal.me"
   images: ["/images/avatar.jpg"]
 
@@ -43,9 +47,12 @@ menu:
     - name: Now
       url: /now/
       weight: 2
+    - name: Archive
+      url: /archives/
+      weight: 3
     - name: About
       url: /about/
-      weight: 3
+      weight: 4
 
 timeZone: "Asia/Jakarta"
 
