@@ -1,19 +1,24 @@
 ---
 title: "About"
-date: 2026-04-30
 draft: false
 ---
 
-Hi, I’m Alif Naufal, based in Indonesia — you might know me online as n6ufal.
+Hi. I'm Alif Naufal — n6ufal online, based in Indonesia.
 
-I studied English Literature. These days I’m learning whatever catches my attention, building small things when the idea sticks, and overthinking more than I probably should.
+English Lit grad. Into music and film — prog house, shoegaze, dream pop, midwest emo, post-hardcore, basically anything that makes noise, and Christopher Nolan movies, except Tenet. I loathe that one, tf Nolan?
 
-Most of what I write here sits somewhere between random thoughts and things I’m trying to figure out in real time. I tend to lose ideas I thought were interesting, so this is my way of keeping track of what I’m thinking and feeling.
+I have strong opinions about extraterrestrials, interdimensional stuff, and secret black government projects. I've been with my girlfriend for seven years. I love you.
 
-HEADSPACE. is where those thoughts end up — in English, Indonesian, or somewhere in between.
+Currently learning Python and how to build a site from scratch.
 
-You can find some of my (very amateur) work on [GitHub](https://github.com/n6ufal).
+HEADSPACE. started as a notes app and got out of hand. I lose ideas faster than I can hold onto them, so this is me keeping track. Posts in English, Indonesian, or whatever language the thought shows up in.
 
-Reach me at alifnaufal@duck.com
+*"Sooner or later, everything old is new again."*
+
+Some amateur work on [GitHub](https://github.com/n6ufal)
+
+Say hi: [alifnaufal@duck.com](mailto:alifnaufal@duck.com)
+
+---
 
 <img src="/images/goth.jpg" alt="blessed" width="300" style="display: block; margin: 0 auto;">

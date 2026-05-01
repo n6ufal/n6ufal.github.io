@@ -14,7 +14,7 @@ params:
   profileMode:
     enabled: true
     title: "Alif Naufal"
-    subtitle: "Music, movies, animals, the outdoors. Pastries, always.<br><em>HEADSPACE. is where the noise goes.</em>"
+    subtitle: "<br><em>One day we’ll die, and our ashes will fly from the aeroplane over the sea.</em>"
     imageUrl: "/images/avatar.jpg"
     imageWidth: 120
     imageHeight: 120
