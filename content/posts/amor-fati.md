@@ -182,7 +182,7 @@ None of that is in my control, yet it still costs energy.
 
 The Stoic framework gave me one useful question:
 
-> *is this actually mine?*
+> *Is this actually mine?*
 >
 > *Can I act on it, or am I just reacting to it?*
 
