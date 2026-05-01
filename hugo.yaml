@@ -7,7 +7,7 @@ pagination:
   pagerSize: 5
 
 params:
-  defaultTheme: auto
+  defaultTheme: dark
   disableThemeToggle: true
   showReadingTime: true
   ShowShareButtons: false
@@ -19,11 +19,11 @@ params:
   profileMode:
     enabled: true
     title: "Alif Naufal"
-    subtitle: "<br><em>One day we’ll die, and our ashes will fly from the aeroplane over the sea.</em>"
+    subtitle: "<em>One day we’ll die, and our ashes will fly from the aeroplane over the sea.</em>"
     imageUrl: "/images/avatar.jpg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: "Alif Naufal"
+    imageTitle: "Alif Naufal and her precious girlfriend"
 
   socialIcons:
     - name: github
