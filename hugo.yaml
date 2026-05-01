@@ -47,6 +47,8 @@ menu:
       url: /about/
       weight: 3
 
+timeZone: "Asia/Jakarta"
+
 markup:
   goldmark:
     renderer:

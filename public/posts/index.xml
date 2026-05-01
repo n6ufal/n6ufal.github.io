@@ -11,12 +11,20 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 00:00:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Do you remember your lucky number?</title>
+      <link>http://localhost:1313/posts/do-you-remember-your-lucky-number/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/do-you-remember-your-lucky-number/</guid>
+      <description>&lt;p&gt;I was never the kind of person who got nervous around people my age. That just wasn&amp;rsquo;t my thing. But then there was this one girl in class I couldn&amp;rsquo;t figure out how to talk to, so naturally, I just… didn&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;And somehow, despite my complete lack of game, she was the one who started things. Which I then managed to completely fumble by ghosting her out of anxiety. Looking back, that might actually be one of the dumbest, most self-sabotaging things I&amp;rsquo;ve ever done.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Amor Fati</title>
       <link>http://localhost:1313/posts/amor-fati/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0700</pubDate>
       <guid>http://localhost:1313/posts/amor-fati/</guid>
       <description>&lt;p&gt;&amp;ldquo;Amor Fati&amp;rdquo; — Latin for &amp;ldquo;love of fate&amp;rdquo; — is the practice of embracing whatever life throws at you and finding something useful in it.&lt;/p&gt;
 &lt;hr&gt;
@@ -26,7 +34,7 @@
     <item>
       <title>Hello World!</title>
       <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0700</pubDate>
       <guid>http://localhost:1313/posts/hello-world/</guid>
       <description>&lt;p&gt;I made this site as a personal outlet. Somewhere to learn, mess around, and dump whatever&amp;rsquo;s been sitting in my head.&lt;/p&gt;
 &lt;p&gt;It started when I got the GitHub Student Pack and figured — why dump stuff on Medium when I could just have my own thing? So I built it. Hugo, GitHub Pages, custom domain. Figured it out as I went. When it finally worked — that feeling of &lt;em&gt;I made this&lt;/em&gt; was kind of hard to beat. I love it and here&amp;rsquo;s HEADSPACE.&lt;/p&gt;</description>
