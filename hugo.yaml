@@ -44,15 +44,12 @@ menu:
     - name: Posts
       url: /posts/
       weight: 1
-    - name: Now
-      url: /now/
-      weight: 2
     - name: Archive
       url: /archives/
-      weight: 3
+      weight: 2
     - name: About
       url: /about/
-      weight: 4
+      weight: 3
 
 timeZone: "Asia/Jakarta"
 
