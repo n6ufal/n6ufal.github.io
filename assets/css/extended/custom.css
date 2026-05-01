@@ -2,13 +2,3 @@
   display: block;
   margin: 0 auto;
 }
-
-/* Tighten name → quote gap */
-.profile-mode .profile-inner h1 {
-  margin-bottom: 0.5rem;
-}
-
-/* Breathe a little more above the social icons */
-.profile-mode .profile-inner .social-icons {
-  margin-top: 1.25rem;
-}
