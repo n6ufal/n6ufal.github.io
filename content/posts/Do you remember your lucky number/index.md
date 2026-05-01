@@ -16,11 +16,11 @@ That was seven years ago.
 
 Seven years sounds like it should feel heavy, like something you can hold in your hands and measure. But it doesn't. It just moves. We started at the tail end of high school and came out the other side with degrees — and everything that sentence quietly skips over is the whole story.
 
-I read the other day that your brain doesn't really finish developing until around twenty-five. The parts responsible for emotional regulation, decision-making, handling conflict — still being built well into your twenties. Which explains a lot, especially in my case.
+I read the other day that your brain doesn't really finish developing until around twenty-five. The parts responsible for emotional regulation, decision-making, handling conflict — still being built well into your twenties.
 
 So when we met, we weren't finished people. I was basically a work in progress with questionable judgment and zero impulse control. And a lot of who I am now took shape during those years, while you were there watching it happen in real time and, for some reason, putting up with it.
 
-At some point along the way, you basically became a second mother figure to me, which says a lot about how much of a mess I was.
+At some point along the way, you basically became a second mother figure to me.
 
 Most people go through that kind of becoming alone, or around people who don't stick around. We didn't. We went through it side by side, which in hindsight feels a little miraculous given the version of me you had to deal with. And somewhere in all of that, without even trying, you made me believe in miracles.
 
@@ -28,7 +28,7 @@ The strange thing about seven years is that you can't actually feel its size. Me
 
 Which means most of what those days actually felt like is gone now, folded down into a vague sense of before and after. That doesn't feel sad to me. If anything, it might be the closest thing to proof that we became comfortable enough that time stopped needing to announce itself.
 
-Also, speaking of seven — there's *Se7en* (1995), directed by David Fincher. I'm thinking of rewatching it just to lean into our dumb little number superstition. And apparently the number 27 shows up a lot in *Shed* (2011) by Title Fight, which feels about right.
+Also, speaking of seven — there's *Se7en* (1995), directed by David Fincher. I'm thinking of rewatching it just to lean into our dumb little number superstition. And apparently the number 27 shows up a lot in *Shed* (2011) by Title Fight.
 
 2,557 days. 84 months.
 
