@@ -8,31 +8,42 @@ cover:
   relative: false
 ---
 
-I made this site as a personal outlet. Somewhere to learn, mess around, and dump whatever's been sitting in my head.
+I made this site as a personal outlet. Nothing too grand behind it. I just wanted a place to learn, mess around, and throw whatever’s been stuck in my head somewhere that isn’t a notes app graveyard.
 
-It started when I got the GitHub Student Pack and figured — why dump stuff on Medium when I could just have my own thing? So I built it. Hugo, GitHub Pages, custom domain. Figured it out as I went. When it finally worked — that feeling of _I made this_ was kind of hard to beat. I love it and here's HEADSPACE.
+It really started when I got the GitHub Student Pack. At the time I thought, why am I posting on Medium when I could just have my own space? So I decided to build it myself.
 
-Lately though, I've been getting pulled into the whole AI "vibe coding" thing, and it's been messing with how I think about making something. I don't code — never have. But the idea of building always felt like it had a clear shape: you make a thing, you own the process. Now it's more like… you describe something clearly enough, shape it, push it in the right direction, and it starts to exist.
+I had no idea what I was doing, by the way. Hugo, GitHub Pages, setting up a custom domain, all of it was new. I just kept poking at things until they worked. And when it finally did work. That very simple, very satisfying *“I made this.”* It’s kind of addictive.
 
+That’s how this whole thing exists.
 
-That's how [Letter Demon](https://github.com/n6ufal/Letter-Demon) came to be.
+Lately though, something’s been shifting a bit. I’ve been getting pulled into the whole AI “vibe coding” space, and it’s been messing with how I think about building things.
 
-I didn't write most of the code. Claude Sonnet 4.5 and Copilot did that. What I did was decide what it should be, how it should behave, what it was trying to become. The logic, the constraints, the structure — I figured those out.
+I’ve never been a coder. Still not, really. But building used to feel more straightforward in my head. You sit down, you make something, and the process is yours from start to finish. Now it feels different. It’s less about writing everything yourself, and more about describing something clearly, shaping it, nudging it in the right direction, and watching it take form.
 
-So I keep coming back to this question: what does it even mean to "build" something now?
+That’s basically how [Letter Demon](https://github.com/n6ufal/Letter-Demon) came together.
 
-If you don't write every line, but you design the system, guide it, make the calls — is it still yours? Or is authorship becoming more about direction than execution?
+I didn’t write most of the code. Tools like Claude Sonnet and Copilot handled a lot of that. What I actually did was decide what the thing should be. How it behaves. What it’s trying to do. I spent more time thinking about the logic, the constraints, and the structure than typing out lines of code.
 
-I genuinely don't know.
+And that’s where things start to feel a bit weird.
 
-Maybe that's part of why I've always liked word games. Scrabble, spelling bees, and that Japanese word game Shiritori — where each word has to start with the last letter of the previous one. You work within whatever constraint you're handed, respond to it, and something comes out the other side that neither player fully planned.
+Because now I keep asking myself: what does it actually mean to “build” something?
 
-Tbh, this feels a bit like that.
+If you’re not the one writing every line, but you’re the one shaping the system, making decisions, setting boundaries… is it still yours? Or is authorship slowly shifting from execution to direction?
 
-Outside of that, music's always running. What I'm into shifts constantly — lately it's been deep prog house, jerk, grunge, dream pop, shoegaze, midwest emo, post-hardcore. All over the place.
+I don’t have a clean answer for that yet.
 
-No strict plan for this site. Probably a mix of small projects, half-baked ideas, and things I'm working through in real time.
+Maybe that’s why I’ve always liked word games. Stuff like Scrabble, spelling bees, or *Shiritori* — that Japanese game where each word has to start with the last letter of the previous one. You’re always working within constraints. You react, adjust, and something comes out of it that neither side fully planned.
 
-That's fine. Not everything needs to be finished to be worth putting out there.
+This whole AI-assisted building thing feels a bit like that to me.
+
+Outside of all this, music’s pretty much always playing in the background. What I’m into changes a lot. Lately it’s been deep prog house, jerk, grunge, dream pop, shoegaze, midwest emo, post-hardcore… it’s a mix. Depends on the day, honestly.
+
+As for this site, there’s no big roadmap. No content strategy or anything like that. It’s probably just going to be a mix of small projects, half-finished ideas, and things I’m figuring out as I go.
+
+And I think I’m okay with that.
+
+Not everything needs to be polished or complete to be worth putting out there.
+
+Anyway, that’s where I’m at right now.
 
 More soon.
