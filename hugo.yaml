@@ -16,6 +16,7 @@ params:
   ShowBreadCrumbs: true
   ShowToc: true
   TocOpen: false
+  Author: "Alif Naufal"
   Description: "Alif Naufal's personal blog. Life, music, and whatever else."
   canonicalURL: "https://alifnaufal.me"
   images: ["/images/avatar.jpg"]

@@ -3,14 +3,14 @@ title: "About"
 draft: false
 ---
 
-Hi. I’m Alif Naufal — n6ufal online, based in Indonesia.
+Hi. I’m Alif Naufal — I go by n6ufal online, and I’m based in Indonesia.
 
-English Lit grad. I listen to a lot of prog house, shoegaze, dream pop, midwest emo, grunge, jerk, post-hardcore. Big on Christopher Nolan too, except *Tenet*. Still not over whatever that was.
+I graduated with a degree in English Literature, so stories and language have always shaped how I see the world — but honestly, I spend just as much time lost in music as I do in words. My taste jumps around a lot: progressive house, shoegaze, dream pop, Midwest emo, grunge, jerk, and lately a post-hardcore kick. I'm also a huge movie nerd and a Christopher Nolan fan, except for Tenet — I'm still not over whatever that was.
 
-I lose ideas faster than I can keep them. *HEADSPACE.* is where I dump everything before it disappears. Notes, half-thoughts, essays, in whatever language they show up. English, Indonesian, or sleep-deprived nonsense my friends and I talked about at 3 AM.
+Ideas come and go way too fast for me. I'll think of something interesting, and five minutes later it's gone unless I write it down immediately. That's why I created HEADSPACE — my personal dumping ground for everything my brain can't hold onto, all while I'm also trying to learn how to set up a static website from scratch. It's where I keep notes, half-formed thoughts, short essays, and random fragments, in whatever language they show up: English, Indonesian, or the kind of sleep-deprived nonsense my friends and I come up with during 3 AM conversations.
 
-Messing around with Python, HTML, Markdown. Trying to build things, and trying to write better.
+I'm also teaching myself to build things with code. I mess around with Python, HTML, and Markdown — trying to make small tools or just understand how things work — and importantly, I'm having fun learning it. I'm actively trying to become a better writer, too.
 
-Lately I’ve been thinking about extraterrestrials, UAPs, and how much governments actually know. Also into evolutionary biology, fragrance chemistry, and the *Breaking Bad* / *Better Call Saul* universe.
+Lately, my mind keeps circling a strange mix of topics. I’ve been thinking a lot about extraterrestrials, UAPs, and how much governments actually know and aren’t telling us. I’m also deep into evolutionary biology, fragrance chemistry (the science behind how things smell still blows my mind), and the whole Breaking Bad / Better Call Saul universe. That world of morally complicated characters and slow-burn storytelling is just endlessly rewatchable to me.
 
 Say hi: [alifnaufal@duck.com](mailto:alifnaufal@duck.com)

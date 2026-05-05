@@ -9,9 +9,9 @@
 <title>HEADSPACE.</title>
 
 <meta name="description" content="Alif Naufal&#39;s personal blog. Life, music, and whatever else.">
-<meta name="author" content="">
+<meta name="author" content="Alif Naufal">
 <link rel="canonical" href="http://localhost:1313/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.a57ce7a0f8536ded82b19d679a4246c450646cb608ed49c3025d197a9238d5ee.css" integrity="sha256-pXznoPhTbe2CsZ1nmkJGxFBkbLYI7UnDAl0ZepI41e4=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7fdb88a233377e29278518433476257270aa2d937cb7689ec797e43f4a76d851.css" integrity="sha256-f9uIojM3fiknhRhDNHYlcnCqLZN8t2iex5fkP0p22FE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -31,7 +31,7 @@
     </style>
 </noscript><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body class="list" id="top">
     <header class="header">
@@ -113,7 +113,7 @@
               const tracks = data.recenttracks.track.slice(0, 5);
               const container = document.getElementById("lastfm-tracks");
 
-              let html = `<p style="font-family: 'Outfit', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--secondary); margin-bottom: 0.75rem;">Recently played</p><ul style="list-style: none; padding: 0; margin: 0;">`;
+              let html = `<p style="font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--secondary); margin-bottom: 0.75rem;">Recently played</p><ul style="list-style: none; padding: 0; margin: 0;">`;
 
               tracks.forEach(track => {
                 const isNowPlaying = track["@attr"]?.nowplaying === "true";
@@ -122,9 +122,9 @@
                 const trackUrl = track.url;
 
                 html += `
-                  <li style="margin-bottom: 0.4rem; font-size: 0.875rem; font-family: 'Outfit', sans-serif;">
+                  <li style="margin-bottom: 0.4rem; font-size: 0.875rem; font-weight: 400;">
                     ${isNowPlaying ? `<span style="color: #A3BE8C; margin-right: 0.4rem;">▶</span>` : `<span style="color: var(--secondary); margin-right: 0.4rem;">♪</span>`}
-                    <a href="${trackUrl}" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none;">
+                    <a href="${trackUrl}" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none; font-weight: 400;">
                       ${name} <span style="color: var(--secondary);">— ${artist}</span>
                     </a>
                   </li>`;
@@ -140,7 +140,6 @@
 
     </div>
 </div>
-
     </main>
     </body>
 
