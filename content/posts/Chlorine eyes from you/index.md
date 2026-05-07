@@ -1,10 +1,10 @@
 ---
-title: "Do you remember your lucky number?"
-date: 2026-05-02
+title: Do you remember your lucky number?
+date: 2026-05-06T16:45:12.300Z
 draft: true
 cover:
-  image: ".jpg"
-  alt: "cover"
+  image: .jpg
+  alt: cover
   relative: true
 ---
 
