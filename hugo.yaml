@@ -9,7 +9,7 @@ pagination:
 params:
   defaultTheme: dark
   disableThemeToggle: true
-  showReadingTime: true
+  showReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
