@@ -16,8 +16,7 @@ params:
   ShowBreadCrumbs: true
   ShowToc: true
   TocOpen: false
-  Author: "Alif Naufal"
-  Description: "Alif Naufal's personal blog. Life, music, and whatever else."
+  Description: "Alif Naufal's personal blog or whatever."
   canonicalURL: "https://alifnaufal.me"
   images: ["/images/avatar.jpg"]
 
@@ -33,10 +32,10 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/n6ufal"
-    - name: spotify
-      url: "https://open.spotify.com/user/fjvvc8gihy2bj471qal9zrg6v"
     - name: x
       url: "https://twitter.com/n6ufal"
+    - name: spotify
+      url: "https://open.spotify.com/user/fjvvc8gihy2bj471qal9zrg6v"
     - name: lastfm
       url: "https://www.last.fm/user/alifnaufal"
 
