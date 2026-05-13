@@ -1,34 +1,41 @@
 baseURL: "https://alifnaufal.me/"
-languageCode: "en-us"
 title: "HEADSPACE"
 theme: "PaperMod"
-
-pagination:
-  pagerSize: 5
+defaultContentLanguage: "en"
+timeZone: "Asia/Jakarta"
 
 params:
+  # Last.fm
+  lastfmApiKey: "0e7245c9a19b6563e2a301c91f053c54"
+  lastfmUser: "alifnaufal"
+  # Theme
   defaultTheme: dark
   disableThemeToggle: true
-  showReadingTime: false
+  # Meta
+  Description: "Alif Naufal's personal blog or whatever."
+  author: "Alif Naufal"
+  # Features
+  ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: true
   ShowToc: true
   TocOpen: false
-  Description: "Alif Naufal's personal blog or whatever."
-  canonicalURL: "https://alifnaufal.me"
+  ShowBackToTop: true
+  # Images
   images: ["/images/avatar.jpg"]
-
+  canonicalURL: "https://alifnaufal.me"
+  # Profile Mode
   profileMode:
     enabled: true
     title: "Alif Naufal"
-    subtitle: "<em>One day we’ll die, and our ashes will fly from the aeroplane over the sea.</em>"
+    subtitle: "One day we’ll die, and our ashes will fly from the aeroplane over the sea."
     imageUrl: "/images/avatar.jpg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: "Alif Naufal and her precious girlfriend"
-
+    imageTitle: "Alif Naufal with precious partner"
+  # Social
   socialIcons:
     - name: github
       url: "https://github.com/n6ufal"
@@ -51,9 +58,20 @@ menu:
       url: /about/
       weight: 3
 
-timeZone: "Asia/Jakarta"
+pagination:
+  pagerSize: 5
 
 markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    style: nord
+    lineNos: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+
+    

@@ -1,0 +1,11 @@
+[build]
+  command = "hugo"
+  publish = "public"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Environment variables (set these in Netlify dashboard or .env.local)
+# LASTFM_API_KEY = your-api-key
+# LASTFM_USER = alifnaufal

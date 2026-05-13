@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on HEADSPACE</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:11103/posts/</link>
     <description>Recent content in Posts on HEADSPACE</description>
     <image>
       <title>HEADSPACE</title>
-      <url>http://localhost:1313/images/avatar.jpg</url>
-      <link>http://localhost:1313/images/avatar.jpg</link>
+      <url>http://localhost:11103/images/avatar.jpg</url>
+      <link>http://localhost:11103/images/avatar.jpg</link>
     </image>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Wed, 13 May 2026 00:00:00 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:11103/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Skin</title>
-      <link>http://localhost:1313/posts/skin-and-all/</link>
+      <link>http://localhost:11103/posts/skin-and-all/</link>
       <pubDate>Wed, 13 May 2026 00:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/posts/skin-and-all/</guid>
+      <guid>http://localhost:11103/posts/skin-and-all/</guid>
       <description>&lt;p&gt;I left through the ceiling before the rest of me understood what was happening.&lt;/p&gt;
 &lt;p&gt;One moment I was inside myself. The next I was somewhere past the light fixture, watching a body that used to be mine go completely still. I&amp;rsquo;m a rabbit beneath a hawk&amp;rsquo;s shadow.&lt;/p&gt;
 &lt;p&gt;Nobody tells you that freezing feels like being evicted from yourself. That the self just gets the hell out and watches from somewhere safe while the rest of you deals with it. I saw everything from up there with this horrible, perfect clarity I have spent years trying to drink away, sleep away, lie away.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Do you remember your lucky number?</title>
-      <link>http://localhost:1313/posts/do-you-remember-your-lucky-number/</link>
+      <link>http://localhost:11103/posts/do-you-remember-your-lucky-number/</link>
       <pubDate>Sat, 02 May 2026 00:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/posts/do-you-remember-your-lucky-number/</guid>
+      <guid>http://localhost:11103/posts/do-you-remember-your-lucky-number/</guid>
       <description>&lt;p&gt;I never really got nervous around people my age. It just wasn&amp;rsquo;t my thing. But then there was this one girl in class I had zero clue how to talk to, so naturally, I just&amp;hellip; didn&amp;rsquo;t.&lt;/p&gt;
 &lt;p&gt;Somehow, despite my absolute lack of game, you were the one who actually started things. Which I then immediately managed to fuck up by ghosting you because of my own anxiety. Looking back, that was easily one of the dumbest, most self-sabotaging things I’ve ever done.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Amor Fati</title>
-      <link>http://localhost:1313/posts/amor-fati/amor-fati/</link>
+      <link>http://localhost:11103/posts/amor-fati/amor-fati/</link>
       <pubDate>Fri, 01 May 2026 00:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/posts/amor-fati/amor-fati/</guid>
+      <guid>http://localhost:11103/posts/amor-fati/amor-fati/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;Amor Fati&amp;rdquo; — Latin for &amp;ldquo;love of fate&amp;rdquo; — is the practice of embracing whatever life throws at you and finding something useful in it.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -43,9 +43,9 @@
     </item>
     <item>
       <title>Hello World!</title>
-      <link>http://localhost:1313/posts/hello-world/hello-world/</link>
+      <link>http://localhost:11103/posts/hello-world/hello-world/</link>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/posts/hello-world/hello-world/</guid>
+      <guid>http://localhost:11103/posts/hello-world/hello-world/</guid>
       <description>&lt;p&gt;I made this site as a personal outlet. Nothing too grand behind it. I just wanted a place to learn, mess around, and throw whatever’s been stuck in my head somewhere that isn’t a notes app graveyard.&lt;/p&gt;
 &lt;p&gt;It really started when I got the GitHub Student Pack. At the time I thought, why am I posting on Medium when I could just have my own space? So I decided to build it myself.&lt;/p&gt;</description>
     </item>

@@ -392,3 +392,84 @@ a:hover {
 .post-meta time {
   color: var(--nord4);
 }
+
+/* ══════════════════════════════════════════
+   LASTFM WIDGET - NORD HOVER FIX
+══════════════════════════════════════════ */
+
+.lastfm-widget {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.lastfm-loading,
+.lastfm-error {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: var(--secondary);
+}
+
+.lastfm-header {
+  font-family: 'Geist', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+}
+
+.lastfm-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lastfm-item {
+  margin-bottom: 0.4rem;
+  font-size: 0.875rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.lastfm-icon {
+  margin-right: 0.4rem;
+  transition: color 0.2s ease;
+}
+
+.lastfm-icon.playing {
+  color: var(--nord14); /* #A3BE8C */
+}
+
+.lastfm-icon.paused {
+  color: var(--secondary);
+}
+
+.lastfm-track {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+/* Hover effects with Nord colors */
+.lastfm-item:hover .lastfm-track {
+  color: var(--nord8); /* #88C0D0 */
+  text-decoration: underline;
+}
+
+.lastfm-item:hover .lastfm-icon.playing,
+.lastfm-item:hover .lastfm-icon.paused {
+  color: var(--nord8);
+}
+
+.lastfm-item:hover .lastfm-artist {
+  color: var(--nord8);
+}
+
+/* Keep artist color consistent */
+.lastfm-artist {
+  color: var(--secondary);
+  transition: color 0.2s ease;
+}
