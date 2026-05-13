@@ -28,15 +28,15 @@ And that’s where things start to feel a bit weird.
 
 Because now I keep asking myself: what does it actually mean to “build” something?
 
-If you’re not the one writing every line, but you’re the one shaping the system, making decisions, setting boundaries… is it still yours? Or is authorship slowly shifting from execution to direction?
+If you’re not the one writing every line, but you’re the one shaping the system, making decisions, setting boundaries... is it still yours? Or is authorship slowly shifting from execution to direction?
 
 I don’t have a clean answer for that yet.
 
-Maybe that’s why I’ve always liked word games. Stuff like Scrabble, spelling bees, or *Shiritori* — that Japanese game where each word has to start with the last letter of the previous one. You’re always working within constraints. You react, adjust, and something comes out of it that neither side fully planned.
+Maybe that’s why I’ve always liked word games. Stuff like Scrabble, spelling bees, or *Shiritori*, that Japanese game where each word has to start with the last letter of the previous one. You’re always working within constraints. You react, adjust, and something comes out of it that neither side fully planned.
 
 This whole AI-assisted building thing feels a bit like that to me.
 
-Outside of all this, music’s pretty much always playing in the background. What I’m into changes a lot. Lately it’s been deep prog house, jerk, grunge, dream pop, shoegaze, midwest emo, post-hardcore… it’s a mix. Depends on the day, honestly.
+Outside of all this, music’s pretty much always playing in the background. What I’m into changes a lot. Lately it’s been deep prog house, jerk, grunge, dream pop, shoegaze, midwest emo, post-hardcore... it’s a mix. Depends on the day, honestly.
 
 As for this site, there’s no big roadmap. No content strategy or anything like that. It’s probably just going to be a mix of small projects, half-finished ideas, and things I’m figuring out as I go.
 

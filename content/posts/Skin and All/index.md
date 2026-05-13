@@ -1,5 +1,5 @@
 ---
-title: "Skin and All"
+title: "Skin"
 date: 2026-05-13
 draft: false
 cover:
@@ -18,13 +18,13 @@ Afterward, I climbed back down into myself like returning to a house after a bre
 
 But I couldn't sing myself to sleep.
 
-My body—traitorous animal that it was—had its own stupid, humiliating logic. And it responded. How do you live in something that betrayed you like that? How do you shower in it, dress it, carry it around, pretend it's yours?
+My body, traitorous animal that it was, had its own stupid, humiliating logic. And it responded. How do you live in something that betrayed you like that? How do you shower in it, dress it, carry it around, pretend it's yours?
 
 You don't.
 
 You just start hating it quietly. You get very good at the logistics anyway. The shower, the mirror, the clothes, carrying it from one room to the next.
 
-I hated the way it responded. Hated that survival could look so much like permission when replayed slowly enough inside your own head. It looks like being funny, being fine, being the one who holds it together. It's maintenance. You wall something rotten off inside yourself and learn the layout around it—where to walk, what not to touch. After a while the detour just becomes the house.
+I hated the way it responded. Hated that survival could look so much like permission when replayed slowly enough inside your own head. It looks like being funny, being fine, being the one who holds it together. It's maintenance. You wall something rotten off inside yourself and learn the layout around it, where to walk, what not to touch. After a while the detour just becomes the house.
 
 The whys came later.
 
@@ -38,7 +38,7 @@ Blame has a fastest route home. It's inward. You tell yourself the part that lef
 
 At some point the suppression became a whole structure I was living inside. I built an entire version of myself it had never happened to. That version was functional. Likeable even. Just completely hollow and exhausting to operate.
 
-I still see it sometimes—that part of me that went to the ceiling. For a long time I hated it for leaving. I thought it abandoned me. But I think it went up there because it didn't know what else to do. Carrying what it could. Staying there because coming back down too soon would have broken something that couldn't be fixed.
+I still see it sometimes, that part of me that went to the ceiling. For a long time I hated it for leaving. I thought it abandoned me. But I think it went up there because it didn't know what else to do. Carrying what it could. Staying there because coming back down too soon would have broken something that couldn't be fixed.
 
 I couldn't sing myself to sleep.
 
