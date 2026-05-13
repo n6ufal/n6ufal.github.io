@@ -45,27 +45,11 @@ code, pre, kbd {
 
 
 /* ══════════════════════════════════════════
-   NORD LIGHT (default)
+   PAPERMOD THEME VARIABLES
+   Dark mode only (toggle disabled)
 ══════════════════════════════════════════ */
 
 :root {
-  --theme: #ECEFF4;
-  --entry: #E5E9F0;
-  --primary: #2E3440;
-  --secondary: #4C566A;
-  --tertiary: #D8DEE9;
-  --content: #3B4252;
-  --hljs-bg: #3B4252;
-  --code-bg: #E5E9F0;
-  --border: #D8DEE9;
-}
-
-
-/* ══════════════════════════════════════════
-   NORD DARK
-══════════════════════════════════════════ */
-
-.dark {
   --theme: #2E3440;
   --entry: #3B4252;
   --primary: #ECEFF4;
@@ -148,6 +132,7 @@ header .logo a {
   padding: 0;
   background: transparent;
 }
+
 
 /* ══════════════════════════════════════════
    LASTFM WIDGET
