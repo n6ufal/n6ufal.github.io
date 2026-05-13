@@ -8,81 +8,13 @@ cover:
   relative: false
 ---
 
-"Amor Fati" — Latin for "love of fate" — is the practice of embracing whatever life throws at you and finding something useful in it.
-
----
-
-### Acceptance
-
-Accepting the world as it is sits at the heart of Stoicism, and it comes down to one idea: control. A lot of what happens to us — other people's behavior, our health, the economy — is simply outside our hands. The Stoics weren't interested in pretending otherwise. Their argument was that fighting the unchangeable is just wasted energy, so point your efforts at what you can actually influence.
-
-When you stop resisting what you can't change, it loses its grip on you and it's a deliberate choice about where your attention goes.
-
-One tell that you're not accepting something: the word "should." _He should have done better. Things shouldn't be this way._ Whenever that word shows up, there's usually an expectation attached to something you never controlled to begin with.
-
-Pain is the clearest example. 
-
-You can't have gratitude, love, or genuine happiness without also being available to loss and suffering.
-
----
-
-### Courage
-
-To the Stoics, courage isn't the absence of fear. It's acting in line with your values _despite_ fear, doubt, or uncertainty. The obstacles don't disappear. You just stop letting them be the deciding factor.
-
-Tied closely to courage is fortitude: the capacity to endure discomfort — mental or physical — without caving to despair. Courage keeps you moving when moving is hard.
-
-> _"The one thing you can't take away from me is the way I choose to respond to what you do to me. The last of one's freedoms is to choose one's attitude in any given circumstance."_ — Viktor Frankl
-
-The Stoic method for building courage is pretty direct: seek out discomfort, don't avoid it. Confront the things you're afraid of. Not because it's fun, but because it shows you, empirically, that you can handle them. Your fears stop being abstract threats and start being things you've already navigated. The comfort zone expands by being pushed.
-
-> _"A gem cannot be polished without friction, nor a man without trials."_ — Seneca
-
----
-
-### Justice
-
-Justice, in the Stoic sense, is bigger than punishment and courts. It's about how you treat people — fairly, with respect, with some awareness that you're part of a community and not just a self-contained unit. Your actions have moral weight whether or not anyone's watching.
-
-It's also about integrity under pressure. Justice asks you to do right by people even when it's inconvenient — treating someone fairly despite bad history, not bending the rules for a friend when you're in a position of authority. It's easy to be just when there's no cost. The virtue shows up when there is one.
-
-> _"Live out your life in truth and justice, tolerant of those who are neither true nor just."_ — Marcus Aurelius
-
----
-
-### Temperance
-
-Temperance is self-control — the ability to moderate your behavior even when desire, impulse, or greed is pulling in the opposite direction.
-
-The Stoics took this seriously. Without it, they argued, your impulses become the decision-maker. You start prioritizing what feels good over what's actually good, and the distance between you and _eudaimonia_ grows.
-
-Unchecked desire tends to produce a specific set of outcomes: shame, regret, frustration, suffering. Not always. But often enough that the Stoics thought it worth watching.
-
-Temperance works the other way. When you can moderate yourself, you can focus on what actually matters. You stop procrastinating. You can break habits that aren't serving you. You build relationships that are actually functional rather than just convenient.
-
-> _"Stop allowing your mind to be a slave, to be jerked about by selfish impulses, to kick against fate and the present, and to mistrust the future."_ — Marcus Aurelius
-
----
-
-### Wisdom
-
-Wisdom is considered the most important of the four virtues. It's the capacity to understand the world clearly and use that understanding to make good decisions.
-
-It starts with one core claim: virtue — being genuinely good — is the only thing with real value. Everything else falls into two buckets: things that are bad, and things that are indifferent. Money, power, pleasure, status — these are indifferent. Not inherently good or bad. They can go either way. The mistake is treating them as though they have moral weight of their own.
-
-Wisdom also includes knowing what you control and what you don't. When you can draw that line clearly, you stop wasting energy on the wrong things and start directing it where it can actually land.
-
-Without it, you'll struggle to stay consistent. The universe changes constantly — that's not a flaw in the system, it _is_ the system. If you haven't made peace with that, every major change will feel like an attack.
-
-> _"Is any man afraid of change? What can take place without change? What then is more pleasing or more suitable to the universal nature? And can you take a hot bath unless the wood for the fire undergoes a change? And can you be nourished unless the food undergoes a change? And can anything else that is useful be accomplished without change? Do you not see then that for yourself also to change is just the same, and equally necessary for the universal nature?"_ — Marcus Aurelius
-
----
+> "Amor Fati" — Latin for "love of fate" — is the practice of embracing whatever life throws at you and finding something useful in it.
 
 ### A Brief History
 
-> _"Man conquers the world by conquering himself."_ — Zeno of Citium
-
 Stoicism started in the early 3rd century BCE with Zeno of Citium. Diogenes Laertius, writing in _Lives of the Eminent Philosophers_, described him as "lean, longish, and swarthy; hence someone called an Egyptian vine." An odd detail to survive two millennia, but there it is.
+
+> _"Man conquers the world by conquering himself."_ — Zeno of Citium
 
 #### Who Was Zeno?
 
@@ -106,8 +38,6 @@ Getting there meant following a few core principles:
 
 > _"The goal of life is living in agreement with Nature."_ — Zeno of Citium
 
----
-
 ### Epictetus
 
 {{< figure src="/images/epictetus.png" alt="Epictetus" caption="Epictetus" >}}
@@ -128,66 +58,84 @@ He laid it out plainly: two kinds of things exist in life. Things you control �
 
 Once this sinks in, your wellbeing stops being tied to external outcomes. You don't stop caring about the world — you stop letting it be the referee for whether you're okay. And as you build the four virtues — wisdom, courage, justice, temperance — that stability becomes something you construct and maintain, not something you're granted or denied by circumstance.
 
----
+### Acceptance
+
+Accepting the world as it is sits at the heart of Stoicism, and it comes down to one idea: control. A lot of what happens to us — other people's behavior, our health, the economy — is simply outside our hands. The Stoics weren't interested in pretending otherwise. Their argument was that fighting the unchangeable is just wasted energy, so point your efforts at what you can actually influence.
+
+When you stop resisting what you can't change, it loses its grip on you and it's a deliberate choice about where your attention goes.
+
+One tell that you're not accepting something: the word "should." _He should have done better. Things shouldn't be this way._ Whenever that word shows up, there's usually an expectation attached to something you never controlled to begin with.
+
+Pain is the clearest example.
+
+You can't have gratitude, love, or genuine happiness without also being available to loss and suffering.
+
+### Courage
+
+To the Stoics, courage isn't the absence of fear. It's acting in line with your values _despite_ fear, doubt, or uncertainty. The obstacles don't disappear. You just stop letting them be the deciding factor.
+
+Tied closely to courage is fortitude: the capacity to endure discomfort — mental or physical — without caving to despair. Courage keeps you moving when moving is hard.
+
+> _"The one thing you can't take away from me is the way I choose to respond to what you do to me. The last of one's freedoms is to choose one's attitude in any given circumstance."_ — Viktor Frankl
+
+The Stoic method for building courage is pretty direct: seek out discomfort, don't avoid it. Confront the things you're afraid of. Not because it's fun, but because it shows you, empirically, that you can handle them. Your fears stop being abstract threats and start being things you've already navigated. The comfort zone expands by being pushed.
+
+> _"A gem cannot be polished without friction, nor a man without trials."_ — Seneca
+
+### Justice
+
+Justice, in the Stoic sense, is bigger than punishment and courts. It's about how you treat people — fairly, with respect, with some awareness that you're part of a community and not just a self-contained unit. Your actions have moral weight whether or not anyone's watching.
+
+It's also about integrity under pressure. Justice asks you to do right by people even when it's inconvenient — treating someone fairly despite bad history, not bending the rules for a friend when you're in a position of authority. It's easy to be just when there's no cost. The virtue shows up when there is one.
+
+> _"Live out your life in truth and justice, tolerant of those who are neither true nor just."_ — Marcus Aurelius
+
+### Temperance
+
+Temperance is self-control — the ability to moderate your behavior even when desire, impulse, or greed is pulling in the opposite direction.
+
+The Stoics took this seriously. Without it, they argued, your impulses become the decision-maker. You start prioritizing what feels good over what's actually good, and the distance between you and _eudaimonia_ grows.
+
+Unchecked desire tends to produce a specific set of outcomes: shame, regret, frustration, suffering. Not always. But often enough that the Stoics thought it worth watching.
+
+Temperance works the other way. When you can moderate yourself, you can focus on what actually matters. You stop procrastinating. You can break habits that aren't serving you. You build relationships that are actually functional rather than just convenient.
+
+> _"Stop allowing your mind to be a slave, to be jerked about by selfish impulses, to kick against fate and the present, and to mistrust the future."_ — Marcus Aurelius
+
+### Wisdom
+
+Wisdom is considered the most important of the four virtues. It's the capacity to understand the world clearly and use that understanding to make good decisions.
+
+It starts with one core claim: virtue — being genuinely good — is the only thing with real value. Everything else falls into two buckets: things that are bad, and things that are indifferent. Money, power, pleasure, status — these are indifferent. Not inherently good or bad. They can go either way. The mistake is treating them as though they have moral weight of their own.
+
+Wisdom also includes knowing what you control and what you don't. When you can draw that line clearly, you stop wasting energy on the wrong things and start directing it where it can actually land.
+
+Without it, you'll struggle to stay consistent. The universe changes constantly — that's not a flaw in the system, it _is_ the system. If you haven't made peace with that, every major change will feel like an attack.
+
+> _"Is any man afraid of change? What can take place without change? What then is more pleasing or more suitable to the universal nature? And can you take a hot bath unless the wood for the fire undergoes a change? And can you be nourished unless the food undergoes a change? And can anything else that is useful be accomplished without change? Do you not see then that for yourself also to change is just the same, and equally necessary for the universal nature?"_ — Marcus Aurelius
 
 ### A Personal Note
 
-I used to lose entire afternoons to politics.
+I used to lose entire afternoons to content that wasn't worth five seconds of my attention.
 
-World politics, Indonesian politics, whatever was trending. I'd form strong opinions about decisions made by people I'll never meet, in rooms I'll never enter, about problems I have zero influence over.
+Not even anything meaningful — just posts engineered to make you react. Something deliberately misworded, a take so bad it had to be intentional, a comment thread that existed entirely to generate friction. The kind of stuff where engaging feels like correcting the record but you're really just feeding the machine.
 
-And then I'd carry it around like it had anything to do with me.
+Reddit and Twitter were the worst for it. I'd open the app for no particular reason, hit something designed to make me feel a certain way, and get pulled in. Twenty minutes later I'd have done nothing except marinate in someone else's bait. The platform kept pushing more of the same because that's exactly what I told it I wanted.
 
-Reddit made it worse. I'd hit some ragebait post, get pulled in, and spend twenty minutes arguing with a stranger *in my head* about something that would be irrelevant by Thursday.
+And then there were the post-conversation spirals — replaying a normal exchange, picking it apart, guessing how some offhand thing might've landed. No new information, just the same loop with diminishing returns. Or I'd start contingency-planning for problems that hadn't happened yet and probably wouldn't. *Just in case*, which is how I justified most of my worst mental habits.
 
-Twitter was the same. Ragebait everywhere, and I kept taking it.
+At some point the pattern became obvious enough to see: the more I engaged with that stuff, the more of it showed up. That's not a design flaw, it's the feature.
 
-Then there were the conversations I'd replay for hours after they happened. Normal exchanges where I'd say something and then think —
+So I started actually curating what I looked at. Muted keywords, muted accounts, unfollowed anything that reliably made me feel worse without giving anything back. After a few weeks the feed changed, and the ambient noise in my head went down with it.
 
-*wait, how did that land?*
+The uncomfortable part — and I'm not going to pretend otherwise — is that it's still a bubble. A quieter, less aggravating one, but the algorithm still just reflects what you engage with. I'm not under the impression that I'm now seeing things clearly.
 
-And that was enough to start the loop. Replaying it, picking apart the wording, guessing how it might've been interpreted. No new information and just going in circles.
+What I've settled on is that there's a difference between staying informed and being saturated. I can check the news on purpose and then close it. What I was doing before wasn't awareness, it was just sitting in the same stress on repeat and calling it that.
 
-Then I'd flip to the future and start building contingency plans for problems that hadn't happened yet and probably wouldn't.
+The Stoic framing makes this feel less like avoidance. Deciding what gets your attention is one of the few things you actually control. The tradeoff is real — you risk narrowing your view — but you also stop outsourcing your mood to whatever some engagement algorithm decided to surface that morning.
 
-*Just in case.* My favorite excuse of all time.
+The bigger thing I eventually noticed: most of what was costing me energy wasn't mine to begin with. Someone else's bad take. Whether a stranger online is wrong about something. None of it mine to fix, but it was still running in the background.
 
-At some point I noticed something obvious: the more I engaged with that stuff, the more it showed up. Rage clicks turned into more rage. Outrage kept getting pushed because it works.
+The Stoic question that cut through it was simple enough: *is this actually mine? Can I act on it, or am I just reacting to it?*
 
-So I started curating what I consume. Muted keywords, blocked accounts, unfollowed anything that reliably made me feel worse. Replaced it with things that were lighter. Still interesting and not constantly negative.
-
-After a few weeks, the feed changed. And the noise in my head went down with it.
-
-The uncomfortable part is that it's still an echo chamber.
-
-A nicer one, but still a bubble. The algorithm just reflects what you engage with. I'm not pretending otherwise.
-
-What I've settled on — at least for now — is that there's a difference between being informed and being saturated.
-
-I don't need seventeen takes on the same event to understand it happened. I can check the news on purpose, then close it.
-
-What I was doing before wasn't staying informed. It was sitting in the same stress over and over and calling it awareness.
-
-The Stoic angle helps a bit. Curating inputs isn't avoidance. It's deciding what gets your attention — one of the few things you actually control.
-
-The tradeoff is real. You risk narrowing your view. But you also stop letting an algorithm set your mood for the day. To be honest with you, I'd rather be aware of that tradeoff than ignore it.
-
-It also took me a while to notice a bigger pattern:
-
-*most of what was stressing me out wasn't mine.*
-
-Other people's opinions. How someone else sees the world. Whether a stranger online is wrong about something.
-
-None of that is in my control, yet it still costs energy.
-
-The Stoic framework gave me one useful question:
-
-> *Is this actually mine?*
->
-> *Can I act on it, or am I just reacting to it?*
-
-Other people's views aren't mine to fix. The past is done. The future isn't here yet.
-
-What's in front of me right now — my choices, my attention, how I respond — that's mine.
-
-That's already enough.
+What's in front of me — my choices, my attention, how I respond — that's mine. That's already enough to work with.

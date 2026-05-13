@@ -3,6 +3,20 @@
    Dark Mode Optimized for PaperMod
 ══════════════════════════════════════════ */
 
+/* Limit post cover image height on list pages (homepage, posts list) */
+.entry-cover img {
+  max-height: 768px;
+  width: auto;
+  object-fit: cover;
+}
+
+/* Limit cover image height on single post page */
+.post-cover img {
+  max-height: 500px;
+  width: auto;
+  object-fit: cover;
+}
+
 /* ══════════════════════════════════════════
    1. UTILITY CLASSES
 ══════════════════════════════════════════ */

@@ -32,27 +32,22 @@
     </item>
     <item>
       <title>Amor Fati</title>
-      <link>http://localhost:1313/posts/amor-fati/</link>
+      <link>http://localhost:1313/posts/amor-fati/amor-fati/</link>
       <pubDate>Fri, 01 May 2026 00:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/posts/amor-fati/</guid>
+      <guid>http://localhost:1313/posts/amor-fati/amor-fati/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;Amor Fati&amp;rdquo; — Latin for &amp;ldquo;love of fate&amp;rdquo; — is the practice of embracing whatever life throws at you and finding something useful in it.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;a-brief-history&#34;&gt;A Brief History&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&amp;ldquo;Man conquers the world by conquering himself.&amp;rdquo;&lt;/em&gt; — Zeno of Citium&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;p&gt;Stoicism started in the early 3rd century BCE with Zeno of Citium. Diogenes Laertius, writing in &lt;em&gt;Lives of the Eminent Philosophers&lt;/em&gt;, described him as &amp;ldquo;lean, longish, and swarthy; hence someone called an Egyptian vine.&amp;rdquo; An odd detail to survive two millennia, but there it is.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Amor Fati</title>
-      <link>http://localhost:1313/posts/amor-fati/amor-fati/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/posts/amor-fati/amor-fati/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Amor Fati&amp;rdquo; — Latin for &amp;ldquo;love of fate&amp;rdquo; — is the practice of embracing whatever life throws at you and finding something useful in it.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;acceptance&#34;&gt;Acceptance&lt;/h3&gt;
-&lt;p&gt;Accepting the world as it is sits at the heart of Stoicism, and it comes down to one idea: control. A lot of what happens to us — other people&amp;rsquo;s behavior, our health, the economy — is simply outside our hands. The Stoics weren&amp;rsquo;t interested in pretending otherwise. Their argument was that fighting the unchangeable is just wasted energy, so point your efforts at what you can actually influence.&lt;/p&gt;</description>
+      <title>Hello World!</title>
+      <link>http://localhost:1313/posts/hello-world/hello-world/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/hello-world/hello-world/</guid>
+      <description>&lt;p&gt;I made this site as a personal outlet. Nothing too grand behind it. I just wanted a place to learn, mess around, and throw whatever’s been stuck in my head somewhere that isn’t a notes app graveyard.&lt;/p&gt;
+&lt;p&gt;It really started when I got the GitHub Student Pack. At the time I thought, why am I posting on Medium when I could just have my own space? So I decided to build it myself.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
