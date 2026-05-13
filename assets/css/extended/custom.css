@@ -3,18 +3,16 @@
    Dark Mode Optimized for PaperMod
 ══════════════════════════════════════════ */
 
-/* Limit post cover image height on list pages (homepage, posts list) */
-.entry-cover img {
-  max-height: 768px;
-  width: auto;
-  object-fit: cover;
+/* Limit post cover image height */
+.entry-cover {
+  overflow: hidden;
 }
 
-/* Limit cover image height on single post page */
-.post-cover img {
-  max-height: 500px;
-  width: auto;
+.entry-cover img {
+  max-height: 400px;
+  width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 /* ══════════════════════════════════════════
