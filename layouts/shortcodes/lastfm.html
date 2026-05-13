@@ -3,10 +3,11 @@
 </div>
 
 <script>
-// Last.fm widget - calls serverless function for API data
+// Last.fm widget
 (function() {
-  // Use serverless function endpoint (works both locally and deployed)
-  const apiEndpoint = "/.netlify/functions/lastfm";
+  const apiKey = "{{ .Site.Params.lastfmApiKey | default "0e7245c9a19b6563e2a301c91f053c54" }}";
+  const user = "{{ .Site.Params.lastfmUser | default "alifnaufal" }}";
+  const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${encodeURIComponent(user)}&api_key=${apiKey}&format=json&limit=5`;
 
   const container = document.getElementById("lastfm-tracks");
   if (!container) return;
@@ -37,7 +38,7 @@
   }
 
   function loadTracks() {
-    fetch(apiEndpoint)
+    fetch(url)
       .then(res => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();

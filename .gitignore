@@ -1,13 +1,3 @@
-# Environment & secrets
-.env
-.env.local
-.env.*.local
-
-# Dependencies
-node_modules/
-package-lock.json
-yarn.lock
-
 # Build output
 public/
 dist/
