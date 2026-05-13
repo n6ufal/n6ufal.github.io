@@ -19,6 +19,8 @@ params:
   Description: "Alif Naufal's personal blog or whatever."
   canonicalURL: "https://alifnaufal.me"
   images: ["/images/avatar.jpg"]
+  lastfmApiKey: "0e7245c9a19b6563e2a301c91f053c54"
+  lastfmUser: "alifnaufal"
 
   profileMode:
     enabled: true
