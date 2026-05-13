@@ -1,7 +1,14 @@
 /* ══════════════════════════════════════════
-   CUSTOM CSS FOR HEADSPACE
-   Dark Mode Optimized for PaperMod
+   CUSTOM CSS FOR PAPERMOD
+   Unified Accent: Nord Green (#A3BE8C)
+   Optimized for Dark Mode
 ══════════════════════════════════════════ */
+
+/* Define the accent colour - change only this one value */
+:root {
+  --accent: #A3BE8C;   /* Nord green, same as Last.fm "now playing" icon */
+  --nord8:  #88C0D0;   /* preserved for reference, if needed */
+}
 
 /* Limit post cover image height on list pages (homepage, posts list) */
 .entry-cover img {
@@ -56,13 +63,13 @@ body, .post-entry, .pagination a {
 
 .profile .avatar img {
   border-radius: 50%;
-  border: 3px solid var(--nord8);
+  border: 3px solid var(--accent);
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .profile .avatar img:hover {
   transform: scale(1.05);
-  border-color: var(--nord7);
+  border-color: var(--accent);
 }
 
 /* Profile subtitle styling */
@@ -76,7 +83,7 @@ body, .post-entry, .pagination a {
 ══════════════════════════════════════════ */
 
 .toc {
-  border-left: 3px solid var(--nord8);
+  border-left: 3px solid var(--accent);
   background: var(--nord1);
   border-radius: 8px;
   padding: 0.5rem 1.25rem;
@@ -90,7 +97,7 @@ body, .post-entry, .pagination a {
 }
 
 .toc details summary:hover {
-  color: var(--nord8);
+  color: var(--accent);
 }
 
 .toc ul {
@@ -103,7 +110,7 @@ body, .post-entry, .pagination a {
 }
 
 .toc a:hover {
-  color: var(--nord8);
+  color: var(--accent);
 }
 
 /* ══════════════════════════════════════════
@@ -142,7 +149,7 @@ body, .post-entry, .pagination a {
 
 .copy-code:hover {
   opacity: 1;
-  background: var(--nord8);
+  background: var(--accent);
   color: var(--nord0);
 }
 
@@ -161,7 +168,7 @@ table {
 }
 
 th {
-  background: var(--nord8);
+  background: var(--accent);
   color: var(--nord0);
   padding: 12px 16px;
   text-align: left;
@@ -182,8 +189,9 @@ tr:last-child td {
    8. BLOCKQUOTES
 ══════════════════════════════════════════ */
 
+/* Using !important to override any high-specificity theme defaults */
 blockquote {
-  border-left: 4px solid var(--nord8);
+  border-left: 4px solid var(--accent) !important;
   background: var(--nord1);
   padding: 1rem 1.5rem;
   border-radius: 0 8px 8px 0;
@@ -210,11 +218,11 @@ blockquote p:last-child {
 }
 
 .social-icons a:hover svg {
-  fill: var(--nord8);
+  fill: var(--accent);
 }
 
 /* ══════════════════════════════════════════
-   10. PAGINATION (Post Navigation)
+   10. PAGINATION & ACTIVE PAGE (PaperMod)
 ══════════════════════════════════════════ */
 
 .pagination a,
@@ -226,9 +234,16 @@ blockquote p:last-child {
 }
 
 .pagination a:hover {
-  background: var(--nord8);
+  background: var(--accent);
   color: var(--nord0);
   transform: translateY(-1px);
+}
+
+/* Style for the active page number (PaperMod uses an <span> with class 'active') */
+.pagination .active {
+  background: var(--accent);
+  color: var(--nord0);
+  border-color: var(--accent);
 }
 
 /* Post nav links (prev/next) */
@@ -248,7 +263,7 @@ blockquote p:last-child {
 
 .breadcrumbs {
   font-size: 0.875rem;
-  color: var(--nord8);
+  color: var(--accent);
 }
 
 .breadcrumbs a {
@@ -256,7 +271,32 @@ blockquote p:last-child {
 }
 
 .breadcrumbs a:hover {
-  color: var(--nord8);
+  color: var(--accent);
+}
+
+/* ══════════════════════════════════════════
+   12. TAXONOMY (TAGS & CATEGORIES) PAGES
+══════════════════════════════════════════ */
+
+/* Styling for each tag/category item on the listing page */
+.post-entry.tag-entry {
+  border-left: 3px solid var(--accent);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Styling for individual tags in the post footer */
+.post-tags a {
+  background: rgba(163, 190, 140, 0.1);
+  border-radius: 20px;
+  padding: 0.2rem 0.6rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.post-tags a:hover {
+  background: var(--accent);
+  color: var(--nord0);
+  text-decoration: none;
 }
 
 /* ══════════════════════════════════════════
@@ -265,7 +305,7 @@ blockquote p:last-child {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--nord8);
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -289,7 +329,7 @@ html {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--nord8);
+  background: var(--accent);
   border-radius: 4px;
 }
 html:not(:hover)::-webkit-scrollbar-thumb {
@@ -301,12 +341,12 @@ html:not(:hover)::-webkit-scrollbar-thumb {
 ══════════════════════════════════════════ */
 
 ::selection {
-  background: var(--nord8);
+  background: var(--accent);
   color: var(--nord0);
 }
 
 ::-moz-selection {
-  background: var(--nord8);
+  background: var(--accent);
   color: var(--nord0);
 }
 
@@ -317,15 +357,25 @@ html:not(:hover)::-webkit-scrollbar-thumb {
 a {
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-  text-decoration-color: var(--nord8);
+  text-decoration-color: var(--accent);
 }
 
 a:hover {
-  color: var(--nord7);
+  color: var(--accent);
 }
 
 /* ══════════════════════════════════════════
-   17. RESPONSIVE DESIGN (Mobile)
+   17. SEARCH INPUT FOCUS (PaperMod)
+══════════════════════════════════════════ */
+
+#searchbox:focus {
+  border: 1px solid var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(163, 190, 140, 0.2);
+}
+
+/* ══════════════════════════════════════════
+   18. RESPONSIVE DESIGN (Mobile)
 ══════════════════════════════════════════ */
 
 @media (max-width: 768px) {
@@ -359,7 +409,7 @@ a:hover {
 }
 
 /* ══════════════════════════════════════════
-   18. FOOTER
+   19. FOOTER
 ══════════════════════════════════════════ */
 
 .footer {
@@ -370,20 +420,20 @@ a:hover {
 }
 
 .footer a {
-  color: var(--nord8);
+  color: var(--accent);
 }
 
 .footer a:hover {
-  color: var(--nord7);
+  color: var(--accent);
 }
 
 /* ══════════════════════════════════════════
-   19. POST META (Dates, etc.)
+   20. POST META (Dates, etc.)
 ══════════════════════════════════════════ */
 
 .post-meta {
   font-size: 0.875rem;
-  color: var(--nord8);
+  color: var(--accent);
 }
 
 .post-meta time {
@@ -391,7 +441,7 @@ a:hover {
 }
 
 /* ══════════════════════════════════════════
-   20. LISTS (Ordered & Unordered)
+   21. LISTS (Ordered & Unordered)
 ══════════════════════════════════════════ */
 
 .post-content ul,
@@ -407,11 +457,11 @@ a:hover {
 }
 
 .post-content ul li::marker {
-  color: var(--nord8);
+  color: var(--accent);
 }
 
 .post-content ol li::marker {
-  color: var(--nord8);
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -422,21 +472,21 @@ a:hover {
 }
 
 /* ══════════════════════════════════════════
-   21. HORIZONTAL RULES
+   22. HORIZONTAL RULES
 ══════════════════════════════════════════ */
 
 .post-content hr,
 hr {
   border: none;
   height: 2px;
-  background: linear-gradient(to right, var(--nord8), var(--nord8) 50%, transparent 50%);
+  background: linear-gradient(to right, var(--accent), var(--accent) 50%, transparent 50%);
   background-size: 8px 2px;
   margin: 2rem 0;
   border-radius: 1px;
 }
 
 /* ══════════════════════════════════════════
-   22. CONTENT MAX-WIDTH (Readability)
+   23. CONTENT MAX-WIDTH (Readability)
 ══════════════════════════════════════════ */
 
 .post-content {
@@ -446,7 +496,21 @@ hr {
 }
 
 /* ══════════════════════════════════════════
-   23. PRINT STYLES
+   24. FOOTNOTE BACKLINKS
+══════════════════════════════════════════ */
+
+.footnote-backref {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footnote-backref:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* ══════════════════════════════════════════
+   25. PRINT STYLES
 ══════════════════════════════════════════ */
 
 @media print {
@@ -503,6 +567,7 @@ hr {
 
 /* ══════════════════════════════════════════
    LASTFM WIDGET - REQUIRED STYLES
+   Now fully using --accent (Nord green)
 ══════════════════════════════════════════ */
 
 .lastfm-widget {
@@ -547,7 +612,7 @@ hr {
 }
 
 .lastfm-icon.playing {
-  color: var(--nord14); /* #A3BE8C */
+  color: var(--accent);
 }
 
 .lastfm-icon.paused {
@@ -562,17 +627,17 @@ hr {
 }
 
 .lastfm-item:hover .lastfm-track {
-  color: var(--nord8);
+  color: var(--accent);
   text-decoration: underline;
 }
 
 .lastfm-item:hover .lastfm-icon.playing,
 .lastfm-item:hover .lastfm-icon.paused {
-  color: var(--nord8);
+  color: var(--accent);
 }
 
 .lastfm-item:hover .lastfm-artist {
-  color: var(--nord8);
+  color: var(--accent);
 }
 
 .lastfm-artist {
