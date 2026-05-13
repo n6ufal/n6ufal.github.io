@@ -40,18 +40,17 @@
       });
   }
 
-  loadTracks();
+  fetchTracks();
 
   let interval;
   function startInterval() {
     if (interval) clearInterval(interval);
     interval = setInterval(() => {
-      if (document.visibilityState === "visible") loadTracks();
+      if (document.visibilityState === "visible") fetchTracks();
     }, 30000);
   }
   startInterval();
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") loadTracks();
+    if (document.visibilityState === "visible") fetchTracks();
   });
-})();
 </script>

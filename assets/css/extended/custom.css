@@ -3,7 +3,6 @@
    Dark Mode Optimized for PaperMod
 ══════════════════════════════════════════ */
 
-<<<<<<< HEAD
 /* Limit post cover image height on list pages (homepage, posts list) */
 .entry-cover img {
   max-height: 500px;
@@ -15,16 +14,6 @@
 .post-single .entry-cover img {
   max-height: 600px;
   width: auto;
-=======
-/* Limit post cover image height */
-.entry-cover {
-  overflow: hidden;
-}
-
-.entry-cover img {
-  max-height: 400px;
-  width: 100%;
->>>>>>> 54770f04be1a9ec2cd41db2f5a041938371706c1
   object-fit: cover;
   display: block;
 }
@@ -402,7 +391,6 @@ a:hover {
 }
 
 /* ══════════════════════════════════════════
-<<<<<<< HEAD
    20. LISTS (Ordered & Unordered)
 ══════════════════════════════════════════ */
 
@@ -515,9 +503,6 @@ hr {
 
 /* ══════════════════════════════════════════
    LASTFM WIDGET - REQUIRED STYLES
-=======
-   LASTFM WIDGET - NORD HOVER FIX
->>>>>>> 54770f04be1a9ec2cd41db2f5a041938371706c1
 ══════════════════════════════════════════ */
 
 .lastfm-widget {
@@ -576,14 +561,8 @@ hr {
   transition: color 0.2s ease;
 }
 
-<<<<<<< HEAD
 .lastfm-item:hover .lastfm-track {
   color: var(--nord8);
-=======
-/* Hover effects with Nord colors */
-.lastfm-item:hover .lastfm-track {
-  color: var(--nord8); /* #88C0D0 */
->>>>>>> 54770f04be1a9ec2cd41db2f5a041938371706c1
   text-decoration: underline;
 }
 
@@ -596,10 +575,6 @@ hr {
   color: var(--nord8);
 }
 
-<<<<<<< HEAD
-=======
-/* Keep artist color consistent */
->>>>>>> 54770f04be1a9ec2cd41db2f5a041938371706c1
 .lastfm-artist {
   color: var(--secondary);
   transition: color 0.2s ease;
