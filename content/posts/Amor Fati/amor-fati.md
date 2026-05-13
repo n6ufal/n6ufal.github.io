@@ -114,28 +114,16 @@ Without it, you'll struggle to stay consistent. The universe changes constantly 
 
 > _"Is any man afraid of change? What can take place without change? What then is more pleasing or more suitable to the universal nature? And can you take a hot bath unless the wood for the fire undergoes a change? And can you be nourished unless the food undergoes a change? And can anything else that is useful be accomplished without change? Do you not see then that for yourself also to change is just the same, and equally necessary for the universal nature?"_ — Marcus Aurelius
 
-### A Personal Note
+### Fati
 
-I used to lose entire afternoons to content that wasn't worth five seconds of my attention.
+The four virtues are how you build toward it — wisdom to see things as they are, courage to keep moving anyway, justice to stay honest about your place among other people, temperance to not let your impulses do the deciding. None of it guarantees anything. They're just the tools for showing up well, repeatedly, under conditions you didn't choose.
 
-Not even anything meaningful — just posts engineered to make you react. Something deliberately misworded, a take so bad it had to be intentional, a comment thread that existed entirely to generate friction. The kind of stuff where engaging feels like correcting the record but you're really just feeding the machine.
+And you didn't choose them. You were born into a specific body, a specific country, a specific century, a specific set of circumstances already in motion before you arrived. The Stoics weren't troubled by this — they thought it was the starting point of any honest life. You work with what's here. You find something to love in it.
 
-Reddit and Twitter were the worst for it. I'd open the app for no particular reason, hit something designed to make me feel a certain way, and get pulled in. Twenty minutes later I'd have done nothing except marinate in someone else's bait. The platform kept pushing more of the same because that's exactly what I told it I wanted.
+When you pull back far enough, the weight of it starts to change. The universe is roughly 13.8 billion years old. The earth has existed for about a third of that. Homo sapiens have been around for maybe 300,000 years — a rounding error on a rounding error. Your life, my life, the things that felt catastrophic last Tuesday — none of it registers at that scale.
 
-And then there were the post-conversation spirals — replaying a normal exchange, picking it apart, guessing how some offhand thing might've landed. No new information, just the same loop with diminishing returns. Or I'd start contingency-planning for problems that hadn't happened yet and probably wouldn't. *Just in case*, which is how I justified most of my worst mental habits.
+There's something quietly settling about that. The stakes that felt enormous turn out to be local and temporary, small against the backdrop of everything that was here before us and will be here long after. The universe was not waiting for you to get it right.
 
-At some point the pattern became obvious enough to see: the more I engaged with that stuff, the more of it showed up. That's not a design flaw, it's the feature.
+What you have is a brief window, a specific set of circumstances, and some say over how you move through them. Amor Fati doesn't ask you to be grateful for the hard parts in some forced way. It just asks you not to waste the window fighting what's already true.
 
-So I started actually curating what I looked at. Muted keywords, muted accounts, unfollowed anything that reliably made me feel worse without giving anything back. After a few weeks the feed changed, and the ambient noise in my head went down with it.
-
-The uncomfortable part — and I'm not going to pretend otherwise — is that it's still a bubble. A quieter, less aggravating one, but the algorithm still just reflects what you engage with. I'm not under the impression that I'm now seeing things clearly.
-
-What I've settled on is that there's a difference between staying informed and being saturated. I can check the news on purpose and then close it. What I was doing before wasn't awareness, it was just sitting in the same stress on repeat and calling it that.
-
-The Stoic framing makes this feel less like avoidance. Deciding what gets your attention is one of the few things you actually control. The tradeoff is real — you risk narrowing your view — but you also stop outsourcing your mood to whatever some engagement algorithm decided to surface that morning.
-
-The bigger thing I eventually noticed: most of what was costing me energy wasn't mine to begin with. Someone else's bad take. Whether a stranger online is wrong about something. None of it mine to fix, but it was still running in the background.
-
-The Stoic question that cut through it was simple enough: *is this actually mine? Can I act on it, or am I just reacting to it?*
-
-What's in front of me — my choices, my attention, how I respond — that's mine. That's already enough to work with.
+Love what is. The rest was never yours to carry.
