@@ -1,7 +1,7 @@
 ---
 title: "Skin"
 date: 2026-05-13
-draft: false
+draft: true
 cover:
   image: "/images/somatic.jpg"
   alt: "cover"
@@ -30,8 +30,8 @@ The whys came later.
 
 Someone brushes your shoulder. Someone plays with your hair. Someone caresses you. Every window blows open, glass everywhere: Exhibit A, B, C, every goddamn thing that ever touched you, filed raw in your traitor nervous system.
 
-*Why did I.*  
-*Why didn't I.*  
+*Why did I.*
+*Why didn't I.*
 *Why did my—*
 
 Blame has a fastest route home. It's inward. You tell yourself the part that left through the ceiling was a coward. A deserter. Left you there rotting. You tell yourself you should have stayed. Should have fought. Anything except lie there like a rabbit counting feathers. And you punish yourself for that. Because staying would have broken you. And you hate that you know that.
