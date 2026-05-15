@@ -1,10 +1,10 @@
 ---
-title: "Skin"
+title: Skin
 date: 2026-05-13
 draft: true
 cover:
-  image: "/images/somatic.jpg"
-  alt: "cover"
+  image: /images/somatic.jpg
+  alt: cover
   relative: false
 ---
 

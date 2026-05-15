@@ -6,8 +6,10 @@
 
 /* Define the accent colour - change only this one value */
 :root {
-  --accent: #A3BE8C;   /* Nord green, same as Last.fm "now playing" icon */
-  --nord8:  #88C0D0;   /* preserved for reference, if needed */
+  --accent: #A3BE8C;
+  /* Nord green, same as Last.fm "now playing" icon */
+  --nord8: #88C0D0;
+  /* preserved for reference, if needed */
 }
 
 /* Limit post cover image height on list pages (homepage, posts list) */
@@ -25,6 +27,26 @@
   display: block;
 }
 
+.post-single .md-content img,
+.post-single .md-content figure img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.post-single .md-content img,
+.post-single .md-content figure img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.post-single .md-content figure {
+  text-align: center;
+}
+
 /* ══════════════════════════════════════════
    1. UTILITY CLASSES
 ══════════════════════════════════════════ */
@@ -38,7 +60,9 @@
    2. SMOOTH TRANSITIONS
 ══════════════════════════════════════════ */
 
-body, .post-entry, .pagination a {
+body,
+.post-entry,
+.pagination a {
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
@@ -317,7 +341,8 @@ button:focus-visible {
 html {
   overflow-y: scroll;
   scrollbar-gutter: stable;
-  scrollbar-width: thin; /* Firefox */
+  scrollbar-width: thin;
+  /* Firefox */
 }
 
 /* WebKit: hide until hover */
@@ -325,13 +350,16 @@ html {
   width: 8px;
   background: transparent;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--accent);
   border-radius: 4px;
 }
+
 html:not(:hover)::-webkit-scrollbar-thumb {
   background: transparent;
 }
@@ -383,20 +411,28 @@ a:hover {
     font-size: 1rem;
     line-height: 1.65;
   }
-  
-  .post-content h1 { font-size: 1.75rem; }
-  .post-content h2 { font-size: 1.35rem; }
-  .post-content h3 { font-size: 1.15rem; }
-  
+
+  .post-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .post-content h2 {
+    font-size: 1.35rem;
+  }
+
+  .post-content h3 {
+    font-size: 1.15rem;
+  }
+
   .post-entry {
     padding: 1rem;
   }
-  
+
   .profile .avatar img {
     width: 100px;
     height: 100px;
   }
-  
+
   .toc {
     padding: 0.5rem 1rem;
   }
