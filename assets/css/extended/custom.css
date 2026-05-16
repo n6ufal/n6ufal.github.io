@@ -66,6 +66,60 @@ body,
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+/* Pagination container (the whole bar) */
+.pagination {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* Each page link, including Prev / Next */
+.pagination a,
+.pagination .page-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 8px;
+  background: var(--entry);
+  /* matches card background */
+  color: var(--primary);
+  /* light text */
+  border: 1px solid var(--border);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Hover state for all pagination links */
+.pagination a:hover,
+.pagination .page-link:hover {
+  background: var(--accent);
+  /* Nord green background */
+  color: var(--nord0);
+  /* dark text for contrast */
+  border-color: var(--accent);
+}
+
+/* Active / current page (if you have numbered pages) */
+.pagination .page-link.active {
+  background: var(--accent);
+  color: var(--nord0);
+  border-color: var(--accent);
+  cursor: default;
+}
+
+/* Disabled state (when there's no previous or next page) */
+.pagination .page-link.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  background: var(--entry);
+  color: var(--secondary);
+}
+
+.paginav a:hover {
+  color: var(--accent) !important;
+  /* bright green */
+}
+
+
 /* ══════════════════════════════════════════
    3. POST CARDS (Homepage)
 ══════════════════════════════════════════ */
@@ -216,7 +270,8 @@ tr:last-child td {
 /* Using !important to override any high-specificity theme defaults */
 blockquote {
   border-left: 4px solid var(--accent) !important;
-  background: var(--nord1);
+  background: var(--entry);
+  /* changed from var(--nord1) to var(--entry) */
   padding: 1rem 1.5rem;
   border-radius: 0 8px 8px 0;
   margin: 1.5rem 0;
@@ -243,42 +298,6 @@ blockquote p:last-child {
 
 .social-icons a:hover svg {
   fill: var(--accent);
-}
-
-/* ══════════════════════════════════════════
-   10. PAGINATION & ACTIVE PAGE (PaperMod)
-══════════════════════════════════════════ */
-
-.pagination a,
-.pagination span {
-  border-radius: 8px;
-  padding: 8px 16px;
-  transition: all 0.2s ease;
-  background: var(--nord1);
-}
-
-.pagination a:hover {
-  background: var(--accent);
-  color: var(--nord0);
-  transform: translateY(-1px);
-}
-
-/* Style for the active page number (PaperMod uses an <span> with class 'active') */
-.pagination .active {
-  background: var(--accent);
-  color: var(--nord0);
-  border-color: var(--accent);
-}
-
-/* Post nav links (prev/next) */
-.post-nav a {
-  border-radius: 8px;
-  padding: 10px;
-  transition: background 0.2s ease;
-}
-
-.post-nav a:hover {
-  background: var(--nord1);
 }
 
 /* ══════════════════════════════════════════
@@ -679,4 +698,19 @@ hr {
 .lastfm-artist {
   color: var(--secondary);
   transition: color 0.2s ease;
+}
+
+/* Remove background from paginav on single pages */
+.paginav {
+  background: transparent;
+  border-top: 1px solid var(--border);
+  box-shadow: none;
+}
+
+.paginav a {
+  background: transparent;
+}
+
+.paginav a:hover {
+  color: var(--accent);
 }
