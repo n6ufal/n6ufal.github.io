@@ -4,55 +4,53 @@ date = 2026-05-16
 draft = false
 +++
 
-There's a word game on Roblox called Last Letter. The premise is simple: you sit at a table with two or four players, someone types a word, and the next person continues from the last letter — or last few letters. The overlap grows as rounds progress, from one letter up to four. Meanwhile, the timer shrinks: fifteen seconds at first, then down to five. Lose a heart when you can't keep up.
+There’s this word game on Roblox called Last Letter. The idea is simple: you sit at a table with a few other people, someone types a word, and the next person has to start from the last letter—or the last few letters. Each round, the overlap gets longer. Round one is just one letter. Round two, two letters. Up to four letters. Meanwhile, the timer shrinks: fifteen seconds to start, then down to five. If you can’t keep up, you lose a heart.
 
-In the first round it's just one letter — someone plays _apple_, you continue from _e_, so you play _eagle_. Second round the overlap lengthens: _eagle_ ends in _le_, so the next word has to start with _le_ — say, _levy_. Third round, _levy_ ends in _vy_, so the next word starts with _vy_ — they answered with _vying_. Now you're in round four, inheriting the last three letters: _ing_.
+First round, one letter: someone plays *apple*, you go from *e*, so you play *eagle*. Second round, longer overlap: *eagle* ends in *le*, so the next word has to start with *le*—like *levy*. Third round, *levy* ends in *vy*, so you need a word starting with *vy*—they answered *vying*. Now you’re in round four, inheriting the last three letters: *ing*.
 
-It sounds manageable. It isn't.
+Sounds manageable. It isn’t.
 
-## The "Dummkopf" Incident
+## The “Dummkopf” Incident
 
-I'm an English Literature graduate, which sounds like an advantage in a word game. It isn't — not for this one. Literature rewards depth. Last Letter rewards a very specific kind of vocabulary: words that end in letter combinations nobody else is prepared for. Loanwords. Taxonomic names. Obscure coinages from languages English absorbed quietly and mostly forgot about.
+Learning the history of linguistics in college didn't teach me many practical skills, but it did teach me one thing that matters: how to look for the edges of a language. The weird exceptions. The borrowed words that never quite fit. That's what sparked something in me. I stopped trying to play Last Letter "well" and started trying to play it mean—finding endings that give the opponent nothing to work with.
 
-I stumbled into that realization the way most things click: through humiliation, then curiosity.
+I figured this out the way most things click: through *embarrassment*, then *curiosity*.
 
-I was playing normally when I typed _dummkopf_ in a round four match — German for "dumb head," the kind of word you pick up from old war films and never expect to use in a Roblox game. I half-expected the game to reject it. It didn't. It accepted the word and handed my opponent the suffix _pf_ to start their next word with.
+I was playing normally when I typed *dummkopf* in a round four match. German for "dumb head." The kind of word you pick up from old war movies and never expect to use in Roblox. I half-expected the game to reject it. It didn't. It accepted the word and handed my opponent the suffix *pf*.
 
-Try thinking of an English word that starts with _pf_. Take your time. The consonant cluster barely fits in English mouths — it's the kind of thing that makes linguists sigh. There's _pfft_, which is less a word and more a transcribed noise. And there's _pfennig_, a former German coin, which the game also accepts. That's essentially it. I had accidentally constructed a near-perfect trap without understanding what I'd done.
+Try thinking of an English word that starts with *pf*. Go ahead. I'll wait. The sound barely fits in an English mouth. There's *pfft*, which is more a noise than a word. And *pfennig*, an old German coin, which the game also accepts. That's basically it. I had accidentally built a perfect trap without even realizing what I'd done.
 
-So I started doing it on purpose.
+*Kuvasz* — a Hungarian dog breed — sailed through the dictionary and left my opponent with *sz*. The answer? *Szekkler*, a variant spelling of the Székely people from Transylvania. *Yangtze* hands over *tze*. Three-letter rounds opened up even stranger endings: *tzi*, *dae*, *mni* — the kind of stuff that basically requires you to have studied obscure etymology for fun.
 
-_Kuvasz_ — a Hungarian dog breed — sailed through the dictionary and left my opponent with _sz_. The answer to that is _Szekkler_, a variant spelling of the Székely people of Transylvania. _Yangtze_ hands over _tze_. Three-letter rounds opened up stranger territory: _tzi_, _dae_, _mni_, and a long tail of loan and taxonomy-sourced endings that basically required your opponent to have studied obscure etymology for fun.
+Four-letter rounds got worse. Greek suffixes like *odon* and *opod* — borrowed from fossil names — force opponents into a corner. Find a word starting with *odon*. Without preparation, most people can't.
 
-Four-letter rounds got worse. Greek suffixes like _odon_ and _opod_ — borrowed from paleontological taxonomies — force opponents into a corner. Find a word starting with _odon_. Without preparation, most people can't.
+Some of these are findable in normal dictionaries if you dig. But what surprised me was what the game knew that *wasn't* in anything I'd checked.
 
-Some of these are findable in standard dictionaries if you dig. What surprised me was the other direction: where the game's vocabulary came from that _wasn't_ in anything I'd checked.
+I'd been testing words against public sources — Merriam-Webster, Wiktionary, spelling bee lists — trying to map the edges of the game's vocabulary. Most of the time, the pattern held.
 
-I'd been testing words against public references — Merriam-Webster, Wiktionary, spelling bee dictionaries — trying to map the edges of what the game knew. Most of the time the pattern held.
+Then I found *okshoofd*.
 
-Then I found _okshoofd_.
-
-It's a unit of liquid measurement. Wiktionary traces it back to Middle Dutch _ocxhooft_ in 1475 — a partial calque of the Middle English _hoggeshed_. It doesn't appear in standard Merriam-Webster. It's not in any spelling bee list I'd seen. It exists, practically speaking, almost exclusively as a Wiktionary entry for a word nobody has used in centuries.
+It's a unit of liquid measurement. Wiktionary traces it back to Middle Dutch in 1475. It's not in standard Merriam-Webster. It's not in any spelling bee list I'd seen. It exists, practically speaking, almost exclusively as a Wiktionary entry for a word nobody has used in centuries.
 
 The game accepted it.
 
-More importantly: _okshoofd_ ends in _fd_. I went looking for words that start with _fd_ and found _transfd_ — a non-standard abbreviation of _transferred_, buried in Merriam-Webster's abbreviations appendix. The game accepted that too.
+More importantly, *okshoofd* ends in *fd*. I went looking for words that start with *fd* and found *transfd* — a non-standard abbreviation of *transferred*, buried in Merriam-Webster's abbreviations appendix. The game accepted that too.
 
-Which opened a whole other door. The game accepts abbreviations. _Bkcy_ for bankruptcy. _Bkgd_ for background. Meaning that if you play _yrbk_ (yearbook) or _nabk_ (a type of tree), your opponent inherits _bk_ — and the answer is a bankruptcy abbreviation. The game is perfectly fine with this.
+Which opened another door. The game accepts abbreviations (it's crazy, I know). *Bkcy* for bankruptcy. *Bkgd* for background. Meaning if you play *yrbk* (yearbook) or *nabk* (a type of tree), your opponent inherits *bk* — and the answer is a bankruptcy abbreviation.
 
 At that point I stopped being surprised and started being systematic.
 
-The game's dictionary is large. Somewhere north of 480,000 words — Merriam-Webster Unabridged territory, not the roughly 200,000-word collegiate edition most people mean when they say "Merriam-Webster." But it's not exactly the Unabridged either. Some entries the Unabridged has, the game rejects. Some things the game accepts I couldn't source anywhere obvious. And since MW Unabridged isn't open-source, it couldn't be the direct source anyway.
+The game’s dictionary is huge. Somewhere north of 480,000 words—Merriam‑Webster Unabridged territory, not the ~200,000‑word college edition most people mean. But it’s not exactly the Unabridged either. Some things the Unabridged has, the game rejects. Some things the game accepts I couldn’t source anywhere obvious. And since MW Unabridged isn’t open‑source, it couldn’t be the direct source anyway.
 
-The closest match I found was [dwyl/english-words](https://github.com/dwyl/english-words) — a plain text file of 479,000 English words, maintained on GitHub, no paywall. Jackpot.
+The closest match I found was [dwyl/english-words](https://github.com/dwyl/english-words)—a plain text file of 479,000 English words, hosted on GitHub, no paywall. Jackpot.
 
 ## Clever for About an Hour
 
-The first version of what became Letter Demon was embarrassingly simple: a Python lookup tool with a bare-bones window, an input field, a button, and a list of results. Type a prefix, get every matching word.
+The first version of what became Letter Demon was embarrassingly simple: a Python lookup tool with a bare‑bones window, an input box, a button, and a list of results. Type a prefix, get every matching word.
 
 ![The first lookup tool](image.png?width=300)
 
- It worked, but it was slow in a way that mattered. Scanning half a million words one by one adds up fast when you're racing a five-second timer. So I rebuilt the lookup using **binary search** — the same idea as flipping through a physical dictionary. Open somewhere in the middle, see if you've gone too far, cut the remaining space in half. Repeat until you land.
+It worked, but it was slow in a way that mattered. Scanning half a million words one by one takes too long when you’re racing a five‑second timer. So I rebuilt the lookup using **binary search**—the same idea as flipping through a physical dictionary. Open somewhere in the middle, see if you’ve gone too far, cut the remaining space in half. Repeat until you land.
 
 ```python
 def search_starts(words, query):
@@ -74,23 +72,23 @@ def search_ends(words_rev, query):
     return [w[::-1] for w in words_rev[lo:hi]]        # Flip the results back before returning
 ```
 
-"Ends with _ing_" becomes "starts with _gni_" on the reversed list. Same binary search, same speed. I felt clever for about an hour.
+“Ends with *ing*” becomes “starts with *gni*” on the reversed list. Same binary search, same speed. I felt clever for about an hour.
 
-But even that wasn't enough. I was still alt-tabbing, typing prefixes manually, picking words, then typing them into Roblox. I wanted something that could just _play_ for me. So I started building what I now call Letter Demon.
+But even that wasn’t enough. I was still alt‑tabbing, typing prefixes by hand, picking words, then typing them into Roblox. I wanted something that could just *play* for me. So I started building what I now call Letter Demon.
 
 ## Here Comes the Demon
 
-I named it that because "Word Assistant" was too honest.
+I named it that because “Word Assistant” was too honest.
 
 ![Letter Demon](image-1.png)
 
-This is corny, I know. But the 3AM version of me, half delirious, it made perfect sense.
+This is corny, I know. But the 3AM version of me, half delirious, thought it made perfect sense.
 
-Letter Demon doesn't suggest words — it takes the wheel, finds the nastiest ending in the dictionary, types it out with unsettling human rhythm, and waits in the corner for next round.
+Letter Demon doesn’t just suggest words—it takes the wheel, finds the nastiest ending in the dictionary, types it out with an unsettlingly human rhythm, and waits in the corner for the next round.
 
-### The Dictionary's Soul
+### The Dictionary’s Soul
 
-First real challenge: loading a 500,000-word dictionary every launch took almost a second. Fine for a script, terrible for a tool that needs to feel responsive. So I added a cache:
+First real problem: loading a 500,000‑word dictionary every time I launched the tool took almost a second. Fine for a script, terrible for something that needs to feel responsive. So I added a cache:
 
 ```python
 def load_wordlist_from_dict(dict_path):
@@ -119,13 +117,13 @@ def load_wordlist_from_dict(dict_path):
     return wordlist, False
 ```
 
-Two-tier validation: a cheap timestamp check first, then a cryptographic hash only if the cache looks stale. Launch time dropped from 1 second to 50 milliseconds.
+Two checks: a quick timestamp first, then a more thorough hash only if the cache looks old. Launch time dropped from 1 second to 50 milliseconds.
 
-But here's the thing I almost missed. The dictionary alone is utterly useless without the **trap list**.
+But here’s the thing I almost missed. The dictionary alone is useless without the **trap list**.
 
 ### The Trap List: My Secret Sauce
 
-Letter Demon doesn't just find any word that matches the prefix. It tries to find words that end in suffixes that are _nightmares_ to continue from. That list — `trap_endings.txt` — is entirely hand-curated.
+Letter Demon doesn’t just find any matching word. It tries to find words that end in suffixes that are *nightmares* to continue from. That list—`trap_endings.txt`—is entirely hand‑curated.
 
 ```
 ocy
@@ -139,11 +137,11 @@ trak
 ...
 ```
 
-Every entry represents hours of trial and error. I'd play round after round, and every time an opponent stumbled on a suffix — or every time I got stuck myself — I'd jot it down.
+Every entry represents hours of trial and error. I’d play round after round, and every time an opponent got stuck on a suffix—or every time I got stuck myself—I’d write it down.
 
-The longer the trap, the more devastating. In round four, your opponent has to find a word starting with all of them.
+The longer the trap, the more devastating. In round four, your opponent has to find a word starting with all four letters.
 
-Also, the trap scoring system is dead simple:
+The scoring is dead simple:
 
 ```python
 def _trap_score(self, word: str) -> int:
@@ -155,17 +153,17 @@ def _trap_score(self, word: str) -> int:
     return 0  # No known trap suffix — this word is polite
 ```
 
-A four-letter trap like `odon` is worth more than `sz`, because forcing someone to find a word starting with `odon` is statistically crueler.
+A four‑letter trap like `odon` is worth more than `sz`, because forcing someone to find a word starting with `odon` is statistically crueler.
 
-When I'm in "Trap Words" mode, the engine scans every candidate, checks its ending against the trap list, and returns the nastiest one it can find. It picks randomly among the highest-scoring candidates — so I don't play the same word every time, but every word I play is engineered to hurt.
+When I’m in “Trap Words” mode, the engine scans every candidate, checks its ending against the trap list, and returns the nastiest one it can find. It picks randomly among the highest‑scoring candidates—so I don’t play the same word every time, but every word I play is engineered to hurt.
 
-If the dictionary knows _Yangtze_ and the trap list knows `tze`, that's checkmate.
+If the dictionary knows *Yangtze* and the trap list knows `tze`, that’s checkmate.
 
 ### The Human Illusion
 
-I couldn't just use `keyboard.write()`. That types too fast, too evenly. Roblox doesn't detect it as cheating (as far as I know), but it feels unnatural — metronomic in a way humans never are. I wanted hesitation, uneven rhythm, the occasional pause between hard letter combinations.
+I couldn’t just use `keyboard.write()`. That types too fast, too even. Though Roblox doesn’t detect it as cheating (as far as I know), but it feels unnatural—metronomic in a way humans never are. I wanted hesitation, uneven rhythm, the occasional pause between hard letter combos.
 
-I settled on a **log-normal distribution** for keypress delays. Human reaction times aren't uniform — they cluster around a median but occasionally spike much longer. The log-normal models that perfectly:
+I settled on a **log‑normal distribution** for keypress delays. Human reaction times aren’t uniform—they cluster around a median but sometimes spike much longer. The log‑normal models that perfectly:
 
 ```python
 def _next_delay(self) -> float:
@@ -182,13 +180,13 @@ def _next_delay(self) -> float:
     return max(0.03, delay)  # Never go below 30ms — any faster looks robotic
 ```
 
-With jitter turned up to 75%, the typing looks convincingly human — sometimes hesitant, sometimes rushed, never perfectly metronomic. I watched it type "exhilarating" once and felt uncomfortable. It looked too real.
+With jitter turned up to 75%, the typing looks convincingly human. Sometimes hesitant, sometimes rushed, never perfectly metronomic. I watched it type “exhilarating” once and felt uncomfortable. It looked too real.
 
 ### The Window Dance
 
-Then came the nightmare: actually typing into Roblox. I couldn't just send keystrokes to a background process. Roblox ignores them. I had to steal focus — yank the game window to the foreground, type, then hide my app again before anyone noticed.
+Then came the nightmare: actually typing into Roblox. I couldn’t just send keystrokes to a background process. Roblox ignores them. I had to steal focus—yank the game window to the front, type, then hide my app again before anyone noticed.
 
-Windows doesn't like programs that steal focus. Whole APIs exist to prevent exactly what I was doing.
+Windows doesn’t like programs that steal focus. Whole APIs exist to prevent exactly what I was doing.
 
 So I got creative:
 
@@ -203,9 +201,9 @@ def focus_roblox_window() -> None:
         user32.SetForegroundWindow(hwnd) # Steal focus
 ```
 
-This worked about 80% of the time. The other 20%, Windows fought back — flickering taskbar, refused focus, the game minimizing again mid-type.
+This worked about 80% of the time. The other 20%, Windows fought back—flickering taskbar, refused focus, the game minimizing again mid‑type.
 
-Eventually I discovered the fix: hide my own window first.
+Eventually I found the fix: hide my own window first.
 
 ```python
 def on_play_round(self):
@@ -215,13 +213,13 @@ def on_play_round(self):
     self.root.deiconify()              # Come back
 ```
 
-The user never sees the transition. One second they're looking at the app, then Roblox magically appears, types a word, and vanishes. It feels like possession.
+The user never sees the transition. One second they’re looking at the app, then Roblox magically appears, types a word, and vanishes.
 
 ### Threading Nightmares
 
-All of this runs in the background while a small Tkinter window sits on my second monitor. But Tkinter doesn't play nice with blocking operations. Type directly on the main thread and the UI freezes solid. Skip the locks and the dictionary reloads mid-round and everything explodes.
+All of this runs in the background while a small Tkinter window sits on top of the game. But Tkinter doesn’t play nice with blocking operations. Type directly on the main thread and the UI freezes solid. Skip the locks and the dictionary reloads mid‑round and everything explodes.
 
-The solution: daemon threads and reentrant locks.
+The solution: background threads and reentrant locks.
 
 ```python
 def on_play_round(self):
@@ -248,18 +246,28 @@ def _type_and_return(self, completion):
         self.root.after(0, self.root.deiconify)  # Hand the UI restore back to the main thread
 ```
 
-The `RLock` prevents deadlocks when the engine calls into itself. The `after(0)` trick is what keeps Tkinter happy — it requires that anything touching the UI happen on the main thread, and without that one line, the whole thing crashes in a way that takes an embarrassingly long time to diagnose.
+The `RLock` prevents deadlocks when the engine calls into itself. The `after(0)` trick is what keeps Tkinter happy—it requires that anything touching the UI happen on the main thread. Without that one line, the whole thing crashes in a way that took me an embarrassingly long time to diagnose.
 
-I learned more about concurrency debugging this than I did from any textbook.
+I learned more about concurrency debugging from this than I did from any textbook.
 
 ## What I Actually Learned
 
-I never really noticed the moment I went from "huh, that's interesting" to "why am I still awake trying to fix this." That's just kind of how it goes when something gets stuck in your head.
+I never really noticed the moment I went from “huh, that’s interesting” to “why am I still awake trying to fix this?” That’s just kind of how it goes when something gets stuck in your head.
 
-None of it was serious, honestly. A slow dictionary load that probably nobody else would notice. A Roblox helper that was a little buggy. Small, silly stuff. But it bothered me, so I kept poking at it.
+Look, none of this was ever serious. It's a macro. Plain and simple. A macro that helped me win over 2,000 matches. That's it.
 
-Along the way I kept running into ideas I'd never heard of before — things like binary search, which I had to look up, and once I understood it I genuinely couldn't believe how clever it was. That's probably the best way I can describe this whole experience, actually. A lot of "wait, that's a thing? that's so cool."
+Nobody's ever suspected anything. Well — almost nobody. A few of the better players had their guesses. *He's looking at a word list. He's got a dictionary open. He's using AI.* I've heard it all. But think about it: later rounds, timer under five seconds. You can't tab over to a dictionary. You can't ask ChatGPT. You just have to know, and you have to type, and you have to do it *now*.
 
-I didn't build anything impressive. I'm not a developer, I don't have a background in any of this. I'm just a hobbyist who got a little obsessed with a problem and ended up learning more than I expected. Most of it came from curiosity and stubbornness in roughly equal measure.
+So why not go all the way? Why not use every script out there if you're just farming wins and steamrolling people?
 
-If you're a no-coder like me and you're thinking about diving into something like this — honestly, just start. You'll figure it out as you go. That's pretty much all I did.
+Because I couldn't find one that worked the way this does. Everything else is *obvious*. Types too fast. Or tries to be human by typing too slow. Some of them even fake a typo — backspace then spit out the right word. You and pros can spot them from a mile away. And eventually? You get banned.
+
+This doesn't.
+
+Along the way, I kept running into ideas I'd never heard of before. Binary search was one of them. I had to look it up, and once I finally understood how it worked, I just remember sitting there thinking, *that's how it works? That's so clever.* And honestly, that's probably the best way I can describe this whole experience. Just a lot of "wait, that's a thing?" followed immediately by "okay, that's cool."
+
+This is my first mildly serious Python project, and I love it. By every possible metric, it's exactly what I wanted. The vision I had in my head actually made it to the screen, which still surprises me a little.
+
+I'm not going to pretend I built something impressive. I'm not a developer. I don't have a background in any of this. I'm just a hobbyist who got a little obsessed with a problem and ended up learning more than I expected along the way. Most of it came from curiosity and stubbornness, in roughly equal measure.
+
+So if you're a no-coder like me and you're thinking about diving into something like this — honestly, just start. You'll figure it out as you go. That's pretty much all I did.
