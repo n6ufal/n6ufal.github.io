@@ -68,10 +68,13 @@ markup:
   highlight:
     style: nord
     lineNos: true
+    lineNumbersInTable: false
+    noClasses: false
+    guessSyntax: true
+
 
 outputs:
   home:
     - HTML
     - RSS
 
-    

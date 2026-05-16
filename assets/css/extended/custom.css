@@ -1,37 +1,35 @@
 /* ══════════════════════════════════════════
    CUSTOM CSS FOR PAPERMOD
-   Unified Accent: Nord Green (#A3BE8C)
+   Primary accent:   --accent      Nord Green (#A3BE8C) — hover/focus/active only
+   Secondary accent: --accent-info Nord Frost (#88C0D0) — link underlines, informational
    Optimized for Dark Mode
 ══════════════════════════════════════════ */
 
-/* Define the accent colour - change only this one value */
 :root {
   --accent: #A3BE8C;
-  /* Nord green, same as Last.fm "now playing" icon */
-  --nord8: #88C0D0;
-  /* preserved for reference, if needed */
+  /* Nord green — reserved for interactive states (hover, focus, active) */
+  --accent-info: #88C0D0;
+  /* Nord frost — resting link underlines and informational decoration */
 }
 
-/* Limit post cover image height on list pages (homepage, posts list) */
+
+/* ══════════════════════════════════════════
+   COVER IMAGES
+══════════════════════════════════════════ */
+
+/* List pages (homepage, posts list) */
 .entry-cover img {
   max-height: 500px;
   width: auto;
   object-fit: cover;
 }
 
-/* Single post pages only */
+/* Single post pages */
 .post-single .entry-cover img {
   max-height: 600px;
   width: auto;
   object-fit: cover;
   display: block;
-}
-
-.post-single .md-content img,
-.post-single .md-content figure img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
 }
 
 .post-single .md-content img,
@@ -47,6 +45,7 @@
   text-align: center;
 }
 
+
 /* ══════════════════════════════════════════
    1. UTILITY CLASSES
 ══════════════════════════════════════════ */
@@ -56,23 +55,23 @@
   margin: 0 auto;
 }
 
+
 /* ══════════════════════════════════════════
    2. SMOOTH TRANSITIONS
 ══════════════════════════════════════════ */
 
-body,
 .post-entry,
 .pagination a {
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-/* Pagination container (the whole bar) */
+/* Pagination container */
 .pagination {
   margin: 2rem 0;
   text-align: center;
 }
 
-/* Each page link, including Prev / Next */
+/* Each page link */
 .pagination a,
 .pagination .page-link {
   display: inline-block;
@@ -80,25 +79,21 @@ body,
   margin: 0 0.25rem;
   border-radius: 8px;
   background: var(--entry);
-  /* matches card background */
   color: var(--primary);
-  /* light text */
   border: 1px solid var(--border);
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Hover state for all pagination links */
+/* Hover */
 .pagination a:hover,
 .pagination .page-link:hover {
   background: var(--accent);
-  /* Nord green background */
   color: var(--nord0);
-  /* dark text for contrast */
   border-color: var(--accent);
 }
 
-/* Active / current page (if you have numbered pages) */
+/* Active / current page */
 .pagination .page-link.active {
   background: var(--accent);
   color: var(--nord0);
@@ -106,7 +101,7 @@ body,
   cursor: default;
 }
 
-/* Disabled state (when there's no previous or next page) */
+/* Disabled */
 .pagination .page-link.disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -116,7 +111,6 @@ body,
 
 .paginav a:hover {
   color: var(--accent) !important;
-  /* bright green */
 }
 
 
@@ -132,8 +126,9 @@ body,
 
 .post-entry:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px rgba(136, 192, 208, 0.08);
 }
+
 
 /* ══════════════════════════════════════════
    4. PROFILE MODE AVATAR
@@ -142,19 +137,20 @@ body,
 .profile .avatar img {
   border-radius: 50%;
   border: 3px solid var(--accent);
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile .avatar img:hover {
   transform: scale(1.05);
-  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(163, 190, 140, 0.3);
 }
 
-/* Profile subtitle styling */
+/* Profile subtitle */
 .profile .subtitle {
   font-style: italic;
   color: var(--nord4);
 }
+
 
 /* ══════════════════════════════════════════
    5. TABLE OF CONTENTS (TOC)
@@ -162,8 +158,8 @@ body,
 
 .toc {
   border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
   background: var(--nord1);
-  border-radius: 8px;
   padding: 0.5rem 1.25rem;
   margin: 1rem 0;
 }
@@ -191,45 +187,18 @@ body,
   color: var(--accent);
 }
 
+
 /* ══════════════════════════════════════════
-   6. CODE BLOCKS (Code Copy Buttons Enabled)
+   6. CODE BLOCKS
 ══════════════════════════════════════════ */
 
-.post-content pre {
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: var(--nord0);
+.post-content .highlight {
+  position: relative;
+  overflow-x: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.post-content code {
-  padding: 0.2em 0.4em;
-  border-radius: 6px;
-  background: var(--nord1);
-  font-size: 0.875em;
-  color: var(--nord4);
-}
-
-.post-content pre code {
-  padding: 0;
-  background: transparent;
-}
-
-/* Copy code button styling */
-.copy-code {
-  background: var(--nord1);
-  color: var(--nord4);
-  border-radius: 6px;
-  padding: 4px 8px;
-  font-size: 0.75rem;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-.copy-code:hover {
-  opacity: 1;
-  background: var(--accent);
-  color: var(--nord0);
-}
 
 /* ══════════════════════════════════════════
    7. TABLES (Responsive)
@@ -239,7 +208,7 @@ table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   margin: 1.5rem 0;
   background: var(--nord1);
@@ -263,15 +232,15 @@ tr:last-child td {
   border-bottom: none;
 }
 
+
 /* ══════════════════════════════════════════
    8. BLOCKQUOTES
 ══════════════════════════════════════════ */
 
-/* Using !important to override any high-specificity theme defaults */
+/* !important required to override PaperMod's high-specificity defaults */
 blockquote {
   border-left: 4px solid var(--accent) !important;
   background: var(--entry);
-  /* changed from var(--nord1) to var(--entry) */
   padding: 1rem 1.5rem;
   border-radius: 0 8px 8px 0;
   margin: 1.5rem 0;
@@ -282,6 +251,7 @@ blockquote {
 blockquote p:last-child {
   margin-bottom: 0;
 }
+
 
 /* ══════════════════════════════════════════
    9. SOCIAL ICONS (Header)
@@ -300,39 +270,41 @@ blockquote p:last-child {
   fill: var(--accent);
 }
 
+
 /* ══════════════════════════════════════════
-   11. BREADCRUMBS
+   10. BREADCRUMBS
 ══════════════════════════════════════════ */
 
 .breadcrumbs {
   font-size: 0.875rem;
-  color: var(--accent);
+  color: var(--secondary);
 }
 
 .breadcrumbs a {
-  color: var(--nord4);
+  color: var(--secondary);
 }
 
 .breadcrumbs a:hover {
   color: var(--accent);
 }
 
+
 /* ══════════════════════════════════════════
-   12. TAXONOMY (TAGS & CATEGORIES) PAGES
+   11. TAXONOMY (TAGS & CATEGORIES) PAGES
 ══════════════════════════════════════════ */
 
-/* Styling for each tag/category item on the listing page */
 .post-entry.tag-entry {
   border-left: 3px solid var(--accent);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Styling for individual tags in the post footer */
 .post-tags a {
-  background: rgba(163, 190, 140, 0.1);
+  background: rgba(163, 190, 140, 0.12);
+  /* fallback for older browsers */
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
   border-radius: 20px;
   padding: 0.2rem 0.6rem;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
   text-decoration: none;
 }
 
@@ -342,8 +314,9 @@ blockquote p:last-child {
   text-decoration: none;
 }
 
+
 /* ══════════════════════════════════════════
-   13. ACCESSIBILITY - FOCUS OUTLINES
+   12. ACCESSIBILITY — FOCUS OUTLINES
 ══════════════════════════════════════════ */
 
 a:focus-visible,
@@ -353,38 +326,9 @@ button:focus-visible {
   border-radius: 4px;
 }
 
-/* ══════════════════════════════════════════
-   14. SCROLLBAR - No gap version
-══════════════════════════════════════════ */
-/* Prevent layout shift from scrollbar */
-html {
-  overflow-y: scroll;
-  scrollbar-gutter: stable;
-  scrollbar-width: thin;
-  /* Firefox */
-}
-
-/* WebKit: hide until hover */
-::-webkit-scrollbar {
-  width: 8px;
-  background: transparent;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 4px;
-}
-
-html:not(:hover)::-webkit-scrollbar-thumb {
-  background: transparent;
-}
 
 /* ══════════════════════════════════════════
-   15. TEXT SELECTION
+   13. TEXT SELECTION
 ══════════════════════════════════════════ */
 
 ::selection {
@@ -392,27 +336,24 @@ html:not(:hover)::-webkit-scrollbar-thumb {
   color: var(--nord0);
 }
 
-::-moz-selection {
-  background: var(--accent);
-  color: var(--nord0);
-}
 
 /* ══════════════════════════════════════════
-   16. LINKS STYLING
+   14. LINKS
 ══════════════════════════════════════════ */
 
 a {
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-  text-decoration-color: var(--accent);
+  text-decoration-color: var(--accent-info);
 }
 
 a:hover {
   color: var(--accent);
 }
 
+
 /* ══════════════════════════════════════════
-   17. SEARCH INPUT FOCUS (PaperMod)
+   15. SEARCH INPUT FOCUS
 ══════════════════════════════════════════ */
 
 #searchbox:focus {
@@ -421,8 +362,9 @@ a:hover {
   box-shadow: 0 0 0 2px rgba(163, 190, 140, 0.2);
 }
 
+
 /* ══════════════════════════════════════════
-   18. RESPONSIVE DESIGN (Mobile)
+   16. RESPONSIVE DESIGN (Mobile)
 ══════════════════════════════════════════ */
 
 @media (max-width: 768px) {
@@ -456,15 +398,15 @@ a:hover {
     padding: 0.5rem 1rem;
   }
 
-  /* Table overflow on mobile */
   table {
     display: block;
     overflow-x: auto;
   }
 }
 
+
 /* ══════════════════════════════════════════
-   19. FOOTER
+   17. FOOTER
 ══════════════════════════════════════════ */
 
 .footer {
@@ -475,28 +417,26 @@ a:hover {
 }
 
 .footer a {
-  color: var(--accent);
+  color: var(--secondary);
 }
 
 .footer a:hover {
   color: var(--accent);
 }
 
+
 /* ══════════════════════════════════════════
-   20. POST META (Dates, etc.)
+   18. POST META (Dates, etc.)
 ══════════════════════════════════════════ */
 
 .post-meta {
   font-size: 0.875rem;
-  color: var(--accent);
+  color: var(--secondary);
 }
 
-.post-meta time {
-  color: var(--nord4);
-}
 
 /* ══════════════════════════════════════════
-   21. LISTS (Ordered & Unordered)
+   19. LISTS (Ordered & Unordered)
 ══════════════════════════════════════════ */
 
 .post-content ul,
@@ -508,7 +448,7 @@ a:hover {
 .post-content li {
   margin: 0.5rem 0;
   color: var(--nord4);
-  line-height: 1.6;
+  line-height: 1.75;
 }
 
 .post-content ul li::marker {
@@ -526,8 +466,9 @@ a:hover {
   margin: 0.5rem 0;
 }
 
+
 /* ══════════════════════════════════════════
-   22. HORIZONTAL RULES
+   20. HORIZONTAL RULES
 ══════════════════════════════════════════ */
 
 .post-content hr,
@@ -541,21 +482,11 @@ hr {
 }
 
 /* ══════════════════════════════════════════
-   23. CONTENT MAX-WIDTH (Readability)
-══════════════════════════════════════════ */
-
-.post-content {
-  max-width: 65ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ══════════════════════════════════════════
-   24. FOOTNOTE BACKLINKS
+   22. FOOTNOTE BACKLINKS
 ══════════════════════════════════════════ */
 
 .footnote-backref {
-  color: var(--accent);
+  color: var(--secondary);
   text-decoration: none;
 }
 
@@ -564,8 +495,9 @@ hr {
   text-decoration: underline;
 }
 
+
 /* ══════════════════════════════════════════
-   25. PRINT STYLES
+   23. PRINT STYLES
 ══════════════════════════════════════════ */
 
 @media print {
@@ -620,9 +552,9 @@ hr {
   }
 }
 
+
 /* ══════════════════════════════════════════
-   LASTFM WIDGET - REQUIRED STYLES
-   Now fully using --accent (Nord green)
+   LASTFM WIDGET
 ══════════════════════════════════════════ */
 
 .lastfm-widget {
@@ -658,7 +590,7 @@ hr {
   font-size: 0.875rem;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .lastfm-icon {
@@ -700,7 +632,11 @@ hr {
   transition: color 0.2s ease;
 }
 
-/* Remove background from paginav on single pages */
+
+/* ══════════════════════════════════════════
+   PREV / NEXT POST NAV (paginav)
+══════════════════════════════════════════ */
+
 .paginav {
   background: transparent;
   border-top: 1px solid var(--border);
@@ -713,4 +649,19 @@ hr {
 
 .paginav a:hover {
   color: var(--accent);
+}
+
+
+/* ══════════════════════════════════════════
+   REDUCED MOTION
+══════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }
