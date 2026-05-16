@@ -42,7 +42,9 @@ At that point I stopped being surprised and started being systematic.
 
 The game’s dictionary is huge. Somewhere north of 480,000 words—Merriam‑Webster Unabridged territory, not the ~200,000‑word college edition most people mean. But it’s not exactly the Unabridged either. Some things the Unabridged has, the game rejects. Some things the game accepts I couldn’t source anywhere obvious. And since MW Unabridged isn’t open‑source, it couldn’t be the direct source anyway.
 
-The closest match I found was [dwyl/english-words](https://github.com/dwyl/english-words)—a plain text file of 479,000 English words, hosted on GitHub, no paywall. Jackpot.
+The closest match I found was [dwyl/english-words](https://github.com/dwyl/english-words)—a plain text file of 479,000 English words, hosted on GitHub. Jackpot.
+
+The next part gets technical. If you're here for the takeaway, skip ahead to [What I Actually Learned](#what-i-actually-learned).
 
 ## Clever for About an Hour
 
@@ -252,7 +254,7 @@ I learned more about concurrency debugging from this than I did from any textboo
 
 ## What I Actually Learned
 
-I never really noticed the moment I went from “huh, that’s interesting” to “why am I still awake trying to fix this?” That’s just kind of how it goes when something gets stuck in your head.
+I never really noticed the moment I went from "huh, that's interesting" to "why am I still awake trying to fix this?" That's just kind of how it goes when something gets stuck in your head.
 
 Look, none of this was ever serious. It's a macro. Plain and simple. A macro that helped me win over 2,000 matches. That's it.
 
@@ -266,8 +268,14 @@ This doesn't.
 
 Along the way, I kept running into ideas I'd never heard of before. Binary search was one of them. I had to look it up, and once I finally understood how it worked, I just remember sitting there thinking, *that's how it works? That's so clever.* And honestly, that's probably the best way I can describe this whole experience. Just a lot of "wait, that's a thing?" followed immediately by "okay, that's cool."
 
-This is my first mildly serious Python project, and I love it. By every possible metric, it's exactly what I wanted. The vision I had in my head actually made it to the screen, which still surprises me a little.
-
-I'm not going to pretend I built something impressive. I'm not a developer. I don't have a background in any of this. I'm just a hobbyist who got a little obsessed with a problem and ended up learning more than I expected along the way. Most of it came from curiosity and stubbornness, in roughly equal measure.
-
 So if you're a no-coder like me and you're thinking about diving into something like this — honestly, just start. You'll figure it out as you go. That's pretty much all I did.
+
+And I should be honest about something, too. I didn't write all of this code from scratch. Most of it came from sitting down with Claude — talking through what I wanted, asking why one approach broke and another didn't, grinding on the same bug for way too long. I did the directing, the debugging, the "no, that's not what I meant" back-and-forth. Claude did the coding. That feels like the right way to say it.
+
+I'm not a developer, and I don't pretend to be. But I learned something from the project — the approaches, the libraries, the trade-offs. Why this method over that one. How to actually implement an idea instead of just thinking about it.
+
+Why am I even admitting this? Partly for validation, I think. I want someone to see what I made. That's embarrassing to admit, but it's true. I studied literature. I don't have a big audience or a job yet. This blog post is me holding up a little flashlight and saying, "Look, I made a thing." And if no one looks? That's fine too. But at least I pointed the light somewhere.
+
+I've told myself it's fine because the game has no stakes. No money, no leaderboards that matter. And technically that's true. But this game got its hooks in me the same way Scrabble does, or a spelling bee — that nerdy satisfaction of knowing the word, finding it fast, placing it right. Letter Demon killed that. Not because it made me worse at the game, but because it made the game irrelevant. The *building* of it though — the figuring out what, why, and how — that reignited something bigger. And then it worked, and that feeling left again.
+
+But I've also watched opponents freeze on a suffix I planted, type nothing, lose a heart, and leave the table. I know they weren't playing a bot. They were probably a kid. Or someone who just wanted to relax. And I ruined their round so I could feel smart for five seconds. I don't pretend it's noble. It's just small, petty cruelty, automated.
