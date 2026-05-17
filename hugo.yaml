@@ -42,8 +42,6 @@ params:
         url: "mailto:alifnaufal@duck.com"
       - name: github
         url: "https://github.com/n6ufal"
-      - name: x
-        url: "https://twitter.com/n6ufal"
       - name: lastfm
         url: "https://www.last.fm/user/alifnaufal"
       - name: spotify
