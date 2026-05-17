@@ -5,7 +5,7 @@ defaultContentLanguage: "en"
 timeZone: "Asia/Jakarta"
 
 params:
-  footer:
+  env: production
   hideFooter: true
   # Last.fm
   lastfmApiKey: "0e7245c9a19b6563e2a301c91f053c54"
@@ -32,21 +32,22 @@ params:
   profileMode:
     enabled: true
     title: "Alif Naufal"
-    subtitle: "One day we’ll die, and our ashes will fly from the aeroplane over the sea."
+    subtitle: "One day we'll die, and our ashes will fly from the aeroplane over the sea."
     imageUrl: "/images/avatar.jpg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: "Alif Naufal with precious partner"
-  # Social
   socialIcons:
-    - name: github
-      url: "https://github.com/n6ufal"
-    - name: x
-      url: "https://twitter.com/n6ufal"
-    - name: spotify
-      url: "https://open.spotify.com/user/fjvvc8gihy2bj471qal9zrg6v"
-    - name: lastfm
-      url: "https://www.last.fm/user/alifnaufal"
+      - name: email
+        url: "mailto:alifnaufal@duck.com"
+      - name: github
+        url: "https://github.com/n6ufal"
+      - name: x
+        url: "https://twitter.com/n6ufal"
+      - name: lastfm
+        url: "https://www.last.fm/user/alifnaufal"
+      - name: spotify
+        url: "https://open.spotify.com/user/fjvvc8gihy2bj471qal9zrg6v"
 
 menu:
   main:
@@ -78,4 +79,3 @@ outputs:
   home:
     - HTML
     - RSS
-
