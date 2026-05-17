@@ -632,7 +632,6 @@ hr {
   transition: color 0.2s ease;
 }
 
-
 /* ══════════════════════════════════════════
    PREV / NEXT POST NAV (paginav)
 ══════════════════════════════════════════ */
@@ -640,28 +639,5 @@ hr {
 .paginav {
   background: transparent;
   border-top: 1px solid var(--border);
-  box-shadow: none;
-}
-
-.paginav a {
-  background: transparent;
-}
-
-.paginav a:hover {
-  color: var(--accent);
-}
-
-
-/* ══════════════════════════════════════════
-   REDUCED MOTION
-══════════════════════════════════════════ */
-
-@media (prefers-reduced-motion: reduce) {
-
-  *,
-  *::before,
-  *::after {
-    transition: none !important;
-    animation: none !important;
-  }
+  box-shadow: 0 2px 4px rgba(136, 192, 208, 0.08);
 }
