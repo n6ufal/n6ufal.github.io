@@ -2,6 +2,7 @@
 title: "Amor Fati"
 date: 2026-05-01
 draft: false
+tags: ["philosophy"]
 cover:
   image: "/images/amorfati.jpg"
   alt: "cover"

@@ -2,6 +2,7 @@
 title = "What Happens When You Take a Word Game Too Seriously"
 date = 2026-05-16
 draft = false
+tags = ["code"]
 +++
 
 There’s this word game on Roblox called Last Letter. The idea is simple: you sit at a table with a few other people, someone types a word, and the next person has to start from the last letter—or the last few letters. Each round, the overlap gets longer. Round one is just one letter. Round two, two letters. Up to four letters. Meanwhile, the timer shrinks: fifteen seconds to start, then down to five. If you can’t keep up, you lose a heart.

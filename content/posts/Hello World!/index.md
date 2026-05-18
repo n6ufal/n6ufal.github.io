@@ -2,6 +2,7 @@
 title: "Hello World!"
 date: 2026-04-30
 draft: false
+tags: ["meta", "personal"]
 cover:
   image: "/images/helloworld.jpg"
   alt: "cover"

@@ -564,13 +564,13 @@ hr {
 
 .lastfm-loading,
 .lastfm-error {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.85rem;
   color: var(--secondary);
 }
 
 .lastfm-header {
-  font-family: 'Geist', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -588,7 +588,7 @@ hr {
 .lastfm-item {
   margin-bottom: 0.4rem;
   font-size: 0.875rem;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-ui);
   font-weight: 400;
   transition: color 0.2s ease;
 }

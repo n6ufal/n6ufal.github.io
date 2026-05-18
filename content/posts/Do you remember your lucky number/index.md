@@ -2,6 +2,7 @@
 title: "Do you remember your lucky number?"
 date: 2026-05-02
 draft: false
+tags: ["personal"]
 cover:
   image: "cats.jpg"
   alt: "cover"
