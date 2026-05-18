@@ -9,7 +9,7 @@ Welcome to my corner of the internet.
 
 I'm based in Indonesia. I studied English Literature, so stories and language shape how I see the world, but I spend just as much time lost in music. Lately, my rotation is a chaotic mix of post-hardcore, grunge, jerk, dream pop, shoegaze, progressive house, and Midwest emo. I'm also a massive movie nerd.
 
-Ideas move too fast for my brain to keep up, so I built **HEADSPACE**. It’s my personal dumping ground for notes, half-baked thoughts, and 3 AM nonsense, written in English or Indonesian. Building it from scratch was a trip, and I'm genuinely proud of how it's turning out.
+Ideas move too fast for my brain to keep up, so I built this site. It’s my personal dumping ground for notes, half-baked thoughts, and 3 AM nonsense, written in English or Indonesian. Building it from scratch was a trip, and I'm genuinely proud of how it's turning out.
 
 New here? These are good entry points:
 
