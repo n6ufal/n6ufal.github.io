@@ -9,11 +9,11 @@ cover:
   relative: false
 ---
 
-> "Amor Fati" — Latin for "love of fate" — is the practice of embracing whatever life throws at you and finding something useful in it.
+> "Amor Fati" — Latin for "love of fate" — is the idea of accepting life as it is and trying to find something useful in whatever happens.
 
 ### A Brief History
 
-Stoicism started in the early 3rd century BCE with Zeno of Citium. Diogenes Laertius, writing in _Lives of the Eminent Philosophers_, described him as "lean, longish, and swarthy; hence someone called an Egyptian vine." An odd detail to survive two millennia, but there it is.
+Stoicism began around the early 3rd century BCE with Zeno of Citium. Diogenes Laertius described him as “lean, longish, and swarthy; hence someone called an Egyptian vine.” Strange detail to survive for over two thousand years, but it did.
 
 > _"Man conquers the world by conquering himself."_ — Zeno of Citium
 
@@ -29,7 +29,7 @@ He studied under various teachers for close to twenty years before eventually se
 
 Virtue. But not in a vague, moralistic sense.
 
-The Stoics were trying to work out how to actually live — how to make good decisions, stay grounded, and reach something they called _eudaimonia_: a lasting, stable kind of happiness that doesn't depend on things going your way.
+The Stoics wanted to figure out how to actually live well. How to make good decisions, stay grounded, and reach something they called *eudaimonia*: a steady kind of happiness that doesn’t depend on life going perfectly.
 
 Getting there meant following a few core principles:
 
@@ -45,7 +45,7 @@ Getting there meant following a few core principles:
 
 Epictetus was born into slavery around 50 AD and spent his early life in Rome as property of Epaphroditus, a wealthy freedman who served as secretary to Emperor Nero. As a young man he showed an interest in philosophy, and his master — unusually — allowed him to attend lectures under the Stoic philosopher Musonius Rufus.
 
-After Nero's death he was freed. By 93 AD he was teaching his own philosophy.
+After Nero died, Epictetus gained his freedom and later became a teacher himself.
 
 His central idea was control — specifically, the distinction between what is and isn't within your power. Everything hinges on that separation. Get it wrong and you're at the mercy of circumstances. Get it right and you have something nobody can take from you.
 
@@ -57,7 +57,7 @@ He laid it out plainly: two kinds of things exist in life. Things you control �
 >
 > _Working within our sphere of control, we are naturally free, independent, and strong. Beyond that sphere, we are weak, limited, and dependent. If you pin your hopes on things outside your control, taking upon yourself things which rightfully belong to others, you are liable to stumble, fall, suffer, and blame both gods and men. But if you focus your attention only on what is truly your own concern, and leave to others what concerns them, then you will be in charge of your interior life. No one will be able to harm or hinder you. You will blame no one, and have no enemies. If you wish to have peace and contentment, release your attachment to all things outside your control._ — Epictetus
 
-Once this sinks in, your wellbeing stops being tied to external outcomes. You don't stop caring about the world — you stop letting it be the referee for whether you're okay. And as you build the four virtues — wisdom, courage, justice, temperance — that stability becomes something you construct and maintain, not something you're granted or denied by circumstance.
+Once that idea sinks in, your wellbeing stops depending entirely on external outcomes. You still care about life, but you stop treating the outside world like the judge of whether you’re okay.
 
 ### Acceptance
 
@@ -65,23 +65,30 @@ Accepting the world as it is sits at the heart of Stoicism, and it comes down to
 
 When you stop resisting what you can't change, it loses its grip on you and it's a deliberate choice about where your attention goes.
 
-One tell that you're not accepting something: the word "should." _He should have done better. Things shouldn't be this way._ Whenever that word shows up, there's usually an expectation attached to something you never controlled to begin with.
+One sign you’re resisting reality is the word “should.”
 
-Pain is the clearest example.
+* He should’ve done better.
+* Things shouldn’t be like this.
 
-You can't have gratitude, love, or genuine happiness without also being available to loss and suffering.
+Usually that word points toward an expectation placed on something you never fully controlled to begin with.
+
+Pain is part of the deal too.
+
+You can’t experience love, gratitude, or happiness without also becoming vulnerable to loss.
 
 ### Courage
 
-To the Stoics, courage isn't the absence of fear. It's acting in line with your values _despite_ fear, doubt, or uncertainty. The obstacles don't disappear. You just stop letting them be the deciding factor.
+To the Stoics, courage wasn’t fearlessness. It was continuing to act according to your values despite fear.
 
-Tied closely to courage is fortitude: the capacity to endure discomfort — mental or physical — without caving to despair. Courage keeps you moving when moving is hard.
+Fortitude mattered too: the ability to endure discomfort without collapsing into despair.
 
-> _"The one thing you can't take away from me is the way I choose to respond to what you do to me. The last of one's freedoms is to choose one's attitude in any given circumstance."_ — Viktor Frankl
+> “The one thing you can’t take away from me is the way I choose to respond to what you do to me. The last of one’s freedoms is to choose one’s attitude in any given circumstance.” — Viktor Frankl
 
-The Stoic method for building courage is pretty direct: seek out discomfort, don't avoid it. Confront the things you're afraid of. Not because it's fun, but because it shows you, empirically, that you can handle them. Your fears stop being abstract threats and start being things you've already navigated. The comfort zone expands by being pushed.
+Their method for building courage was straightforward: stop avoiding discomfort.
 
-> _"A gem cannot be polished without friction, nor a man without trials."_ — Seneca
+Face difficult things directly. Over time, fear becomes less abstract because you’ve already survived it before.
+
+> “A gem cannot be polished without friction, nor a man without trials.” — Seneca
 
 ### Justice
 
