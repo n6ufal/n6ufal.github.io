@@ -9,20 +9,25 @@ cover:
   relative: false
 ---
 
-So this site started because I'm stubborn. Plain stubborn.
+This site exists because I’m stubborn.
 
-I got tired of writing on other people's platforms and hoping the algorithm gods would bless me. Substack, Medium, WordPress — yeah, they're easy. But easy in that way where you kind of know you're giving something up. Like, sure, frozen pizza is easy too. But you didn't really cook it, you know? Someone else made all the decisions for you. You just pushed the buttons.
+I got tired of writing on platforms that never really felt like mine. They make publishing easy, which is great, but also a little limiting. Everything already comes predesigned: the layout, the features, the way your work is presented. You can customize around the edges, but at the end of the day, you’re still building inside someone else’s system.
 
-So I made my own thing. Not because I had some big philosophical reason. Mostly just because I'm stubborn. I wanted a corner of the internet that actually felt like mine.
+So I built my own site. Not for some deep philosophical reason. I just wanted a small corner of the internet that actually belonged to me.
 
-What finally got me to do it was realizing I still had access to my student email address. Out of curiosity, I looked up the GitHub Student Developer Pack and was genuinely surprised — they were giving away a bunch of free tools for people just starting out. That was all the push I needed. I signed up, got approved, and then that part of my brain that learns by tinkering started buzzing. I remembered a developer I'd seen online who recommended this setup using something called Hugo and GitHub Pages, so I opened the instructions and just started playing around.
+What pushed me to finally do it was realizing I still had access to my student email. I checked out the GitHub Student Developer Pack out of curiosity and found a bunch of free tools for students. That was enough motivation. I signed up, got approved, and started messing around with a setup I’d seen another developer recommend using Hugo and GitHub Pages.
 
-I had absolutely no clue what I was doing. I'd never even heard the word Hugo before. GitHub Pages sounded like something for serious tech people, not for someone sitting at their kitchen table with a laptop and way too much free time. And buying my own domain name? That felt like something only companies did.
+I had no idea what I was doing. I’d never heard of Hugo before. GitHub Pages sounded like something only real developers used. Buying a domain name felt weirdly serious too.
 
-But somehow, I figured it out anyway. I set up the basic structure, removed all the fluff, picked a color palette with a soft green accent (I really like muted green), chose a font I actually liked, and connected my domain name to where my files live. I broke things constantly and then fixed them really slowly. I read instructions over and over until they stopped looking like gibberish.
+But I figured it out anyway.
 
-Then one evening, it loaded. My words, my page, my very own web address. No random banners at the top, no footer that someone else decided I needed. There's even a little widget on the homepage that shows what I'm listening to on Last.fm, updating in real time, and I genuinely love that thing.
+I built the basic structure, removed the clutter, picked a muted green accent color because I like muted green, chose a font I liked, and connected my domain to the site. I broke things constantly and fixed them slowly. Half the process was rereading instructions until they finally made sense.
 
-That feeling of "I made this" is surprisingly hard to find anywhere else. And it kind of hooks you. Once something you built actually works, all the frustration of breaking things and hunting down tiny mistakes just fades away. You just want to build more stuff. Break things again just so you can fix them. The finished site was never really the point, when I think about it.
+Then one evening, it worked.
 
-Anyway. Glad you're here. More soon.
+My words, on my page, under my own web address. No ads, no random branding, no extra junk somebody else decided should be there. There’s even a little Last.fm widget on the homepage showing what I’m listening to in real time, and I still think that’s cool.
+
+That “I made this” feeling is hard to replace. Once you build something that actually works, the frustration starts feeling worth it. You just want to keep making things, even if it means breaking them first.
+
+Anyway, glad you’re here. More soon.
+
