@@ -5,11 +5,14 @@ draft: false
 tags: ["personal"]
 cover:
 ---
+
 People often confuse understanding with agreement.
 
-Someone explains why a harmful ideology appeals to people. They break down the psychology, the grievances, the internal logic. Then someone else responds: *so you’re defending it?*
+Someone explains why a harmful ideology appeals to people. They break down the psychology, the grievances, the internal logic. Then someone else responds: _so you’re defending it?_
 
-No. Explaining something is not the same as supporting it.
+No.
+
+Explaining something is not the same as supporting it.
 
 But many people treat deep understanding as suspicious. If you can describe the other side clearly, they assume you sympathize with it. So instead of trying to fully understand things, people simplify them into cartoons. That feels safer socially, but it also makes real analysis impossible.
 
