@@ -352,7 +352,7 @@ button:focus-visible {
    which made links pop two brightness levels above surrounding li/blockquote text.
    Using --accent-info keeps it consistent with the existing underline decoration color. */
 .post-content a {
-  color: var(--accent-info);
+  color: inherit;
 }
 
 .post-content a:hover {
