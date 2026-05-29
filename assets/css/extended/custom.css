@@ -237,8 +237,10 @@ tr:last-child td {
    8. BLOCKQUOTES
 ══════════════════════════════════════════ */
 
-/* !important required to override PaperMod's high-specificity defaults */
-blockquote {
+/* .post-content blockquote matches PaperMod's own specificity level;
+   bare `blockquote` was losing to PaperMod's scoped rule, so color never applied.
+   blockquote p is covered explicitly because .post-content p can re-override it. */
+.post-content blockquote {
   border-left: 4px solid var(--accent) !important;
   background: var(--entry);
   padding: 1rem 1.5rem;
@@ -248,7 +250,11 @@ blockquote {
   color: var(--nord4);
 }
 
-blockquote p:last-child {
+.post-content blockquote p {
+  color: var(--nord4);
+}
+
+.post-content blockquote p:last-child {
   margin-bottom: 0;
 }
 
@@ -340,6 +346,18 @@ button:focus-visible {
 /* ══════════════════════════════════════════
    14. LINKS
 ══════════════════════════════════════════ */
+
+/* Resting link color scoped to post content.
+   No color was set here before; PaperMod defaulted to --primary (#ECEFF4),
+   which made links pop two brightness levels above surrounding li/blockquote text.
+   Using --accent-info keeps it consistent with the existing underline decoration color. */
+.post-content a {
+  color: var(--accent-info);
+}
+
+.post-content a:hover {
+  color: var(--accent);
+}
 
 a {
   text-decoration-thickness: 2px;
@@ -447,7 +465,9 @@ a:hover {
 
 .post-content li {
   margin: 0.5rem 0;
-  color: var(--nord4);
+  /* color removed — inherits var(--content) from .post-content via PaperMod,
+     matching paragraph text. Hardcoding var(--nord4) here was making list
+     items dimmer than surrounding paragraphs. */
   line-height: 1.75;
 }
 
