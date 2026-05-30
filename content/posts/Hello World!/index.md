@@ -9,25 +9,32 @@ cover:
   relative: false
 ---
 
-This site exists because I’m stubborn.
+This site exists because I'm stubborn.
 
-I got tired of writing on platforms that never really felt like mine. They make publishing easy, which is great, but also a little limiting. Everything already comes predesigned: the layout, the features, the way your work is presented. You can customize around the edges, but at the end of the day, you’re still building inside someone else’s system.
+For years, I wrote on platforms that were convenient, polished, and easy to use. They also never quite felt like mine.
 
-So I built my own site. Not for some deep philosophical reason. I just wanted a small corner of the internet that actually belonged to me.
+That's not really a criticism. Those platforms solve real problems. They handle the design, the publishing, the infrastructure, all the technical stuff most people don't want to think about. But that's also the tradeoff. The layout is already decided. The features are already chosen. You can decorate the room, but you don't own the building.
 
-What pushed me to finally do it was realizing I still had access to my student email. I checked out the GitHub Student Developer Pack out of curiosity and found a bunch of free tools for students. That was enough motivation. I signed up, got approved, and started messing around with a setup I’d seen another developer recommend using Hugo and GitHub Pages.
+Eventually, that started bothering me.
 
-I had no idea what I was doing. I’d never heard of Hugo before. GitHub Pages sounded like something only real developers used. Buying a domain name felt weirdly serious too.
+I wanted a place where every choice was mine, even the bad ones. A small corner of the internet that actually belonged to me, not something I was borrowing.
 
-But I figured it out anyway.
+The push came from a weirdly mundane place: I realized my student email still worked.
 
-I built the basic structure, removed the clutter, picked a muted green accent color because I like muted green, chose a font I liked, and connected my domain to the site. I broke things constantly and fixed them slowly. Half the process was rereading instructions until they finally made sense.
+Out of curiosity, I poked around the GitHub Student Developer Pack and found a pile of free tools I didn't fully understand but immediately wanted to mess with. Somewhere in there, I found a recommendation for Hugo and GitHub Pages. I hadn't used either. At that point, "deploying a website" still sounded like something real developers did.
 
-Then one evening, it worked.
+Naturally, I decided to try it anyway.
 
-My words, on my page, under my own web address. No ads, no random branding, no extra junk somebody else decided should be there. There’s even a little Last.fm widget on the homepage showing what I’m listening to in real time, and I still think that’s cool.
+The first few days felt like wandering through a city without a map. Every guide assumed I already knew three things I didn't. Every fix introduced two new problems. I broke the site repeatedly, fixed it slowly, then broke it again in a completely different way.
 
-That “I made this” feeling is hard to replace. Once you build something that actually works, the frustration starts feeling worth it. You just want to keep making things, even if it means breaking them first.
+I didn't build the structure from scratch. Hugo handled most of that, and I started with PaperMod as a base. My focus was on making it feel like mine. I stripped away the clutter, wrote custom CSS (which swallowed the vast majority of my time and debugging), put together a color palette lifted from Nord, and spent way too long on fonts. Then I grabbed a domain, which felt more intimidating than any of the technical steps for reasons I still can't fully explain. Connected everything, held my breath a little.
 
-Anyway, glad you’re here. More soon.
+One evening, it worked. Yay!
 
+No ads. No platform branding. No algorithm deciding what surfaces. Just a website sitting on the internet because I put it there.
+
+There's a Last.fm widget on the homepage showing what I'm currently listening to. It serves no practical purpose whatsoever, which is exactly why I like it.
+
+What surprised me wasn't the website itself. It was how good it felt to build something and figure things out along the way.
+
+Anyway, thanks for stopping by. More soon.
