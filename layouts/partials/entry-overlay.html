@@ -1,0 +1,38 @@
+{{- if .IsHome }}
+<div class="entry-overlay" id="entryOverlay">
+    <div class="entry-overlay__content">
+        <span class="entry-overlay__text">Click Anywhere</span>
+    </div>
+</div>
+
+<script>
+    (function () {
+        const overlay = document.getElementById("entryOverlay");
+        if (!overlay) return;
+
+        const video = document.getElementById("homeVideoPlayer");
+
+        const dismissOverlay = function () {
+            // Remove click listener to prevent multiple triggers
+            overlay.removeEventListener("click", dismissOverlay);
+
+            // Fade out overlay
+            overlay.classList.add("entry-overlay--dismissed");
+
+            // Wait for animation to complete (0.6s from CSS)
+            setTimeout(function () {
+                overlay.remove();
+
+                // Unmute video after overlay is gone
+                if (video) {
+                    video.muted = false;
+                    video.play().catch(() => {});
+                }
+            }, 600);
+        };
+
+        // Click anywhere to dismiss
+        overlay.addEventListener("click", dismissOverlay);
+    })();
+</script>
+{{- end }}

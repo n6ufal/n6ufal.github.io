@@ -4,7 +4,6 @@
         class="home-video-bg__video"
         id="homeVideoPlayer"
         autoplay
-        muted
         loop
         playsinline
         preload="metadata"
@@ -44,14 +43,6 @@
         } else {
             playWithAudio();
         }
-
-        // Allow unmuting on user click
-        document.addEventListener("click", function handler() {
-            if (video && video.muted) {
-                video.muted = false;
-                document.removeEventListener("click", handler);
-            }
-        });
     })();
 </script>
 {{- end }}
