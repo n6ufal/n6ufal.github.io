@@ -58,6 +58,18 @@
     let currentView = localStorage.getItem("lastfm-view") || "recent";
     let autoRefreshInterval;
 
+    // Helper function to get best quality image
+    function getBestImage(imageArray) {
+        if (!imageArray || !Array.isArray(imageArray)) return "";
+        // Try to get largest first: extralarge, large, medium, small
+        const sizes = ["extralarge", "large", "medium", "small"];
+        for (const size of sizes) {
+            const img = imageArray.find((img) => img.size === size);
+            if (img && img["#text"]) return img["#text"];
+        }
+        return "";
+    }
+
     // API URLs
     const endpoints = {
         recent: () =>
@@ -102,9 +114,7 @@
                 ? "lastfm-icon playing"
                 : "lastfm-icon paused";
             const icon = isNowPlaying ? "▶" : "♪";
-            const art =
-                track.image?.find((img) => img.size === "small")?.["#text"] ||
-                "";
+            const art = getBestImage(track.image);
 
             html += `
   <li class="lastfm-item">
@@ -130,9 +140,7 @@
             const artist = album.artist.name;
             const albumUrl = album.url;
             const playcount = album.playcount;
-            const art =
-                album.image?.find((img) => img.size === "small")?.["#text"] ||
-                "";
+            const art = getBestImage(album.image);
 
             html += `
   <li class="lastfm-item">
@@ -156,9 +164,7 @@
             const name = artist.name;
             const artistUrl = artist.url;
             const playcount = artist.playcount;
-            const art =
-                artist.image?.find((img) => img.size === "small")?.["#text"] ||
-                "";
+            const art = getBestImage(artist.image);
 
             html += `
   <li class="lastfm-item">
