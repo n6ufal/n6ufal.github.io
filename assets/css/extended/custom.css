@@ -119,12 +119,21 @@
 }
 
 /* Hide logo and show mute button on homepage only */
-.main .logo {
-    display: none;
+.header .logo > a {
+    display: none !important;
 }
 
-.main .video-mute-btn {
+.header .video-mute-btn {
     display: flex !important;
+}
+
+/* On non-homepage, show logo and hide mute button */
+body:not(.list) .header .logo > a {
+    display: inline-block !important;
+}
+
+body:not(.list) .header .video-mute-btn {
+    display: none !important;
 }
 
 /* ══════════════════════════════════════════
