@@ -10,11 +10,6 @@
             data-view="topAlbums"
             title="Top Albums"
         ></span>
-        <span
-            class="lastfm-dot"
-            data-view="topArtists"
-            title="Top Artists"
-        ></span>
     </div>
     <div id="lastfm-tracks" class="lastfm-content">
         <p class="lastfm-loading">Loading...</p>
@@ -76,8 +71,6 @@
             `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${user}&api_key=${apiKey}&format=json&limit=5`,
         topAlbums: () =>
             `https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=${user}&api_key=${apiKey}&format=json&limit=5&period=overall`,
-        topArtists: () =>
-            `https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=${user}&api_key=${apiKey}&format=json&limit=5&period=overall`,
     };
 
     // Fetch data based on current view
@@ -90,8 +83,6 @@
                     renderRecentTracks(data);
                 } else if (currentView === "topAlbums") {
                     renderTopAlbums(data);
-                } else if (currentView === "topArtists") {
-                    renderTopArtists(data);
                 }
             })
             .catch((err) => {
@@ -147,30 +138,6 @@
     ${art ? `<img class="lastfm-art" src="${art}" alt="${name}" loading="lazy" />` : `<span class="lastfm-art lastfm-art--placeholder"></span>`}
     <a href="${albumUrl}" target="_blank" rel="noopener" class="lastfm-track">
       ${name} <span class="lastfm-artist">— ${artist}</span><span class="lastfm-playcount"> (${playcount})</span>
-    </a>
-  </li>`;
-        });
-
-        html += `</ul>`;
-        container.innerHTML = html;
-    }
-
-    // Render top artists
-    function renderTopArtists(data) {
-        const artists = data.topartists.artist.slice(0, 5);
-        let html = `<p class="lastfm-header">Top Artists (Overall)</p><ul class="lastfm-list">`;
-
-        artists.forEach((artist) => {
-            const name = artist.name;
-            const artistUrl = artist.url;
-            const playcount = artist.playcount;
-            const art = getBestImage(artist.image);
-
-            html += `
-  <li class="lastfm-item">
-    ${art ? `<img class="lastfm-art" src="${art}" alt="${name}" loading="lazy" />` : `<span class="lastfm-art lastfm-art--placeholder"></span>`}
-    <a href="${artistUrl}" target="_blank" rel="noopener" class="lastfm-track">
-      ${name}<span class="lastfm-playcount"> (${playcount})</span>
     </a>
   </li>`;
         });
