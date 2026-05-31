@@ -40,24 +40,16 @@ Imagine two people discussing a public figure who committed a serious crime. One
 
 Another person asks questions. What experiences shaped them? What warning signs were missed? What patterns existed before the crime happened? The second person is not necessarily defending the criminal. They're trying to understand reality in greater detail. But many people mistake that attempt at explanation for moral approval.
 
-The feeling of certainty gets confused with actual understanding.
+The feeling of certainty often gets confused with actual understanding.
 
-Outrage alone is not comprehension. A person can passionately condemn something and still understand very little about it because they are reacting to it rather than examining it.
+Outrage can be justified, but outrage alone is not comprehension. A person can passionately condemn something and still understand very little about it because they are reacting to it rather than examining it.
 
-Personally, I've noticed that some of the most interesting conversations happen when people are willing to stay in that uncomfortable space between immediate judgment and blind sympathy. Good judgment usually comes after understanding, not before it.
+Good judgment usually comes after understanding, not before it. If you immediately label someone as evil, irrational, or stupid, you may stop asking questions. Once that happens, your explanation becomes less about reality and more about reinforcing what you already believe.
 
-If you immediately label someone as evil, irrational, or stupid, you may stop asking questions. Once that happens, your explanation becomes less about reality and more about reinforcing what you already believe.
+The opposite mistake exists too. Some people assume that if you understand something terrible, you must sympathize with it. But understanding and judgment are separate things.
 
-The opposite mistake exists too.
+A psychologist can understand a serial killer without approving of them. A historian can understand why a dictatorship gained support without endorsing it. Understanding answers "why." Judgment answers "what do we think about it?"
 
-Some people think that if you understand something terrible, you must sympathize with it. But understanding and judgment are different things.
+You can fully understand something and still reject it completely. Likewise, you can condemn something while admitting you don't fully understand it yet.
 
-A psychologist can understand a serial killer without approving of them. A historian can understand why a dictatorship gained support without endorsing it. A detective can understand a criminal's motives and still want them convicted.
-
-Understanding answers "why." Judgment answers "what do we think about it?"
-
-You can fully understand something and still reject it completely. You can understand why someone became racist and still condemn racism. You can understand why someone hurt you and still decide never to trust them again.
-
-Likewise, you can condemn something while admitting you don't fully understand it yet.
-
-Real intellectual honesty means being willing to understand things you disagree with before judging them. Understanding is not endorsement. It's simply seeing clearly enough to know what you're judging.
+Real intellectual honesty means being willing to understand things before judging them. Understanding is not endorsement. It's simply seeing clearly enough to know what you're judging.
