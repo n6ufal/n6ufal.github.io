@@ -3,7 +3,6 @@
     <video
         class="home-video-bg__video"
         id="homeVideoPlayer"
-        autoplay
         loop
         playsinline
         preload="metadata"
@@ -19,7 +18,12 @@
         const video = document.getElementById("homeVideoPlayer");
         if (!video) return;
 
-        const playWithAudio = function () {
+        // Start with video paused and muted - don't autoplay
+        video.muted = true;
+        video.pause();
+
+        // Wait for overlay to be dismissed before playing
+        window.playVideoWithSound = function () {
             video.muted = false;
             const playPromise = video.play();
 
@@ -36,13 +40,6 @@
                 });
             }
         };
-
-        // Wait for page load to ensure video element is ready
-        if (document.readyState === "loading") {
-            document.addEventListener("DOMContentLoaded", playWithAudio);
-        } else {
-            playWithAudio();
-        }
     })();
 </script>
 {{- end }}

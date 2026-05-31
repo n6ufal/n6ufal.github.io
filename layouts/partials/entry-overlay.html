@@ -10,8 +10,6 @@
         const overlay = document.getElementById("entryOverlay");
         if (!overlay) return;
 
-        const video = document.getElementById("homeVideoPlayer");
-
         const dismissOverlay = function () {
             // Remove click listener to prevent multiple triggers
             overlay.removeEventListener("click", dismissOverlay);
@@ -23,10 +21,9 @@
             setTimeout(function () {
                 overlay.remove();
 
-                // Unmute video after overlay is gone
-                if (video) {
-                    video.muted = false;
-                    video.play().catch(() => {});
+                // Play video with sound after overlay is gone
+                if (window.playVideoWithSound) {
+                    window.playVideoWithSound();
                 }
             }, 600);
         };
