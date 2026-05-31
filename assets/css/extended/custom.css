@@ -577,6 +577,42 @@ hr {
     text-align: center;
 }
 
+.lastfm-controls {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.lastfm-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1.5px solid currentColor;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0.4;
+}
+
+.lastfm-dot:hover {
+    opacity: 0.6;
+}
+
+.lastfm-dot.active {
+    opacity: 1;
+    background-color: currentColor;
+}
+
+.lastfm-content {
+    /* Container for the list content */
+}
+
+.lastfm-playcount {
+    color: var(--secondary);
+    font-size: 0.9em;
+}
+
 .lastfm-loading,
 .lastfm-error {
     font-family: var(--font-ui);
