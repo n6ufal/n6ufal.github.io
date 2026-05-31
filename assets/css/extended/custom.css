@@ -234,20 +234,29 @@
 }
 
 /* Hide logo and show mute button on homepage only */
-.header .logo > a {
-    display: none !important;
-}
-
-.header .video-mute-btn {
-    display: flex !important;
-}
-
-/* On non-homepage, show logo and hide mute button */
 body:not(.list) .header .logo > a {
     display: inline-block !important;
 }
 
 body:not(.list) .header .video-mute-btn {
+    display: none !important;
+}
+
+/* On homepage (IsHome with .list body class), hide logo and show mute button */
+body.list.home .header .logo > a {
+    display: none !important;
+}
+
+body.list.home .header .video-mute-btn {
+    display: flex !important;
+}
+
+/* On posts list page (non-home list), show logo and hide mute button */
+body.list:not(.home) .header .logo > a {
+    display: inline-block !important;
+}
+
+body.list:not(.home) .header .video-mute-btn {
     display: none !important;
 }
 
@@ -879,7 +888,7 @@ hr {
 }
 
 .lastfm-content {
-    /* Container for the list content */
+    display: block;
 }
 
 .lastfm-loading,
@@ -990,3 +999,66 @@ hr {
     border-top: 1px solid var(--border);
     box-shadow: 0 2px 4px rgba(136, 192, 208, 0.08);
 }
+
+/* ══════════════════════════════════════════
+   ARCHIVE PAGE NAVIGATION
+══════════════════════════════════════════ */
+
+
+.archive-toc summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--accent-info);
+    padding: 0.25rem 0;
+    transition: color 0.2s ease;
+}
+
+.archive-toc summary:hover {
+    color: var(--accent);
+}
+
+.archive-toc-list {
+    margin-top: 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.archive-toc-list > li {
+    margin-bottom: 0.5rem;
+}
+
+.archive-toc-year {
+    display: inline-block;
+    font-weight: 600;
+    color: var(--accent-info);
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.archive-toc-year:hover {
+    background-color: rgba(163, 190, 140, 0.1);
+    color: var(--accent);
+}
+
+.archive-toc-months {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.archive-toc-months li {
+    margin-bottom: 0.25rem;
+}
+
+.archive-toc-month {
+    color: var(--accent-info);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.archive-toc-month:hover {
+    color: var(--accent);
+}
+

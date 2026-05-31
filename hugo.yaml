@@ -29,10 +29,9 @@ params:
     images: ["/images/avatar.jpg"]
     assets:
         favicon: "/favicon.ico"
-        favicon16x16: "/favicon-16x16.png"
-        favicon32x32: "/favicon-32x32.png"
+        favicon96x96: "/favicon-96x96.png"
         apple_touch_icon: "/apple-touch-icon.png"
-        safari_pinned_tab: "/safari-pinned-tab.svg"
+        safari_pinned_tab: "/favicon.svg"
         theme_color: "#2E3440"
         msapplication_TileColor: "#2E3440"
     canonicalURL: "https://alifnaufal.me"
