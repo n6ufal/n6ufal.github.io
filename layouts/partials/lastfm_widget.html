@@ -108,13 +108,13 @@
             const art = getBestImage(track.image);
 
             html += `
-  <li class="lastfm-item">
-    ${art ? `<img class="lastfm-art" src="${art}" alt="${name}" loading="lazy" />` : `<span class="lastfm-art lastfm-art--placeholder"></span>`}
-    <span class="${iconClass}">${icon}</span>
-    <a href="${trackUrl}" target="_blank" rel="noopener" class="lastfm-track">
-      ${name} <span class="lastfm-artist">— ${artist}</span>
-    </a>
-  </li>`;
+    <li class="lastfm-item">
+      ${art ? `<img class="lastfm-art" src="${art}" alt="${name}" loading="lazy" />` : `<span class="lastfm-art lastfm-art--placeholder"></span>`}
+      <span class="${iconClass}">${icon}</span>
+      <a href="${trackUrl}" target="_blank" rel="noopener" class="lastfm-track">
+        ${name} <span class="lastfm-artist">— ${artist}</span>
+      </a>
+    </li>`;
         });
 
         html += `</ul>`;
@@ -130,16 +130,15 @@
             const name = album.name;
             const artist = album.artist.name;
             const albumUrl = album.url;
-            const playcount = album.playcount;
             const art = getBestImage(album.image);
 
             html += `
-  <li class="lastfm-item">
-    ${art ? `<img class="lastfm-art" src="${art}" alt="${name}" loading="lazy" />` : `<span class="lastfm-art lastfm-art--placeholder"></span>`}
-    <a href="${albumUrl}" target="_blank" rel="noopener" class="lastfm-track">
-      ${name} <span class="lastfm-artist">— ${artist}</span><span class="lastfm-playcount"> (${playcount})</span>
-    </a>
-  </li>`;
+    <li class="lastfm-item">
+      ${art ? `<img class="lastfm-art" src="${art}" alt="${name}" loading="lazy" />` : `<span class="lastfm-art lastfm-art--placeholder"></span>`}
+      <a href="${albumUrl}" target="_blank" rel="noopener" class="lastfm-track">
+        ${name} <span class="lastfm-artist">— ${artist}</span>
+      </a>
+    </li>`;
         });
 
         html += `</ul>`;
