@@ -5,86 +5,85 @@ defaultContentLanguage: "en"
 timeZone: "Asia/Jakarta"
 
 params:
-  env: production
-  hideFooter: true
-  # Last.fm
-  lastfmApiKey: "0e7245c9a19b6563e2a301c91f053c54"
-  lastfmUser: "alifnaufal"
-  # Theme
-  defaultTheme: dark
-  disableThemeToggle: true
-  # Meta
-  Description: "Alif Naufal's personal blog or whatever."
-  author: "Alif Naufal"
-  # Features
-  ShowReadingTime: true
-  ShowShareButtons: false
-  ShowPostNavLinks: true
-  ShowCodeCopyButtons: true
-  ShowBreadCrumbs: true
-  ShowToc: true
-  TocOpen: false
-  ShowBackToTop: true
-  # Images
-  images: ["/images/avatar.jpg"]
-  assets:
-    favicon: "/favicon.ico"
-    favicon16x16: "/favicon-16x16.png"
-    favicon32x32: "/favicon-32x32.png"
-    apple_touch_icon: "/apple-touch-icon.png"
-    safari_pinned_tab: "/safari-pinned-tab.svg"
-    theme_color: "#2E3440"
-    msapplication_TileColor: "#2E3440"
-  canonicalURL: "https://alifnaufal.me"
-  # Profile Mode
-  profileMode:
-    enabled: true
-    title: "Alif Naufal"
-    subtitle: "One day we'll die, and our ashes will fly from the aeroplane over the sea."
-    imageUrl: "/images/avatar.jpg"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: "Alif Naufal with precious partner"
-  socialIcons:
-      - name: email
-        url: "mailto:alifnaufal@duck.com"
-      - name: github
-        url: "https://github.com/n6ufal"
-      - name: rss
-        url: "/index.xml"
-        title: "RSS"
-      - name: lastfm
-        url: "https://www.last.fm/user/alifnaufal"
-      - name: spotify
-        url: "https://open.spotify.com/user/fjvvc8gihy2bj471qal9zrg6v"
+    env: production
+    hideFooter: true
+    # Last.fm
+    lastfmApiKey: "0e7245c9a19b6563e2a301c91f053c54"
+    lastfmUser: "alifnaufal"
+    # Theme
+    defaultTheme: dark
+    disableThemeToggle: true
+    # Meta
+    Description: "Alif Naufal's personal blog or whatever."
+    author: "Alif Naufal"
+    # Features
+    ShowReadingTime: true
+    ShowShareButtons: false
+    ShowPostNavLinks: true
+    ShowCodeCopyButtons: true
+    ShowBreadCrumbs: true
+    ShowToc: true
+    TocOpen: false
+    ShowBackToTop: true
+    # Images
+    images: ["/images/avatar.jpg"]
+    assets:
+        favicon: "/favicon.ico"
+        favicon16x16: "/favicon-16x16.png"
+        favicon32x32: "/favicon-32x32.png"
+        apple_touch_icon: "/apple-touch-icon.png"
+        safari_pinned_tab: "/safari-pinned-tab.svg"
+        theme_color: "#2E3440"
+        msapplication_TileColor: "#2E3440"
+    canonicalURL: "https://alifnaufal.me"
+    # Profile Mode
+    profileMode:
+        enabled: true
+        title: "Alif Naufal"
+        imageUrl: "/images/avatar.jpg"
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: "Alif Naufal with precious partner"
+    socialIcons:
+        - name: email
+          url: "mailto:alifnaufal@duck.com"
+        - name: github
+          url: "https://github.com/n6ufal"
+        - name: rss
+          url: "/index.xml"
+          title: "RSS"
+        - name: lastfm
+          url: "https://www.last.fm/user/alifnaufal"
+        - name: spotify
+          url: "https://open.spotify.com/user/fjvvc8gihy2bj471qal9zrg6v"
 
 menu:
-  main:
-    - name: Posts
-      url: /posts/
-      weight: 1
-    - name: Archive
-      url: /archives/
-      weight: 2
-    - name: About
-      url: /about/
-      weight: 3
+    main:
+        - name: Posts
+          url: /posts/
+          weight: 1
+        - name: Archive
+          url: /archives/
+          weight: 2
+        - name: About
+          url: /about/
+          weight: 3
 
 pagination:
-  pagerSize: 5
+    pagerSize: 5
 
 markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  highlight:
-    style: nord
-    lineNos: true
-    lineNumbersInTable: false
-    noClasses: false
-    guessSyntax: true
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        style: nord
+        lineNos: true
+        lineNumbersInTable: false
+        noClasses: false
+        guessSyntax: true
 
 outputs:
-  home:
-    - HTML
-    - RSS
+    home:
+        - HTML
+        - RSS
