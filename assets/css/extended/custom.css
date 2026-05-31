@@ -6,12 +6,11 @@
 ══════════════════════════════════════════ */
 
 :root {
-  --accent: #A3BE8C;
-  /* Nord green — reserved for interactive states (hover, focus, active) */
-  --accent-info: #88C0D0;
-  /* Nord frost — resting link underlines and informational decoration */
+    --accent: #a3be8c;
+    /* Nord green — reserved for interactive states (hover, focus, active) */
+    --accent-info: #88c0d0;
+    /* Nord frost — resting link underlines and informational decoration */
 }
-
 
 /* ══════════════════════════════════════════
    COVER IMAGES
@@ -19,42 +18,40 @@
 
 /* List pages (homepage, posts list) */
 .entry-cover img {
-  max-height: 500px;
-  width: auto;
-  object-fit: cover;
+    max-height: 500px;
+    width: auto;
+    object-fit: cover;
 }
 
 /* Single post pages */
 .post-single .entry-cover img {
-  max-height: 600px;
-  width: auto;
-  object-fit: cover;
-  display: block;
+    max-height: 600px;
+    width: auto;
+    object-fit: cover;
+    display: block;
 }
 
 .post-single .md-content img,
 .post-single .md-content figure img {
-  display: block;
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  margin: 1rem auto;
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 1rem auto;
 }
 
 .post-single .md-content figure {
-  text-align: center;
+    text-align: center;
 }
-
 
 /* ══════════════════════════════════════════
    1. UTILITY CLASSES
 ══════════════════════════════════════════ */
 
 .center {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
-
 
 /* ══════════════════════════════════════════
    2. SMOOTH TRANSITIONS
@@ -62,176 +59,179 @@
 
 .post-entry,
 .pagination a {
-  transition: background-color 0.2s ease, transform 0.2s ease;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 /* Pagination container */
 .pagination {
-  margin: 2rem 0;
-  text-align: center;
+    margin: 2rem 0;
+    text-align: center;
 }
 
 /* Each page link */
 .pagination a,
 .pagination .page-link {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin: 0 0.25rem;
-  border-radius: 8px;
-  background: var(--entry);
-  color: var(--primary);
-  border: 1px solid var(--border);
-  text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 8px;
+    background: var(--entry);
+    color: var(--primary);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
 }
 
 /* Hover */
 .pagination a:hover,
 .pagination .page-link:hover {
-  background: var(--accent);
-  color: var(--nord0);
-  border-color: var(--accent);
+    background: var(--accent);
+    color: var(--nord0);
+    border-color: var(--accent);
 }
 
 /* Active / current page */
 .pagination .page-link.active {
-  background: var(--accent);
-  color: var(--nord0);
-  border-color: var(--accent);
-  cursor: default;
+    background: var(--accent);
+    color: var(--nord0);
+    border-color: var(--accent);
+    cursor: default;
 }
 
 /* Disabled */
 .pagination .page-link.disabled {
-  opacity: 0.5;
-  pointer-events: none;
-  background: var(--entry);
-  color: var(--secondary);
+    opacity: 0.5;
+    pointer-events: none;
+    background: var(--entry);
+    color: var(--secondary);
 }
 
 .paginav a:hover {
-  color: var(--accent) !important;
+    color: var(--accent) !important;
 }
-
 
 /* ══════════════════════════════════════════
    3. POST CARDS (Homepage)
 ══════════════════════════════════════════ */
 
 .post-entry {
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .post-entry:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(136, 192, 208, 0.08);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(136, 192, 208, 0.08);
 }
-
 
 /* ══════════════════════════════════════════
    4. PROFILE MODE AVATAR
 ══════════════════════════════════════════ */
 
 .profile .avatar img {
-  border-radius: 50%;
-  border: 3px solid var(--accent);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .profile .avatar img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 0 4px rgba(163, 190, 140, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 0 0 4px rgba(163, 190, 140, 0.3);
 }
 
 /* Profile subtitle */
 .profile .subtitle {
-  font-style: italic;
-  color: var(--nord4);
+    font-style: italic;
+    color: var(--nord4);
 }
-
 
 /* ══════════════════════════════════════════
    5. TABLE OF CONTENTS (TOC)
 ══════════════════════════════════════════ */
 
 .toc {
-  border-left: 3px solid var(--accent);
-  border-radius: 0 8px 8px 0;
-  background: var(--nord1);
-  padding: 0.5rem 1.25rem;
-  margin: 1rem 0;
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    background: var(--nord1);
+    padding: 0.5rem 1.25rem;
+    margin: 1rem 0;
 }
 
 .toc details summary {
-  font-weight: 600;
-  cursor: pointer;
-  color: var(--nord6);
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--nord6);
 }
 
 .toc details summary:hover {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 .toc ul {
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
 }
 
 .toc a {
-  color: var(--nord4);
+    color: var(--nord4);
 }
 
 .toc a:hover {
-  color: var(--accent);
+    color: var(--accent);
 }
-
 
 /* ══════════════════════════════════════════
    6. CODE BLOCKS
 ══════════════════════════════════════════ */
 
 .post-content .highlight {
-  position: relative;
-  overflow-x: auto;
-  width: 100%;
-  box-sizing: border-box;
+    position: relative;
+    overflow-x: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
-
 
 /* ══════════════════════════════════════════
    7. TABLES (Responsive)
 ══════════════════════════════════════════ */
 
 table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: 12px;
-  overflow: hidden;
-  margin: 1.5rem 0;
-  background: var(--nord1);
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    background: var(--nord1);
 }
 
 th {
-  background: var(--accent);
-  color: var(--nord0);
-  padding: 12px 16px;
-  text-align: left;
-  font-weight: 600;
+    background: var(--accent);
+    color: var(--nord0);
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
 }
 
 td {
-  padding: 10px 16px;
-  border-bottom: 1px solid var(--border);
-  color: var(--nord4);
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    color: var(--nord4);
 }
 
 tr:last-child td {
-  border-bottom: none;
+    border-bottom: none;
 }
-
 
 /* ══════════════════════════════════════════
    8. BLOCKQUOTES
@@ -241,85 +241,85 @@ tr:last-child td {
    bare `blockquote` was losing to PaperMod's scoped rule, so color never applied.
    blockquote p is covered explicitly because .post-content p can re-override it. */
 .post-content blockquote {
-  border-left: 4px solid var(--accent) !important;
-  background: var(--entry);
-  padding: 1rem 1.5rem;
-  border-radius: 0 8px 8px 0;
-  margin: 1.5rem 0;
-  font-style: italic;
-  color: var(--nord4);
+    border-left: 4px solid var(--accent) !important;
+    background: var(--entry);
+    padding: 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--nord4);
 }
 
 .post-content blockquote p {
-  color: var(--nord4);
+    color: var(--nord4);
 }
 
 .post-content blockquote p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
-
 
 /* ══════════════════════════════════════════
    9. SOCIAL ICONS (Header)
 ══════════════════════════════════════════ */
 
 .social-icons a {
-  transition: transform 0.2s ease;
-  display: inline-block;
+    transition: transform 0.2s ease;
+    display: inline-block;
 }
 
 .social-icons a:hover {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .social-icons a:hover svg {
-  fill: var(--accent);
+    fill: var(--accent);
 }
-
 
 /* ══════════════════════════════════════════
    10. BREADCRUMBS
 ══════════════════════════════════════════ */
 
 .breadcrumbs {
-  font-size: 0.875rem;
-  color: var(--secondary);
+    font-size: 0.875rem;
+    color: var(--secondary);
 }
 
 .breadcrumbs a {
-  color: var(--secondary);
+    color: var(--secondary);
 }
 
 .breadcrumbs a:hover {
-  color: var(--accent);
+    color: var(--accent);
 }
-
 
 /* ══════════════════════════════════════════
    11. TAXONOMY (TAGS & CATEGORIES) PAGES
 ══════════════════════════════════════════ */
 
 .post-entry.tag-entry {
-  border-left: 3px solid var(--accent);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 3px solid var(--accent);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .post-tags a {
-  background: rgba(163, 190, 140, 0.12);
-  /* fallback for older browsers */
-  background: color-mix(in srgb, var(--accent) 12%, transparent);
-  border-radius: 20px;
-  padding: 0.2rem 0.6rem;
-  transition: background 0.2s ease, color 0.2s ease;
-  text-decoration: none;
+    background: rgba(163, 190, 140, 0.12);
+    /* fallback for older browsers */
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-radius: 20px;
+    padding: 0.2rem 0.6rem;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+    text-decoration: none;
 }
 
 .post-tags a:hover {
-  background: var(--accent);
-  color: var(--nord0);
-  text-decoration: none;
+    background: var(--accent);
+    color: var(--nord0);
+    text-decoration: none;
 }
-
 
 /* ══════════════════════════════════════════
    12. ACCESSIBILITY — FOCUS OUTLINES
@@ -327,21 +327,19 @@ tr:last-child td {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-  border-radius: 4px;
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
 }
-
 
 /* ══════════════════════════════════════════
    13. TEXT SELECTION
 ══════════════════════════════════════════ */
 
 ::selection {
-  background: var(--accent);
-  color: var(--nord0);
+    background: var(--accent);
+    color: var(--nord0);
 }
-
 
 /* ══════════════════════════════════════════
    14. LINKS
@@ -352,106 +350,101 @@ button:focus-visible {
    which made links pop two brightness levels above surrounding li/blockquote text.
    Using --accent-info keeps it consistent with the existing underline decoration color. */
 .post-content a {
-  color: inherit;
+    color: inherit;
 }
 
 .post-content a:hover {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 a {
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-  text-decoration-color: var(--accent-info);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--accent-info);
 }
 
 a:hover {
-  color: var(--accent);
+    color: var(--accent);
 }
-
 
 /* ══════════════════════════════════════════
    15. SEARCH INPUT FOCUS
 ══════════════════════════════════════════ */
 
 #searchbox:focus {
-  border: 1px solid var(--accent);
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(163, 190, 140, 0.2);
+    border: 1px solid var(--accent);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(163, 190, 140, 0.2);
 }
-
 
 /* ══════════════════════════════════════════
    16. RESPONSIVE DESIGN (Mobile)
 ══════════════════════════════════════════ */
 
 @media (max-width: 768px) {
-  .post-content {
-    font-size: 1rem;
-    line-height: 1.65;
-  }
+    .post-content {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
 
-  .post-content h1 {
-    font-size: 1.75rem;
-  }
+    .post-content h1 {
+        font-size: 1.75rem;
+    }
 
-  .post-content h2 {
-    font-size: 1.35rem;
-  }
+    .post-content h2 {
+        font-size: 1.35rem;
+    }
 
-  .post-content h3 {
-    font-size: 1.15rem;
-  }
+    .post-content h3 {
+        font-size: 1.15rem;
+    }
 
-  .post-entry {
-    padding: 1rem;
-  }
+    .post-entry {
+        padding: 1rem;
+    }
 
-  .profile .avatar img {
-    width: 100px;
-    height: 100px;
-  }
+    .profile .avatar img {
+        width: 100px;
+        height: 100px;
+    }
 
-  .toc {
-    padding: 0.5rem 1rem;
-  }
+    .toc {
+        padding: 0.5rem 1rem;
+    }
 
-  table {
-    display: block;
-    overflow-x: auto;
-  }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
 }
-
 
 /* ══════════════════════════════════════════
    17. FOOTER
 ══════════════════════════════════════════ */
 
 .footer {
-  border-top: 1px solid var(--border);
-  margin-top: 2rem;
-  padding: 1.5rem 0;
-  color: var(--nord4);
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+    color: var(--nord4);
 }
 
 .footer a {
-  color: var(--secondary);
+    color: var(--secondary);
 }
 
 .footer a:hover {
-  color: var(--accent);
+    color: var(--accent);
 }
-
 
 /* ══════════════════════════════════════════
    18. POST META (Dates, etc.)
 ══════════════════════════════════════════ */
 
 .post-meta {
-  font-size: 0.875rem;
-  color: var(--secondary);
+    font-size: 0.875rem;
+    color: var(--secondary);
 }
-
 
 /* ══════════════════════════════════════════
    19. LISTS (Ordered & Unordered)
@@ -459,33 +452,32 @@ a:hover {
 
 .post-content ul,
 .post-content ol {
-  margin: 1rem 0;
-  padding-left: 1.5rem;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
 }
 
 .post-content li {
-  margin: 0.5rem 0;
-  /* color removed — inherits var(--content) from .post-content via PaperMod,
+    margin: 0.5rem 0;
+    /* color removed — inherits var(--content) from .post-content via PaperMod,
      matching paragraph text. Hardcoding var(--nord4) here was making list
      items dimmer than surrounding paragraphs. */
-  line-height: 1.75;
+    line-height: 1.75;
 }
 
 .post-content ul li::marker {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 .post-content ol li::marker {
-  color: var(--accent);
-  font-weight: 600;
+    color: var(--accent);
+    font-weight: 600;
 }
 
 /* Nested lists */
 .post-content li ul,
 .post-content li ol {
-  margin: 0.5rem 0;
+    margin: 0.5rem 0;
 }
-
 
 /* ══════════════════════════════════════════
    20. HORIZONTAL RULES
@@ -493,12 +485,17 @@ a:hover {
 
 .post-content hr,
 hr {
-  border: none;
-  height: 2px;
-  background: linear-gradient(to right, var(--accent), var(--accent) 50%, transparent 50%);
-  background-size: 8px 2px;
-  margin: 2rem 0;
-  border-radius: 1px;
+    border: none;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        var(--accent),
+        var(--accent) 50%,
+        transparent 50%
+    );
+    background-size: 8px 2px;
+    margin: 2rem 0;
+    border-radius: 1px;
 }
 
 /* ══════════════════════════════════════════
@@ -506,150 +503,168 @@ hr {
 ══════════════════════════════════════════ */
 
 .footnote-backref {
-  color: var(--secondary);
-  text-decoration: none;
+    color: var(--secondary);
+    text-decoration: none;
 }
 
 .footnote-backref:hover {
-  color: var(--accent);
-  text-decoration: underline;
+    color: var(--accent);
+    text-decoration: underline;
 }
-
 
 /* ══════════════════════════════════════════
    23. PRINT STYLES
 ══════════════════════════════════════════ */
 
 @media print {
-  body {
-    background: white;
-    color: black;
-  }
+    body {
+        background: white;
+        color: black;
+    }
 
-  a {
-    color: #0066cc;
-    text-decoration: underline;
-  }
+    a {
+        color: #0066cc;
+        text-decoration: underline;
+    }
 
-  .post-entry,
-  .pagination,
-  .social-icons,
-  .footer,
-  .toc details,
-  .post-nav {
-    display: none;
-  }
+    .post-entry,
+    .pagination,
+    .social-icons,
+    .footer,
+    .toc details,
+    .post-nav {
+        display: none;
+    }
 
-  .post-content {
-    max-width: 100%;
-  }
+    .post-content {
+        max-width: 100%;
+    }
 
-  .post-content code {
-    background: #f5f5f5;
-    border: 1px solid #ddd;
-  }
+    .post-content code {
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+    }
 
-  table {
-    border: 1px solid #ddd;
-    background: white;
-  }
+    table {
+        border: 1px solid #ddd;
+        background: white;
+    }
 
-  th {
-    background: #f9f9f9;
-    color: black;
-    border: 1px solid #ddd;
-  }
+    th {
+        background: #f9f9f9;
+        color: black;
+        border: 1px solid #ddd;
+    }
 
-  td {
-    border: 1px solid #ddd;
-    color: black;
-  }
+    td {
+        border: 1px solid #ddd;
+        color: black;
+    }
 
-  blockquote {
-    border-left: 4px solid #999;
-    background: #f9f9f9;
-    color: black;
-  }
+    blockquote {
+        border-left: 4px solid #999;
+        background: #f9f9f9;
+        color: black;
+    }
 }
-
 
 /* ══════════════════════════════════════════
    LASTFM WIDGET
 ══════════════════════════════════════════ */
 
 .lastfm-widget {
-  margin-top: 1.5rem;
-  text-align: center;
+    margin-top: 1.5rem;
+    text-align: center;
 }
 
 .lastfm-loading,
 .lastfm-error {
-  font-family: var(--font-ui);
-  font-size: 0.85rem;
-  color: var(--secondary);
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    color: var(--secondary);
 }
 
 .lastfm-header {
-  font-family: var(--font-ui);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--secondary);
-  margin-bottom: 0.75rem;
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
 }
 
 .lastfm-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .lastfm-item {
-  margin-bottom: 0.4rem;
-  font-size: 0.875rem;
-  font-family: var(--font-ui);
-  font-weight: 400;
-  transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-family: var(--font-ui);
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.lastfm-art {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.lastfm-art--placeholder {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    background: var(--tertiary);
+    flex-shrink: 0;
 }
 
 .lastfm-icon {
-  margin-right: 0.4rem;
-  transition: color 0.2s ease;
+    margin-right: 0.4rem;
+    transition: color 0.2s ease;
 }
 
 .lastfm-icon.playing {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 .lastfm-icon.paused {
-  color: var(--secondary);
+    color: var(--secondary);
 }
 
 .lastfm-track {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 400;
-  transition: color 0.2s ease;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s ease;
 }
 
 .lastfm-item:hover .lastfm-track {
-  color: var(--accent);
-  text-decoration: underline;
+    color: var(--accent);
+    text-decoration: underline;
 }
 
 .lastfm-item:hover .lastfm-icon.playing,
 .lastfm-item:hover .lastfm-icon.paused {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 .lastfm-item:hover .lastfm-artist {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 .lastfm-artist {
-  color: var(--secondary);
-  transition: color 0.2s ease;
+    color: var(--secondary);
+    transition: color 0.2s ease;
 }
 
 /* ══════════════════════════════════════════
@@ -657,7 +672,7 @@ hr {
 ══════════════════════════════════════════ */
 
 .paginav {
-  background: transparent;
-  border-top: 1px solid var(--border);
-  box-shadow: 0 2px 4px rgba(136, 192, 208, 0.08);
+    background: transparent;
+    border-top: 1px solid var(--border);
+    box-shadow: 0 2px 4px rgba(136, 192, 208, 0.08);
 }
