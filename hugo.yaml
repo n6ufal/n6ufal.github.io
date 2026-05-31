@@ -15,7 +15,6 @@ params:
     disableThemeToggle: true
     # Meta
     Description: "Alif Naufal's personal blog or whatever."
-    author: "Alif Naufal"
     # Features
     ShowReadingTime: true
     ShowShareButtons: false
@@ -51,21 +50,21 @@ params:
           url: "https://discordapp.com/users/460866504704131084"
         - name: instagram
           url: "https://instagram.com/n6ufal"
-        - name: rss
-          url: "/index.xml"
-          title: "RSS"
         - name: lastfm
           url: "https://www.last.fm/user/alifnaufal"
         - name: spotify
           url: "https://open.spotify.com/user/fjvvc8gihy2bj471qal9zrg6v"
+        - name: rss
+          url: "/index.xml"
+          title: "RSS"
 
 menu:
     main:
         - name: Posts
           url: /posts/
           weight: 1
-        - name: Archive
-          url: /archives/
+        - name: Moodboard
+          url: /moodboard/
           weight: 2
         - name: About
           url: /about/

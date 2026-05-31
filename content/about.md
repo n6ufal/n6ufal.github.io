@@ -1,6 +1,7 @@
 ---
 title: "About"
 draft: false
+showReadingTime: false
 ---
 
 Hi, I'm Alif Naufal.
