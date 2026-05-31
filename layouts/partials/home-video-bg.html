@@ -1,0 +1,57 @@
+{{- if .IsHome }}
+<div class="home-video-bg">
+    <video
+        class="home-video-bg__video"
+        id="homeVideoPlayer"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+    >
+        <source src="/videos/bg-video.mp4" type="video/mp4" />
+        <source src="/videos/bg-video.webm" type="video/webm" />
+    </video>
+    <div class="home-video-bg__overlay"></div>
+</div>
+
+<script>
+    (function () {
+        const video = document.getElementById("homeVideoPlayer");
+        if (!video) return;
+
+        const playWithAudio = function () {
+            video.muted = false;
+            const playPromise = video.play();
+
+            if (playPromise !== undefined) {
+                playPromise.catch(function (err) {
+                    console.warn(
+                        "Unmuted autoplay failed, retrying muted:",
+                        err,
+                    );
+                    video.muted = true;
+                    video.play().catch(function (muteErr) {
+                        console.warn("Even muted play failed:", muteErr);
+                    });
+                });
+            }
+        };
+
+        // Wait for page load to ensure video element is ready
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", playWithAudio);
+        } else {
+            playWithAudio();
+        }
+
+        // Allow unmuting on user click
+        document.addEventListener("click", function handler() {
+            if (video && video.muted) {
+                video.muted = false;
+                document.removeEventListener("click", handler);
+            }
+        });
+    })();
+</script>
+{{- end }}
