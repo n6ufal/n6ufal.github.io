@@ -29,7 +29,6 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    animation: entryOverlayFadeIn 0.6s ease-out forwards;
 }
 
 .entry-overlay__content {
@@ -47,15 +46,6 @@
 
 .entry-overlay--dismissed {
     animation: entryOverlayFadeOut 0.6s ease-out forwards;
-}
-
-@keyframes entryOverlayFadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 @keyframes entryOverlayFadeOut {
