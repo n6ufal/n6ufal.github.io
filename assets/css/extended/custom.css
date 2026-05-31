@@ -33,19 +33,100 @@
 
 .entry-overlay__content {
     text-align: center;
+    filter: drop-shadow(0 0 16px rgba(136, 192, 208, 0.35));
+    animation: textFloat 3.5s ease-in-out 2.2s infinite;
 }
 
 .entry-overlay__text {
     font-size: 2rem;
     font-weight: 300;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     color: #eceff4;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
     display: block;
+}
+
+/* Individual letter spans injected by JS */
+.entry-overlay__letter {
+    display: inline-block;
+    opacity: 0;
+    animation: letterIn 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    /* Shimmer applied per-letter so background-clip works correctly */
+    background: linear-gradient(
+        90deg,
+        #eceff4 30%,
+        #88c0d0 46%,
+        #a3be8c 54%,
+        #eceff4 70%
+    );
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:
+        letterIn 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) forwards,
+        shimmerSweep 4s linear 1.8s infinite;
+}
+
+/* Ripple element created on click */
+.entry-overlay__ripple {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -40px;
+    border-radius: 50%;
+    background: rgba(136, 192, 208, 0.35);
+    pointer-events: none;
+    animation: rippleExpand 0.65s ease-out forwards;
 }
 
 .entry-overlay--dismissed {
     animation: entryOverlayFadeOut 0.6s ease-out forwards;
+}
+
+/* ── Keyframes ────────────────────────── */
+
+@keyframes letterIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+        filter: blur(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes shimmerSweep {
+    0% {
+        background-position: 100% center;
+    }
+    100% {
+        background-position: -100% center;
+    }
+}
+
+@keyframes textFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes rippleExpand {
+    from {
+        transform: scale(0);
+        opacity: 0.6;
+    }
+    to {
+        transform: scale(9);
+        opacity: 0;
+    }
 }
 
 @keyframes entryOverlayFadeOut {

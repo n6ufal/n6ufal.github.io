@@ -10,25 +10,45 @@
         const overlay = document.getElementById("entryOverlay");
         if (!overlay) return;
 
-        const dismissOverlay = function () {
-            // Remove click listener to prevent multiple triggers
+        // Split "Click Anywhere" into individually-animated letter spans
+        const textEl = overlay.querySelector(".entry-overlay__text");
+        const chars = textEl.textContent.split("");
+        textEl.textContent = "";
+        chars.forEach(function (char, i) {
+            var span = document.createElement("span");
+            span.className = "entry-overlay__letter";
+            span.textContent = char === " " ? "\u00A0" : char;
+            span.style.animationDelay = i * 0.065 + "s";
+            textEl.appendChild(span);
+        });
+
+        var dismissed = false;
+
+        var dismissOverlay = function (e) {
+            if (dismissed) return;
+            dismissed = true;
             overlay.removeEventListener("click", dismissOverlay);
 
-            // Fade out overlay
-            overlay.classList.add("entry-overlay--dismissed");
+            // Spawn a ripple at the click position
+            var ripple = document.createElement("div");
+            ripple.className = "entry-overlay__ripple";
+            ripple.style.left = e.clientX + "px";
+            ripple.style.top = e.clientY + "px";
+            overlay.appendChild(ripple);
 
-            // Wait for animation to complete (0.6s from CSS)
+            // Fade overlay out after a brief ripple head-start
             setTimeout(function () {
-                overlay.remove();
+                overlay.classList.add("entry-overlay--dismissed");
 
-                // Play video with sound after overlay is gone
-                if (window.playVideoWithSound) {
-                    window.playVideoWithSound();
-                }
-            }, 600);
+                setTimeout(function () {
+                    overlay.remove();
+                    if (window.playVideoWithSound) {
+                        window.playVideoWithSound();
+                    }
+                }, 600);
+            }, 180);
         };
 
-        // Click anywhere to dismiss
         overlay.addEventListener("click", dismissOverlay);
     })();
 </script>
