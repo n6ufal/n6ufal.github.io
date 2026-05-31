@@ -4,6 +4,9 @@ date: 2026-05-29
 draft: false
 tags: ["personal"]
 cover:
+  image: /images/witness.jpg
+  alt: cover
+  relative: false
 ---
 
 People often confuse understanding with agreement.
