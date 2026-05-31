@@ -52,6 +52,6 @@ python scripts/generate_favicons.py
 
 ## 📜 Credits
 
-- Favicons by [Javier Danglada](https://www.flaticon.com/authors/javier-danglada) (original inspiration)
+- Favicons by [Flat Icons](https://www.flaticon.com/authors/flat-icons)
 - Base theme template by Aditya Telange ([PaperMod](https://github.com/adityatelange/hugo-PaperMod))
 - Nord color scheme by [Arctic Ice Studio](https://github.com/arcticicestudio)
