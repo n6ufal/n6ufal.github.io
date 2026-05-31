@@ -18,3 +18,21 @@ resources/
 # OS
 .DS_Store
 Thumbs.db
+
+# Secrets and local environment configs
+.env
+.env.local
+.env.*.local
+*.env
+
+# Dependencies (Node.js/npm/yarn)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Logs & temporary files
+*.log
+*.bak
+*.tmp
