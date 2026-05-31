@@ -43,7 +43,6 @@ params:
         imageUrl: "/images/avatar.jpg"
         imageWidth: 120
         imageHeight: 120
-        imageTitle: "Alif Naufal with precious partner"
     socialIcons:
         - name: email
           url: "mailto:alifnaufal@duck.com"
