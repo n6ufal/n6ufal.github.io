@@ -12,7 +12,7 @@
 
         function getBestImage(imageArray) {
             if (!Array.isArray(imageArray)) return "";
-            for (const size of ["extralarge", "large", "medium", "small"]) {
+            for (const size of ["medium", "large", "extralarge", "small"]) {
                 const img = imageArray.find((img) => img.size === size);
                 if (img && img["#text"]) return img["#text"];
             }
