@@ -14,6 +14,7 @@
         const finalText = textEl.textContent.trim();
         const letters = finalText.split("");
         const fragment = document.createDocumentFragment();
+        var intervals = [];
         letters.forEach(function (char, i) {
             const span = document.createElement("span");
             span.className = "entry-overlay__letter";
@@ -21,6 +22,7 @@
                 char === " "
                     ? "\u00A0"
                     : chars[Math.floor(Math.random() * chars.length)];
+            span.setAttribute("data-final", char === " " ? "\u00A0" : char);
             fragment.appendChild(span);
             let scrambleCount = 0;
             const maxScrambles = 3;
@@ -40,32 +42,45 @@
                         span.classList.add("entry-overlay__letter--resolved");
                     }
                 }, 60);
+                intervals.push(scrambleInterval);
             }, i * 60);
         });
         textEl.textContent = "";
         textEl.appendChild(fragment);
+
+        function resolveScramble() {
+            intervals.forEach(function (id) { clearInterval(id); });
+            intervals = [];
+            var spans = overlay.querySelectorAll(".entry-overlay__letter");
+            [].forEach.call(spans, function (s) {
+                s.textContent = s.getAttribute("data-final") || s.textContent;
+                s.classList.add("entry-overlay__letter--resolved");
+            });
+        }
+
         overlay.addEventListener(
             "click",
             function (e) {
+                resolveScramble();
                 const ripple = document.createElement("div");
                 ripple.className = "entry-overlay__ripple";
-                ripple.style.left = e.clientX + "px";
-                ripple.style.top = e.clientY + "px";
+                ripple.style.setProperty("--x", e.clientX + "px");
+                ripple.style.setProperty("--y", e.clientY + "px");
                 overlay.appendChild(ripple);
                 const coords = document.createElement("div");
                 coords.className = "entry-overlay__coords";
                 coords.textContent = `[${e.clientX}, ${e.clientY}]`;
-                coords.style.left = e.clientX + "px";
-                coords.style.top = e.clientY + "px";
+                coords.style.setProperty("--x", e.clientX + "px");
+                coords.style.setProperty("--y", e.clientY + "px");
                 overlay.appendChild(coords);
-                setTimeout(function () {
+                requestAnimationFrame(function () {
                     overlay.classList.add("entry-overlay--dismissed");
                     setTimeout(function () {
                         overlay.remove();
                         if (window.playVideoWithSound)
                             window.playVideoWithSound();
                     }, 600);
-                }, 180);
+                });
             },
             { once: true },
         );

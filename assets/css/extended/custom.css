@@ -76,6 +76,8 @@
 /* Coordinates at click point */
 .entry-overlay__coords {
     position: fixed;
+    left: var(--x, 0);
+    top: var(--y, 0);
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.75rem;
     color: var(--accent);
@@ -118,6 +120,8 @@
 /* Ripple element created on click */
 .entry-overlay__ripple {
     position: fixed;
+    left: var(--x, 0);
+    top: var(--y, 0);
     width: 80px;
     height: 80px;
     margin-left: -40px;
