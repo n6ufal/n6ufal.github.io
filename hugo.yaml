@@ -84,6 +84,10 @@ markup:
         noClasses: false
         guessSyntax: true
 
+imaging:
+    quality: 80
+    resampleFilter: Lanczos
+
 outputs:
     home:
         - HTML
