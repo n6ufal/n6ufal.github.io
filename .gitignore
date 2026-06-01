@@ -48,3 +48,8 @@ yarn-error.log*
 
 # Agent instructions
 AGENTS.md
+
+# Moodboard originals — Hugo processes WebP copies at build time
+content/moodboard/*.jpg
+content/moodboard/*.jpeg
+content/moodboard/*.png
