@@ -44,6 +44,15 @@
                 });
             }
         });
+
+        window.addEventListener("pageshow", function (event) {
+            if (event.persisted) {
+                video.muted = true;
+                video.pause();
+                wasPlayingBeforeFocus = false;
+                if (window.resetEntryOverlay) window.resetEntryOverlay();
+            }
+        });
     })();
 </script>
 {{- end }}
