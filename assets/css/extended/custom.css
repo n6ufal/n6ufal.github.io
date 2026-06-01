@@ -6,10 +6,8 @@
 ══════════════════════════════════════════ */
 
 :root {
-    --accent: #a3be8c;
-    /* Nord green — reserved for interactive states (hover, focus, active) */
+    --accent: #e8a9d0;
     --accent-info: #88c0d0;
-    /* Nord frost — resting link underlines and informational decoration */
 }
 
 /* ══════════════════════════════════════════
