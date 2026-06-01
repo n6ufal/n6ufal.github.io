@@ -41,7 +41,7 @@ Getting there meant following a few core principles:
 
 ### Epictetus
 
-{{< figure src="/images/epictetus.png" alt="Epictetus" caption="Epictetus" >}}
+{{< figure src="/images/epictetus.jpg" alt="Epictetus" caption="Epictetus" >}}
 
 Epictetus was born into slavery around 50 AD and spent his early life in Rome as property of Epaphroditus, a wealthy freedman who served as secretary to Emperor Nero. As a young man he showed an interest in philosophy, and his master — unusually — allowed him to attend lectures under the Stoic philosopher Musonius Rufus.
 
