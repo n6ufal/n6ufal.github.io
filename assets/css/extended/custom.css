@@ -471,6 +471,13 @@ body.list:not(.home) .header .video-mute-btn {
     color: var(--accent);
 }
 
+.toc details summary::after {
+    content: " [...]";
+    opacity: 0.35;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+}
+
 .toc ul {
     font-size: 0.9rem;
     margin-left: 0.5rem;
@@ -598,25 +605,16 @@ tr:last-child td {
 }
 
 .post-tags a {
-    background: rgba(
-        163,
-        190,
-        140,
-        0.12
-    ); /* fallback for browsers without color-mix */
-    background: color-mix(in srgb, var(--accent) 12%, transparent);
-    border-radius: 20px;
-    padding: 0.2rem 0.6rem;
-    transition:
-        background 0.2s ease,
-        color 0.2s ease;
+    color: var(--secondary);
+    font-size: 0.85rem;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .post-tags a:hover {
-    background: var(--accent);
-    color: var(--nord0);
-    text-decoration: none;
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 /* ══════════════════════════════════════════
