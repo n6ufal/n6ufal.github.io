@@ -4,7 +4,7 @@
         <h1>{{ .Title }}</h1>
         {{ with .Content }}<div class="moodboard-description">{{ . }}</div>{{ end }}
     </header>
-    {{ with .Resources.ByType "image" }}
+    {{ with resources.Match "moodboard/*" }}
     <div class="moodboard-grid">
         {{ range $i, $img := . }}
         {{ $thumb := $img.Fill "480x600 webp q85" }}
