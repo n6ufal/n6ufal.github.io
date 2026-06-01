@@ -2,6 +2,7 @@
 title: "I Miss Being Certain"
 date: 2026-06-01
 draft: false
+tags: ["personal"]
 cover:
   image: "/images/birds.jpg"
   alt: "cover"

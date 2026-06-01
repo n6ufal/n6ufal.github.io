@@ -171,7 +171,6 @@
 
 /* Video Mute Button - Homepage Only */
 .video-mute-btn {
-    display: none;
     background: none;
     border: none;
     cursor: pointer;
@@ -405,12 +404,6 @@ body.list:not(.home) .header .video-mute-btn {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.header .menu a {
-    text-shadow:
-        0 2px 6px rgba(0, 0, 0, 0.8),
-        0 0 14px rgba(0, 0, 0, 0.6);
-}
-
 /* ══════════════════════════════════════════
    5. TABLE OF CONTENTS (TOC)
 ══════════════════════════════════════════ */
@@ -560,8 +553,12 @@ tr:last-child td {
 }
 
 .post-tags a {
-    background: rgba(163, 190, 140, 0.12);
-    /* fallback for older browsers */
+    background: rgba(
+        163,
+        190,
+        140,
+        0.12
+    ); /* fallback for browsers without color-mix */
     background: color-mix(in srgb, var(--accent) 12%, transparent);
     border-radius: 20px;
     padding: 0.2rem 0.6rem;

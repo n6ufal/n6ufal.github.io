@@ -20,44 +20,28 @@
 
         let wasPlayingBeforeFocus = false;
 
-        // Start with video paused and muted - don't autoplay
         video.muted = true;
         video.pause();
 
-        // Wait for overlay to be dismissed before playing
         window.playVideoWithSound = function () {
             video.muted = false;
-            const playPromise = video.play();
-
-            if (playPromise !== undefined) {
-                playPromise.catch(function (err) {
-                    console.warn(
-                        "Unmuted autoplay failed, retrying muted:",
-                        err,
-                    );
-                    video.muted = true;
-                    video.play().catch(function (muteErr) {
-                        console.warn("Even muted play failed:", muteErr);
-                    });
+            video.play().catch(function (err) {
+                console.warn("Unmuted autoplay failed, retrying muted:", err);
+                video.muted = true;
+                video.play().catch(function (muteErr) {
+                    console.warn("Even muted play failed:", muteErr);
                 });
-            }
+            });
         };
 
-        // Pause video when page loses focus, resume when regains focus
         document.addEventListener("visibilitychange", function () {
             if (document.hidden) {
-                // Page is hidden
                 wasPlayingBeforeFocus = !video.paused;
-                if (wasPlayingBeforeFocus) {
-                    video.pause();
-                }
-            } else {
-                // Page is visible again
-                if (wasPlayingBeforeFocus && !video.paused === false) {
-                    video.play().catch(function (err) {
-                        console.warn("Resume play after focus failed:", err);
-                    });
-                }
+                if (wasPlayingBeforeFocus) video.pause();
+            } else if (wasPlayingBeforeFocus) {
+                video.play().catch(function (err) {
+                    console.warn("Resume play after focus failed:", err);
+                });
             }
         });
     })();

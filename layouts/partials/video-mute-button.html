@@ -40,43 +40,31 @@
     (function () {
         const btn = document.getElementById("video-mute-btn");
         const video = document.getElementById("homeVideoPlayer");
-
         if (!btn || !video) return;
 
-        // Sync button state with video
         function updateButtonState() {
-            if (video.muted) {
-                btn.classList.add("is-muted");
-            } else {
-                btn.classList.remove("is-muted");
-            }
+            btn.classList.toggle("is-muted", video.muted);
         }
 
-        // Click button to toggle mute
         btn.addEventListener("click", function (e) {
             e.preventDefault();
             video.muted = !video.muted;
             updateButtonState();
         });
 
-        // Listen for video mute changes (e.g., from keyboard shortcuts)
         video.addEventListener("volumechange", updateButtonState);
 
-        // Keyboard shortcut: M key
         document.addEventListener("keydown", function (e) {
-            if (e.key === "m" || e.key === "M") {
-                // Only activate if not typing in an input
-                if (
-                    document.activeElement.tagName !== "INPUT" &&
-                    document.activeElement.tagName !== "TEXTAREA"
-                ) {
-                    video.muted = !video.muted;
-                    updateButtonState();
-                }
+            if (
+                (e.key === "m" || e.key === "M") &&
+                document.activeElement.tagName !== "INPUT" &&
+                document.activeElement.tagName !== "TEXTAREA"
+            ) {
+                video.muted = !video.muted;
+                updateButtonState();
             }
         });
 
-        // Initial state
         updateButtonState();
     })();
 </script>

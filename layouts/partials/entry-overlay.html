@@ -10,46 +10,40 @@
         const overlay = document.getElementById("entryOverlay");
         if (!overlay) return;
 
-        // Split "Click Anywhere" into individually-animated letter spans
         const textEl = overlay.querySelector(".entry-overlay__text");
-        const chars = textEl.textContent.split("");
-        textEl.textContent = "";
-        chars.forEach(function (char, i) {
-            var span = document.createElement("span");
+        const fragment = document.createDocumentFragment();
+
+        textEl.textContent.split("").forEach(function (char, i) {
+            const span = document.createElement("span");
             span.className = "entry-overlay__letter";
             span.textContent = char === " " ? "\u00A0" : char;
             span.style.animationDelay = i * 0.03 + "s";
-            textEl.appendChild(span);
+            fragment.appendChild(span);
         });
 
-        var dismissed = false;
+        textEl.textContent = "";
+        textEl.appendChild(fragment);
 
-        var dismissOverlay = function (e) {
-            if (dismissed) return;
-            dismissed = true;
-            overlay.removeEventListener("click", dismissOverlay);
-
-            // Spawn a ripple at the click position
-            var ripple = document.createElement("div");
-            ripple.className = "entry-overlay__ripple";
-            ripple.style.left = e.clientX + "px";
-            ripple.style.top = e.clientY + "px";
-            overlay.appendChild(ripple);
-
-            // Fade overlay out after a brief ripple head-start
-            setTimeout(function () {
-                overlay.classList.add("entry-overlay--dismissed");
+        overlay.addEventListener(
+            "click",
+            function (e) {
+                const ripple = document.createElement("div");
+                ripple.className = "entry-overlay__ripple";
+                ripple.style.left = e.clientX + "px";
+                ripple.style.top = e.clientY + "px";
+                overlay.appendChild(ripple);
 
                 setTimeout(function () {
-                    overlay.remove();
-                    if (window.playVideoWithSound) {
-                        window.playVideoWithSound();
-                    }
-                }, 600);
-            }, 180);
-        };
-
-        overlay.addEventListener("click", dismissOverlay);
+                    overlay.classList.add("entry-overlay--dismissed");
+                    setTimeout(function () {
+                        overlay.remove();
+                        if (window.playVideoWithSound)
+                            window.playVideoWithSound();
+                    }, 600);
+                }, 180);
+            },
+            { once: true },
+        );
     })();
 </script>
 {{- end }}
