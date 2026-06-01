@@ -1,8 +1,6 @@
 /* ══════════════════════════════════════════
-   CUSTOM CSS FOR PAPERMOD
-   Primary accent:   --accent      Nord Green (#A3BE8C) — hover/focus/active only
-   Secondary accent: --accent-info Nord Frost (#88C0D0) — link underlines, informational
-   Optimized for Dark Mode
+   yes i wrote all of this by hand. yes it hurts.
+   dark mode only because light mode users can't be trusted.
 ══════════════════════════════════════════ */
 
 :root {
@@ -21,8 +19,8 @@
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.92);
+    /* backdrop-filter: blur(4px); */
     display: flex;
     align-items: center;
     justify-content: center;
