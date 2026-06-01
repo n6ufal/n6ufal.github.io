@@ -1,57 +1,46 @@
 # ~/n6ufal
 
-This is the source code for my personal site and digital garden at [alifnaufal.me](https://alifnaufal.me/).
+Personal blog and digital garden at [alifnaufal.me](https://alifnaufal.me/), built with [Hugo](https://gohugo.io/) and the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, styled in [Nord](https://www.nordtheme.com/).
 
-It's built with [Hugo](https://gohugo.io/) using a highly customized version of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, styled with the [Nord color palette](https://www.nordtheme.com/).
+## Features
 
-## 🌟 Features
+- **Video background** — looping MP4/WebM on the homepage with audio and a grain overlay
+- **Entry overlay** — "Click Anywhere" scramble-resolve animation on page load
+- **Live Last.fm widget** — real-time recently played tracks with album art
+- **Dark mode only** — no theme toggle, Nord palette throughout
+- **Vanilla JS** — zero npm/Node.js dependencies; all JavaScript is handwritten
 
-- **Digital Garden**: A personal dumping ground for notes, stories, thoughts, and technical exploration.
-- **Live Last.fm Widget**: Custom-coded, real-time widget pulling recently played music with actual album art from the Last.fm API.
-- **Nord Styling**: Custom CSS tailored around Nord dark colors, refined typography (IBM Plex Mono & Sans), clean syntax highlighting, and smooth hover transitions.
-- **Performance & SEO**: Native dark mode, lightning-fast loads, tags, archive pagination, sitemap, and RSS feed.
-
-## 🛠️ Tech Stack & Structure
-
-- **SSG**: [Hugo](https://gohugo.io/) (Extended Edition)
-- **Theme**: [PaperMod](https://github.com/adityatelange/hugo-PaperMod) (extended using layout overrides)
-- **Styling**: CSS under `assets/css/extended/custom.css`
-- **Asset Automation**: Custom Python scripts for asset generation
-
-## 🚀 Running Locally
-
-1. **Clone the repository recursively** (to pull the PaperMod theme submodule):
-
-   ```bash
-   git clone --recursive https://github.com/n6ufal/n6ufal.github.io.git
-   cd n6ufal.github.io
-   ```
-
-2. **Start the Hugo development server**:
-
-   ```bash
-   hugo server -D
-   ```
-
-   _(The `-D` flag tells Hugo to include draft posts in local builds)._
-
-3. Open `http://localhost:1313` in your browser.
-
-## 🐍 Automation Scripts
-
-### Favicon Generator (`scripts/generate_favicons.py`)
-
-Includes a custom Python script that downloads `IBMPlexSans-Bold`, extracts the vector geometry of the letter **A**, scales/positions it, and automatically generates SVG, ICO, and various PNG favicons in Nord dark and green colors.
-
-To run it:
+## Quick start
 
 ```bash
-pip install Pillow fontTools
-python scripts/generate_favicons.py
+git clone --recursive https://github.com/n6ufal/n6ufal.github.io.git
+cd n6ufal.github.io
+hugo server -D
 ```
 
-## 📜 Credits
+The `-D` flag includes draft posts. Open `http://localhost:1313`.
 
-- Favicons by [Flat Icons](https://www.flaticon.com/authors/flat-icons)
-- Base theme template by Aditya Telange ([PaperMod](https://github.com/adityatelange/hugo-PaperMod))
-- Nord color scheme by [Arctic Ice Studio](https://github.com/arcticicestudio)
+### Production build
+
+```bash
+hugo --minify
+```
+
+### Regenerate syntax highlighting CSS
+
+```bash
+hugo gen chromastyles --style=nord
+```
+
+## Submodule
+
+The PaperMod theme lives at `themes/PaperMod`. If you cloned without `--recursive`:
+
+```bash
+git submodule update --init --recursive
+```
+
+## Credits
+
+- [PaperMod](https://github.com/adityatelange/hugo-PaperMod) by Aditya Telange
+- [Nord](https://www.nordtheme.com/) by Arctic Ice Studio
