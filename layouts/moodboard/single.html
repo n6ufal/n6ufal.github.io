@@ -71,7 +71,8 @@
 
     function open(index) {
         currentIndex = index;
-        imgEl.src = images[currentIndex].getAttribute('data-full');
+        imgEl.src = getFullSrc(currentIndex);
+        preloadAdjacent(currentIndex);
         updateCounter();
         updateNav();
         lb.hidden = false;
@@ -106,10 +107,22 @@
         changeImage();
     }
 
+    function getFullSrc(index) {
+        return images[index].getAttribute('data-full');
+    }
+
+    function preloadAdjacent(index) {
+        var prevIdx = (index - 1 + images.length) % images.length;
+        var nextIdx = (index + 1) % images.length;
+        var p = new Image(); p.src = getFullSrc(prevIdx);
+        var n = new Image(); n.src = getFullSrc(nextIdx);
+    }
+
     function changeImage() {
         imgEl.classList.remove('moodboard-lightbox-img--visible');
         setTimeout(function () {
-            imgEl.src = images[currentIndex].getAttribute('data-full');
+            imgEl.src = getFullSrc(currentIndex);
+            preloadAdjacent(currentIndex);
             updateCounter();
             updateNav();
             requestAnimationFrame(function () {
