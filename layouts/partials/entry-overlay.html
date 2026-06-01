@@ -4,26 +4,46 @@
         <span class="entry-overlay__text">Click Anywhere</span>
     </div>
 </div>
-
 <script>
     (function () {
         const overlay = document.getElementById("entryOverlay");
         if (!overlay) return;
-
         const textEl = overlay.querySelector(".entry-overlay__text");
+        const chars =
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*?";
+        const finalText = textEl.textContent.trim();
+        const letters = finalText.split("");
         const fragment = document.createDocumentFragment();
-
-        textEl.textContent.split("").forEach(function (char, i) {
+        letters.forEach(function (char, i) {
             const span = document.createElement("span");
             span.className = "entry-overlay__letter";
-            span.textContent = char === " " ? "\u00A0" : char;
-            span.style.animationDelay = i * 0.03 + "s";
+            span.textContent =
+                char === " "
+                    ? "\u00A0"
+                    : chars[Math.floor(Math.random() * chars.length)];
             fragment.appendChild(span);
+            let scrambleCount = 0;
+            const maxScrambles = 6;
+            setTimeout(function () {
+                const scrambleInterval = setInterval(function () {
+                    if (scrambleCount < maxScrambles) {
+                        span.textContent =
+                            char === " "
+                                ? "\u00A0"
+                                : chars[
+                                      Math.floor(Math.random() * chars.length)
+                                  ];
+                        scrambleCount++;
+                    } else {
+                        clearInterval(scrambleInterval);
+                        span.textContent = char === " " ? "\u00A0" : char;
+                        span.classList.add("entry-overlay__letter--resolved");
+                    }
+                }, 40);
+            }, i * 60);
         });
-
         textEl.textContent = "";
         textEl.appendChild(fragment);
-
         overlay.addEventListener(
             "click",
             function (e) {
@@ -32,7 +52,12 @@
                 ripple.style.left = e.clientX + "px";
                 ripple.style.top = e.clientY + "px";
                 overlay.appendChild(ripple);
-
+                const coords = document.createElement("div");
+                coords.className = "entry-overlay__coords";
+                coords.textContent = `[${e.clientX}, ${e.clientY}]`;
+                coords.style.left = e.clientX + "px";
+                coords.style.top = e.clientY + "px";
+                overlay.appendChild(coords);
                 setTimeout(function () {
                     overlay.classList.add("entry-overlay--dismissed");
                     setTimeout(function () {
