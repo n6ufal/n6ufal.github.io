@@ -1,16 +1,4 @@
 <div class="lastfm-widget">
-    <div class="lastfm-controls">
-        <span
-            class="lastfm-dot"
-            data-view="recent"
-            title="Recently Played"
-        ></span>
-        <span
-            class="lastfm-dot"
-            data-view="topAlbums"
-            title="Top Albums"
-        ></span>
-    </div>
     <div id="lastfm-tracks" class="lastfm-content">
         <p class="lastfm-loading">Loading...</p>
     </div>
@@ -21,9 +9,6 @@
         const API_KEY = "0e7245c9a19b6563e2a301c91f053c54";
         const USER = "alifnaufal";
         const container = document.getElementById("lastfm-tracks");
-        const dots = document.querySelectorAll(".lastfm-dot");
-        let currentView =
-            localStorage.getItem("headspace-lastfm-view") || "recent";
 
         function getBestImage(imageArray) {
             if (!Array.isArray(imageArray)) return "";
@@ -34,102 +19,34 @@
             return "";
         }
 
-        const endpoints = {
-            recent: () =>
-                `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${USER}&api_key=${API_KEY}&format=json&limit=5`,
-            topAlbums: () =>
-                `https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=${USER}&api_key=${API_KEY}&format=json&limit=5&period=overall`,
-        };
-
         function fetchData() {
-            fetch(endpoints[currentView]())
+            fetch(
+                `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${USER}&api_key=${API_KEY}&format=json&limit=5`,
+            )
                 .then((res) => res.json())
                 .then((data) => {
-                    if (currentView === "recent") renderRecentTracks(data);
-                    else renderTopAlbums(data);
+                    const tracks = data.recenttracks.track.slice(0, 5);
+                    let html = `<p class="lastfm-header">Recently played</p><ul class="lastfm-list">`;
+                    for (const track of tracks) {
+                        const isNowPlaying =
+                            track["@attr"]?.nowplaying === "true";
+                        const art = getBestImage(track.image);
+                        html += `
+                            <li class="lastfm-item">
+                                ${art ? `<img class="lastfm-art" src="${art}" alt="${track.name}" loading="lazy" />` : `<span class="lastfm-art lastfm-art--placeholder"></span>`}
+                                <span class="${isNowPlaying ? "lastfm-icon playing" : "lastfm-icon paused"}">${isNowPlaying ? "▶" : "♪"}</span>
+                                <a href="${track.url}" target="_blank" rel="noopener" class="lastfm-track">
+                                    ${track.name} <span class="lastfm-artist">— ${track.artist["#text"]}</span>
+                                </a>
+                            </li>`;
+                    }
+                    container.innerHTML = html + `</ul>`;
                 })
                 .catch(() => {
                     container.innerHTML = `<p class="lastfm-error">Couldn't load data.</p>`;
                 });
         }
 
-        function buildItem(
-            artSrc,
-            altText,
-            url,
-            trackName,
-            artistName,
-            iconClass,
-            icon,
-        ) {
-            const art = artSrc
-                ? `<img class="lastfm-art" src="${artSrc}" alt="${altText}" loading="lazy" />`
-                : `<span class="lastfm-art lastfm-art--placeholder"></span>`;
-            const iconHtml = iconClass
-                ? `<span class="${iconClass}">${icon}</span>`
-                : "";
-            return `
-                <li class="lastfm-item">
-                    ${art}
-                    ${iconHtml}
-                    <a href="${url}" target="_blank" rel="noopener" class="lastfm-track">
-                        ${trackName} <span class="lastfm-artist">— ${artistName}</span>
-                    </a>
-                </li>`;
-        }
-
-        function renderRecentTracks(data) {
-            const tracks = data.recenttracks.track.slice(0, 5);
-            let html = `<p class="lastfm-header">Recently played</p><ul class="lastfm-list">`;
-            for (const track of tracks) {
-                const isNowPlaying = track["@attr"]?.nowplaying === "true";
-                html += buildItem(
-                    getBestImage(track.image),
-                    track.name,
-                    track.url,
-                    track.name,
-                    track.artist["#text"],
-                    isNowPlaying ? "lastfm-icon playing" : "lastfm-icon paused",
-                    isNowPlaying ? "▶" : "♪",
-                );
-            }
-            container.innerHTML = html + `</ul>`;
-        }
-
-        function renderTopAlbums(data) {
-            const albums = data.topalbums.album.slice(0, 5);
-            let html = `<p class="lastfm-header">Top Albums (Overall)</p><ul class="lastfm-list">`;
-            for (const album of albums) {
-                html += buildItem(
-                    getBestImage(album.image),
-                    album.name,
-                    album.url,
-                    album.name,
-                    album.artist.name,
-                    null,
-                    null,
-                );
-            }
-            container.innerHTML = html + `</ul>`;
-        }
-
-        function setActiveView(view) {
-            currentView = view;
-            localStorage.setItem("headspace-lastfm-view", view);
-            dots.forEach((d) =>
-                d.classList.toggle("active", d.dataset.view === view),
-            );
-        }
-
-        dots.forEach((dot) => {
-            dot.addEventListener("click", () => {
-                setActiveView(dot.dataset.view);
-                container.innerHTML = `<p class="lastfm-loading">Loading...</p>`;
-                fetchData();
-            });
-        });
-
-        setActiveView(currentView);
         fetchData();
 
         setInterval(() => {

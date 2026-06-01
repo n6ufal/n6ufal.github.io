@@ -837,39 +837,6 @@ hr {
     margin-bottom: 8px;
 }
 
-.lastfm-dot {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    padding: 0;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border: none;
-    background: transparent;
-    font-size: 0;
-}
-
-.lastfm-dot::before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border: 1.5px solid currentColor;
-    transition: all 0.2s ease;
-    opacity: 0.4;
-}
-
-.lastfm-dot:hover::before {
-    opacity: 0.6;
-}
-
-.lastfm-dot.active::before {
-    opacity: 1;
-    background-color: currentColor;
-}
-
 .lastfm-content {
     display: block;
 }
