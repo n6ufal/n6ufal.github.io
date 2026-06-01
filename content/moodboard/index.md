@@ -1,7 +1,6 @@
 ---
 title: "Moodboard"
-layout: "page"
 showReadingTime: false
 ---
 
-Work in progress.
+Fragments, textures, and things that stay with me.

@@ -1,0 +1,167 @@
+{{ define "main" }}
+<article class="moodboard">
+    <header class="moodboard-header">
+        <h1>{{ .Title }}</h1>
+        {{ with .Content }}<div class="moodboard-description">{{ . }}</div>{{ end }}
+    </header>
+    {{ with .Resources.ByType "image" }}
+    <div class="moodboard-grid">
+        {{ range $i, $img := . }}
+        {{ $thumb := $img.Fill "480x600 webp q85" }}
+        {{ $full := $img.Resize "1200x webp q85" }}
+        <img src="{{ $thumb.RelPermalink }}"
+             data-full="{{ $full.RelPermalink }}"
+             data-index="{{ $i }}"
+             width="{{ $thumb.Width }}"
+             height="{{ $thumb.Height }}"
+             alt=""
+             loading="lazy">
+        {{ end }}
+    </div>
+    {{ end }}
+</article>
+<script>
+(function () {
+    var grid = document.querySelector('.moodboard-grid');
+    if (!grid) return;
+    var images = Array.from(grid.querySelectorAll('img'));
+    if (!images.length) return;
+
+    var currentIndex = 0;
+    var animating = false;
+
+    var lb = document.createElement('div');
+    lb.className = 'moodboard-lightbox';
+    lb.id = 'moodboard-lightbox';
+    lb.hidden = true;
+    lb.setAttribute('role', 'dialog');
+    lb.setAttribute('aria-modal', 'true');
+    lb.setAttribute('aria-label', 'Image viewer');
+
+    var closeBtn = document.createElement('button');
+    closeBtn.className = 'moodboard-lightbox-close';
+    closeBtn.innerHTML = '&times;';
+    closeBtn.setAttribute('aria-label', 'Close');
+
+    var prevBtn = document.createElement('button');
+    prevBtn.className = 'moodboard-lightbox-prev';
+    prevBtn.innerHTML = '&#8249;';
+    prevBtn.setAttribute('aria-label', 'Previous');
+
+    var nextBtn = document.createElement('button');
+    nextBtn.className = 'moodboard-lightbox-next';
+    nextBtn.innerHTML = '&#8250;';
+    nextBtn.setAttribute('aria-label', 'Next');
+
+    var imgEl = document.createElement('img');
+    imgEl.className = 'moodboard-lightbox-img';
+    imgEl.id = 'moodboard-lightbox-img';
+    imgEl.alt = '';
+
+    var counterEl = document.createElement('span');
+    counterEl.className = 'moodboard-lightbox-counter';
+    counterEl.id = 'moodboard-lightbox-counter';
+
+    lb.appendChild(closeBtn);
+    lb.appendChild(prevBtn);
+    lb.appendChild(nextBtn);
+    lb.appendChild(imgEl);
+    lb.appendChild(counterEl);
+    document.body.appendChild(lb);
+
+    function open(index) {
+        currentIndex = index;
+        imgEl.src = images[currentIndex].getAttribute('data-full');
+        updateCounter();
+        updateNav();
+        lb.hidden = false;
+        requestAnimationFrame(function () {
+            lb.classList.add('moodboard-lightbox--open');
+            requestAnimationFrame(function () {
+                imgEl.classList.add('moodboard-lightbox-img--visible');
+            });
+        });
+    }
+
+    function close() {
+        imgEl.classList.remove('moodboard-lightbox-img--visible');
+        lb.classList.remove('moodboard-lightbox--open');
+        setTimeout(function () {
+            lb.hidden = true;
+            imgEl.src = '';
+        }, 300);
+    }
+
+    function prev() {
+        if (images.length < 2 || animating) return;
+        animating = true;
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        changeImage();
+    }
+
+    function next() {
+        if (images.length < 2 || animating) return;
+        animating = true;
+        currentIndex = (currentIndex + 1) % images.length;
+        changeImage();
+    }
+
+    function changeImage() {
+        imgEl.classList.remove('moodboard-lightbox-img--visible');
+        setTimeout(function () {
+            imgEl.src = images[currentIndex].getAttribute('data-full');
+            updateCounter();
+            updateNav();
+            requestAnimationFrame(function () {
+                imgEl.classList.add('moodboard-lightbox-img--visible');
+                animating = false;
+            });
+        }, 250);
+    }
+
+    function updateCounter() {
+        counterEl.textContent = (currentIndex + 1) + ' / ' + images.length;
+    }
+
+    function updateNav() {
+        var show = images.length > 1 ? '' : 'none';
+        prevBtn.style.display = show;
+        nextBtn.style.display = show;
+    }
+
+    grid.addEventListener('click', function (e) {
+        var img = e.target.closest('img');
+        if (!img) return;
+        var idx = parseInt(img.getAttribute('data-index'), 10);
+        if (!isNaN(idx)) open(idx);
+    });
+
+    closeBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        close();
+    });
+
+    lb.addEventListener('click', function (e) {
+        if (e.target === lb) close();
+    });
+
+    prevBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        prev();
+    });
+
+    nextBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        next();
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (!lb.hidden) {
+            if (e.key === 'Escape') close();
+            else if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+            else if (e.key === 'ArrowRight') { e.preventDefault(); next(); }
+        }
+    });
+})();
+</script>
+{{ end }}

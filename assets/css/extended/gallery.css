@@ -1,0 +1,157 @@
+.moodboard-header {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 2rem;
+    text-align: center;
+}
+
+.moodboard-header h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.moodboard-description {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    line-height: 1.6;
+}
+
+.moodboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1.5rem 1.5rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.moodboard-grid img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .moodboard-header {
+        padding: 3rem 1.5rem 1.5rem;
+    }
+
+    .moodboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 1rem 1rem 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .moodboard-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 0.75rem 0.75rem 2.5rem;
+    }
+}
+
+/* ─── Moodboard Lightbox ─── */
+
+.moodboard-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.moodboard-lightbox--open {
+    opacity: 1;
+}
+
+.moodboard-lightbox[hidden] {
+    display: none;
+}
+
+.moodboard-lightbox-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    cursor: default;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.moodboard-lightbox-img--visible {
+    opacity: 1;
+}
+
+.moodboard-lightbox-close {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    padding: 0.5rem;
+    line-height: 1;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.moodboard-lightbox-close:hover {
+    opacity: 1;
+}
+
+.moodboard-lightbox-prev,
+.moodboard-lightbox-next {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1;
+    padding: 1rem;
+    line-height: 1;
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
+}
+
+.moodboard-lightbox-prev:hover,
+.moodboard-lightbox-next:hover {
+    opacity: 1;
+}
+
+.moodboard-lightbox-prev {
+    left: 1rem;
+}
+
+.moodboard-lightbox-next {
+    right: 1rem;
+}
+
+.moodboard-lightbox-counter {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--secondary);
+    font-size: 0.85rem;
+    font-family: var(--monofont);
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+    z-index: 1;
+    pointer-events: none;
+}
