@@ -51,7 +51,7 @@ The next part gets technical. If you're here for the takeaway, skip ahead to [Wh
 
 The first version of what became Letter Demon was embarrassingly simple: a Python lookup tool with a bare‑bones window, an input box, a button, and a list of results. Type a prefix, get every matching word.
 
-![The first lookup tool](image.png?width=300)
+![The first lookup tool](image.jpg?width=300)
 
 It worked, but it was slow in a way that mattered. Scanning half a million words one by one takes too long when you’re racing a five‑second timer. So I rebuilt the lookup using **binary search**—the same idea as flipping through a physical dictionary. Open somewhere in the middle, see if you’ve gone too far, cut the remaining space in half. Repeat until you land.
 
@@ -83,7 +83,7 @@ But even that wasn’t enough. I was still alt‑tabbing, typing prefixes by han
 
 I named it that because “Word Assistant” was too honest.
 
-![Letter Demon](image-1.png)
+![Letter Demon](image-1.jpg)
 
 This is corny, I know. But the 3AM version of me, half delirious, thought it made perfect sense.
 
