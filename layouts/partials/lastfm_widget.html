@@ -34,7 +34,6 @@
                         html += `
                             <li class="lastfm-item">
                                 ${art ? `<img class="lastfm-art" src="${art}" alt="${track.name}" loading="lazy" />` : `<span class="lastfm-art lastfm-art--placeholder"></span>`}
-                                <span class="${isNowPlaying ? "lastfm-icon playing" : "lastfm-icon paused"}">${isNowPlaying ? "▶" : "♪"}</span>
                                 <a href="${track.url}" target="_blank" rel="noopener" class="lastfm-track">
                                     ${track.name} <span class="lastfm-artist">— ${track.artist["#text"]}</span>
                                 </a>
