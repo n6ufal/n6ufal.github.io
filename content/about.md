@@ -25,3 +25,7 @@ New here? These are good entry points:
 If anything here resonates with you, feel free to say hi:
 
 [alifnaufal@duck.com](mailto:alifnaufal@duck.com)
+
+---
+
+{{< version >}}

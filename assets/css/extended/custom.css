@@ -1008,3 +1008,9 @@ hr {
 .archive-toc-month:hover {
     color: var(--accent);
 }
+
+.site-version {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    color: var(--secondary);
+}

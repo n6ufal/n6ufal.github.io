@@ -1,6 +1,7 @@
 baseURL: "https://alifnaufal.me/"
 title: "~/n6ufal"
 theme: "PaperMod"
+enableGitInfo: true
 defaultContentLanguage: "en"
 timeZone: "Asia/Jakarta"
 
@@ -84,6 +85,10 @@ markup:
         lineNumbersInTable: false
         noClasses: false
         guessSyntax: true
+
+security:
+  funcs:
+    getenv: ['^HUGO_', '^CI$', '^GITHUB_SHA$']
 
 imaging:
     quality: 80
