@@ -3,6 +3,8 @@ name: Deploy Hugo site
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '0 6 * * 1'
   workflow_dispatch:
 
 jobs:
@@ -23,6 +25,12 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Check broken links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --no-progress -- './public/**/*.html'
+          fail: true
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -30,3 +38,27 @@ jobs:
           publish_dir: ./public
           cname: alifnaufal.me
           force_orphan: true
+
+  optimize-images:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq imagemagick
+
+      - name: Resize and compress images
+        run: |
+          find . \( -path ./.git -o -path ./themes -o -path ./public -o -path ./resources \) -prune -o \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -print0 | while IFS= read -r -d '' f; do
+            mogrify -resize '1200>' -quality 85 "$f" 2>/dev/null || true
+          done
+
+      - name: Commit changes if any
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'chore: auto-optimize images'
+          commit_user_name: 'github-actions[bot]'
+          commit_user_email: 'github-actions[bot]@users.noreply.github.com'

@@ -1,0 +1,17 @@
+#!/bin/sh
+# Pre-commit hook: reject commit if Hugo build fails
+
+if ! command -v hugo >/dev/null 2>&1; then
+    echo "  hugo not found, skipping build check"
+    echo "  Install: https://gohugo.io/installation/"
+    exit 0
+fi
+
+echo "  Running hugo --minify..."
+hugo --minify 2>&1
+if [ $? -ne 0 ]; then
+    echo ""
+    echo "  Hugo build failed. Fix errors before committing."
+    exit 1
+fi
+echo "  Hugo build OK"
