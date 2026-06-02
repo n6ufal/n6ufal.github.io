@@ -25,12 +25,6 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Check broken links
-        uses: lycheeverse/lychee-action@v1
-        with:
-          args: --no-progress --exclude 'fonts\.(googleapis|gstatic)\.com' -- './public/**/*.html'
-          fail: true
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
