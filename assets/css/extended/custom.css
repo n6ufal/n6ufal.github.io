@@ -111,9 +111,9 @@
         animation: none;
         opacity: 1;
     }
-    .entry-overlay__coords {
-        animation: none;
-        opacity: 0;
+    .entry-overlay__coords,
+    .entry-overlay__ripple {
+        display: none;
     }
 }
 
@@ -335,13 +335,6 @@ body.list:not(.home) .header .video-mute-btn {
    2. SMOOTH TRANSITIONS
 ══════════════════════════════════════════ */
 
-.post-entry,
-.pagination a {
-    transition:
-        background-color 0.2s ease,
-        transform 0.2s ease;
-}
-
 /* Pagination container */
 .pagination {
     margin: 2rem 0;
@@ -478,18 +471,7 @@ body.list:not(.home) .header .video-mute-btn {
 }
 
 /* ══════════════════════════════════════════
-   6. CODE BLOCKS
-══════════════════════════════════════════ */
-
-.post-content .highlight {
-    position: relative;
-    overflow-x: auto;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* ══════════════════════════════════════════
-   7. TABLES (Responsive)
+   6. TABLES (Responsive)
 ══════════════════════════════════════════ */
 
 table {
@@ -521,7 +503,7 @@ tr:last-child td {
 }
 
 /* ══════════════════════════════════════════
-   8. BLOCKQUOTES
+   7. BLOCKQUOTES
 ══════════════════════════════════════════ */
 
 /* .post-content blockquote matches PaperMod's own specificity level;
@@ -545,8 +527,12 @@ tr:last-child td {
     margin-bottom: 0;
 }
 
+.post-content blockquote p:first-child {
+    margin-top: 0;
+}
+
 /* ══════════════════════════════════════════
-   9. SOCIAL ICONS (Header)
+   8. SOCIAL ICONS (Header)
 ══════════════════════════════════════════ */
 
 .social-icons a {
@@ -563,7 +549,7 @@ tr:last-child td {
 }
 
 /* ══════════════════════════════════════════
-   10. BREADCRUMBS
+   9. BREADCRUMBS
 ══════════════════════════════════════════ */
 
 .breadcrumbs {
@@ -580,7 +566,7 @@ tr:last-child td {
 }
 
 /* ══════════════════════════════════════════
-   11. TAXONOMY (TAGS & CATEGORIES) PAGES
+   10. TAXONOMY (TAGS & CATEGORIES) PAGES
 ══════════════════════════════════════════ */
 
 .post-entry.tag-entry {
@@ -604,7 +590,7 @@ tr:last-child td {
 }
 
 /* ══════════════════════════════════════════
-   12. ACCESSIBILITY — FOCUS OUTLINES
+   11. ACCESSIBILITY — FOCUS OUTLINES
 ══════════════════════════════════════════ */
 
 a:focus-visible,
@@ -615,7 +601,7 @@ button:focus-visible {
 }
 
 /* ══════════════════════════════════════════
-   13. TEXT SELECTION
+   12. TEXT SELECTION
 ══════════════════════════════════════════ */
 
 ::selection {
@@ -624,7 +610,7 @@ button:focus-visible {
 }
 
 /* ══════════════════════════════════════════
-   14. LINKS
+   13. LINKS
 ══════════════════════════════════════════ */
 
 /* Resting link color scoped to post content.
@@ -650,7 +636,7 @@ a:hover {
 }
 
 /* ══════════════════════════════════════════
-   15. SEARCH INPUT FOCUS
+   14. SEARCH INPUT FOCUS
 ══════════════════════════════════════════ */
 
 #searchbox:focus {
@@ -660,7 +646,7 @@ a:hover {
 }
 
 /* ══════════════════════════════════════════
-   16. RESPONSIVE DESIGN (Mobile)
+   15. RESPONSIVE DESIGN (Mobile)
 ══════════════════════════════════════════ */
 
 @media (max-width: 768px) {
@@ -701,7 +687,7 @@ a:hover {
 }
 
 /* ══════════════════════════════════════════
-   17. POST META (Dates, etc.)
+   16. POST META (Dates, etc.)
 ══════════════════════════════════════════ */
 
 .post-meta {
@@ -710,7 +696,7 @@ a:hover {
 }
 
 /* ══════════════════════════════════════════
-   19. LISTS (Ordered & Unordered)
+   17. LISTS (Ordered & Unordered)
 ══════════════════════════════════════════ */
 
 .post-content ul,
@@ -743,7 +729,7 @@ a:hover {
 }
 
 /* ══════════════════════════════════════════
-   20. HORIZONTAL RULES
+   18. HORIZONTAL RULES
 ══════════════════════════════════════════ */
 
 .post-content hr,
@@ -762,7 +748,7 @@ hr {
 }
 
 /* ══════════════════════════════════════════
-   22. FOOTNOTE BACKLINKS
+   19. FOOTNOTE BACKLINKS
 ══════════════════════════════════════════ */
 
 .footnote-backref {
@@ -776,7 +762,7 @@ hr {
 }
 
 /* ══════════════════════════════════════════
-   23. PRINT STYLES
+   20. PRINT STYLES
 ══════════════════════════════════════════ */
 
 @media print {
@@ -897,7 +883,6 @@ hr {
 }
 
 .lastfm-art--placeholder {
-    display: inline-block;
     width: 32px;
     height: 32px;
     border-radius: 3px;
