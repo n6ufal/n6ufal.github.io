@@ -265,29 +265,29 @@
 
 /* Hide logo and show mute button on homepage only */
 body:not(.list) .header .logo > a {
-    display: inline-block !important;
+    display: inline-block;
 }
 
 body:not(.list) .header .video-mute-btn {
-    display: none !important;
+    display: none;
 }
 
 /* On homepage (IsHome with .list body class), hide logo and show mute button */
 body.list.home .header .logo > a {
-    display: none !important;
+    display: none;
 }
 
 body.list.home .header .video-mute-btn {
-    display: flex !important;
+    display: flex;
 }
 
 /* On posts list page (non-home list), show logo and hide mute button */
 body.list:not(.home) .header .logo > a {
-    display: inline-block !important;
+    display: inline-block;
 }
 
 body.list:not(.home) .header .video-mute-btn {
-    display: none !important;
+    display: none;
 }
 
 /* ══════════════════════════════════════════
@@ -383,7 +383,7 @@ body.list:not(.home) .header .video-mute-btn {
 }
 
 .paginav a:hover {
-    color: var(--accent) !important;
+    color: var(--accent);
 }
 
 /* ══════════════════════════════════════════
@@ -510,7 +510,7 @@ tr:last-child td {
    bare `blockquote` was losing to PaperMod's scoped rule, so color never applied.
    blockquote p is covered explicitly because .post-content p can re-override it. */
 .post-content blockquote {
-    border-left: 4px solid var(--accent) !important;
+    border-left: 4px solid var(--accent);
     background: var(--entry);
     padding: 1rem 1.5rem;
     border-radius: 0 8px 8px 0;
