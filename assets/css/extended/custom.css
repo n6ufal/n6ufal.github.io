@@ -5,7 +5,7 @@
 
 :root {
     --accent: #e8a9d0;
-    --accent-info: #88c0d0;
+    --accent-info: var(--nord8);
 }
 
 /* ══════════════════════════════════════════
@@ -51,13 +51,13 @@
     display: inline-block;
     opacity: 1;
     color: #ffffff;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: var(--font-mono);
 }
 
 /* Blinking cursor */
 .entry-overlay__cursor {
     display: inline-block;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: var(--font-mono);
     color: var(--accent);
     margin-left: 4px;
     animation: cursorBlink 1s step-end infinite;
@@ -78,7 +78,7 @@
     position: fixed;
     left: var(--x, 0);
     top: var(--y, 0);
-    font-family: "IBM Plex Mono", monospace;
+    font-family: var(--font-mono);
     font-size: 0.75rem;
     color: var(--accent);
     pointer-events: none;
