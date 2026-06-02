@@ -8,7 +8,7 @@
     <div class="moodboard-grid">
         {{ range $i, $img := . }}
         {{ $thumb := $img.Fill "480x600 webp q85" }}
-        {{ $full := $img.Resize "1200x webp q85" }}
+        {{ $full := $img.Resize "1000x webp q75" }}
         <img src="{{ $thumb.RelPermalink }}"
              data-full="{{ $full.RelPermalink }}"
              data-index="{{ $i }}"

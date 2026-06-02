@@ -23,9 +23,6 @@ params:
     ShowCodeCopyButtons: true
     ShowBreadCrumbs: true
     ShowToc: true
-    TocOpen: false
-    ShowBackToTop: true
-    externalLinkNewTab: true
     # Images
     images: ["/images/avatar.jpg"]
     assets:
