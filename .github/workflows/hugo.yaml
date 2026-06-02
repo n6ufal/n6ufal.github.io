@@ -28,7 +28,7 @@ jobs:
       - name: Check broken links
         uses: lycheeverse/lychee-action@v1
         with:
-          args: --no-progress -- './public/**/*.html'
+          args: --no-progress --exclude 'fonts\.(googleapis|gstatic)\.com' -- './public/**/*.html'
           fail: true
 
       - name: Deploy
