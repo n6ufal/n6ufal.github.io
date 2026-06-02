@@ -1,17 +1,5 @@
 #!/bin/sh
-# Pre-commit hook: optimize images, then reject commit if Hugo build fails
-
-HOOK_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-
-# Optimize staged images (Windows: powershell, others: mogrify if available)
-if command -v powershell.exe >/dev/null 2>&1; then
-    STAGED_IMGS=$(git diff --cached --name-only --diff-filter=ACM -- '*.jpg' '*.jpeg' '*.png')
-    if [ -n "$STAGED_IMGS" ]; then
-        echo "  Optimizing images..."
-        powershell.exe -ExecutionPolicy Bypass -File "$HOOK_DIR/tools/optimize-images.ps1" 2>&1
-        git add -u -- '*.jpg' '*.jpeg' '*.png'
-    fi
-fi
+# Pre-commit hook: reject commit if Hugo build fails
 
 if ! command -v hugo >/dev/null 2>&1; then
     echo "  hugo not found, skipping build check"
