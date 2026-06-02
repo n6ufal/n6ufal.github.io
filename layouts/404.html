@@ -1,99 +1,44 @@
 {{- define "main" }}
 <div class="not-found">
-    <pre id="asciiArt" class="ascii">
-  _____
- /     \
-|  o-o  |
-|   ^   |
- \_____/
-    </pre>
-    <p id="message" class="message">congratulations. you’ve reached the void. it’s exactly as interesting as it looks.</p>
-    <a href="{{ "" | absLangURL }}" class="home-link">go back home →</a>
-    <div class="hint">psst, click the creature</div>
+    <div class="dialogue">
+        <p><span class="speaker">Woman:</span> If tomatoes are fruits, why aren't they in fruit salad?</p>
+        <p><span class="speaker">Man:</span> Because nobody wants them there.</p>
+        <p><span class="speaker">Woman:</span> Sounds political.</p>
+        <p><span class="speaker">Man:</span> <a href="{{ "" | absLangURL }}" class="home-link">Wanna go home?</a></p>
+    </div>
 </div>
 
 <style>
+html, body {
+    margin: 0;
+    min-height: 100vh;
+}
 .not-found {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
-    text-align: center;
+    min-height: 100vh;
     padding: 2rem;
-    font-family: system-ui, -apple-system, 'Segoe UI', monospace;
 }
-.ascii {
-    font-family: 'IBM Plex Mono', 'Fira Code', monospace;
-    font-size: 0.85rem;
-    line-height: 1.5;
+.dialogue {
+    max-width: 32rem;
+    width: 100%;
+    font-family: 'IBM Plex Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 17px;
+    line-height: 1.6;
     color: #d8dee9;
-    background: rgba(0,0,0,0.05);
-    padding: 1rem;
-    border-radius: 1rem;
-    display: inline-block;
-    white-space: pre;
-    cursor: pointer;
-    transition: transform 0.1s ease, background 0.2s;
 }
-.ascii:hover {
-    background: rgba(0,0,0,0.1);
-    transform: scale(1.02);
-}
-.message {
-    font-size: 1.1rem;
-    margin: 1rem 0 1.5rem;
+.speaker {
     color: #81a1c1;
 }
 .home-link {
     color: #e8a9d0;
     text-decoration: none;
-    font-size: 1rem;
     border-bottom: 1px dotted currentColor;
     transition: opacity 0.2s;
 }
 .home-link:hover {
     opacity: 0.7;
 }
-.hint {
-    font-size: 0.7rem;
-    margin-top: 1.2rem;
-    opacity: 0.6;
-    color: #8fbcbb;
-}
-@media (prefers-color-scheme: light) {
-    .ascii { color: #2e3440; }
-    .message { color: #4c566a; }
-}
 </style>
-
-<script>
-const asciiElem = document.getElementById('asciiArt');
-const msgElem = document.getElementById('message');
-let mood = 0;
-
-const moods = [
-    { art: `  _____\n /     \\\n|  o-o  |\n|   ^   |\n \\_____/`, msg: "congratulations. you’ve reached the void. it’s exactly as interesting as it looks." },
-    { art: `  _____\n /     \\\n|  o-o  |\n|   u   |\n \\_____/`, msg: "this page exists about as much as my motivation on a monday." },
-    { art: `  _____\n /     \\\n|  x-x  |\n|   v   |\n \\_____/`, msg: "either you typed the wrong address, or the universe made a typo. both are equally likely." },
-    { art: `  _____\n /     \\\n|  - -  |\n|   .   |\n \\_____/`, msg: "we put a lot of effort into making sure you’d never see this. so that worked out well." },
-    { art: `  _____\n /     \\\n|  * *  |\n|   ^   |\n \\_____/`, msg: "the link you followed was probably someone’s idea of a joke. hysterical." },
-    { art: `  _____\n /     \\\n|  o-o  |\n|   -   |\n \\_____/`, msg: "this error has been brought to you by the letters 4, 0, and another 4." },
-    { art: `  _____\n /     \\\n|  o-o  |\n|   ^   |\n \\_____/`, msg: "a wild 404 appears. it’s not very effective." },
-    { art: `  _____\n /     \\\n|  o-o  |\n|   v   |\n \\_____/`, msg: "the page you’re looking for left. no forwarding address. shocking." },
-    { art: `  _____\n /     \\\n|  o-o  |\n|   .   |\n \\_____/`, msg: "if you were trying to find something important, this is your sign to give up." },
-    { art: `  _____\n /     \\\n|  o-o  |\n|   ^   |\n \\_____/`, msg: "we searched everywhere. literally everywhere except the place it should be. that place is empty too." },
-    { art: `  _____\n /     \\\n|  o-o  |\n|   -   |\n \\_____/`, msg: "this is what happens when someone forgets to do their job. enjoy the scenery." },
-    { art: `  _____\n /     \\\n|  o-o  |\n|   u   |\n \\_____/`, msg: "the good news: nothing is broken. the bad news: nothing is here either." },
-    { art: `  _____\n /     \\\n|  x-x  |\n|   ^   |\n \\_____/`, msg: "we could show you something useful, but that would ruin the surprise." },
-    { art: `  _____\n /     \\\n|  - -  |\n|   v   |\n \\_____/`, msg: "this page is like that drawer full of old cables – completely useless, but you had to check anyway." },
-    { art: `  _____\n /     \\\n|  * *  |\n|   .   |\n \\_____/`, msg: "the requested resource is currently busy not existing. please try again never." }
-];
-
-asciiElem.addEventListener('click', () => {
-    mood = (mood + 1) % moods.length;
-    asciiElem.textContent = moods[mood].art;
-    msgElem.textContent = moods[mood].msg;
-});
-</script>
 {{- end }}
