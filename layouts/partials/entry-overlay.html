@@ -6,68 +6,74 @@
 </div>
 <script>
     (function () {
-        var overlay = document.getElementById("entryOverlay");
+        const overlay = document.getElementById("entryOverlay");
         if (!overlay) return;
 
-        function initScramble() {
-            var textEl = overlay.querySelector(".entry-overlay__text");
-            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*?";
-            var finalText = (textEl.textContent || "").trim();
-            if (!finalText) return;
-            var intervals = [];
-            textEl.textContent = "";
-            for (var i = 0; i < finalText.length; i++) {
-                (function (index) {
-                    var c = finalText[index];
-                    var span = document.createElement("span");
-                    span.className = "entry-overlay__letter";
-                    span.textContent = c === " " ? "\u00A0" : chars[Math.floor(Math.random() * chars.length)];
-                    span.setAttribute("data-final", c === " " ? "\u00A0" : c);
-                    textEl.appendChild(span);
-                    var count = 0;
-                    setTimeout(function () {
-                        var id = setInterval(function () {
-                            if (count < 3) {
-                                span.textContent = c === " " ? "\u00A0" : chars[Math.floor(Math.random() * chars.length)];
-                                count++;
-                            } else {
-                                clearInterval(id);
-                                span.textContent = c === " " ? "\u00A0" : c;
-                                span.classList.add("entry-overlay__letter--resolved");
-                            }
-                        }, 60);
-                        intervals.push(id);
-                    }, index * 60);
-                })(i);
+        const textEl = overlay.querySelector(".entry-overlay__text");
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*?";
+        const finalText = (textEl.textContent || "").trim();
+        const TOTAL_FRAMES = 20;
+        let frame = 0;
+        let rafId = null;
+
+        // Build per-character spans
+        textEl.textContent = "";
+        const spans = [];
+        for (let i = 0; i < finalText.length; i++) {
+            const c = finalText[i];
+            const span = document.createElement("span");
+            span.className = "entry-overlay__letter";
+            if (c === " ") {
+                span.textContent = "\u00A0";
+                span.setAttribute("data-final", "\u00A0");
+            } else {
+                span.textContent = chars[Math.floor(Math.random() * chars.length)];
+                span.setAttribute("data-final", c);
             }
-            return intervals;
+            textEl.appendChild(span);
+            spans.push(span);
         }
 
-        var scrambleIntervals = initScramble() || [];
-
-        function resolveScramble() {
-            for (var i = 0; i < scrambleIntervals.length; i++) clearInterval(scrambleIntervals[i]);
-            scrambleIntervals = [];
-            var spans = overlay.querySelectorAll(".entry-overlay__letter");
-            for (var i = 0; i < spans.length; i++) {
-                spans[i].textContent = spans[i].getAttribute("data-final") || spans[i].textContent;
+        function resolve() {
+            for (let i = 0; i < spans.length; i++) {
+                spans[i].textContent = spans[i].getAttribute("data-final");
                 spans[i].classList.add("entry-overlay__letter--resolved");
             }
         }
 
-        function handleClick(e) {
-            resolveScramble();
-            var ripple = document.createElement("div");
+        function scramble() {
+            if (frame >= TOTAL_FRAMES) {
+                rafId = null;
+                resolve();
+                return;
+            }
+            for (let i = 0; i < spans.length; i++) {
+                if (finalText[i] !== " ") {
+                    spans[i].textContent = chars[Math.floor(Math.random() * chars.length)];
+                }
+            }
+            frame++;
+            rafId = requestAnimationFrame(scramble);
+        }
+
+        function dismiss(e) {
+            if (rafId) cancelAnimationFrame(rafId);
+            rafId = null;
+            resolve();
+
+            const ripple = document.createElement("div");
             ripple.className = "entry-overlay__ripple";
             ripple.style.setProperty("--x", e.clientX + "px");
             ripple.style.setProperty("--y", e.clientY + "px");
             overlay.appendChild(ripple);
-            var coords = document.createElement("div");
+
+            const coords = document.createElement("div");
             coords.className = "entry-overlay__coords";
             coords.textContent = "[" + e.clientX + ", " + e.clientY + "]";
             coords.style.setProperty("--x", e.clientX + "px");
             coords.style.setProperty("--y", e.clientY + "px");
             overlay.appendChild(coords);
+
             requestAnimationFrame(function () {
                 overlay.classList.add("entry-overlay--dismissed");
                 setTimeout(function () {
@@ -77,19 +83,8 @@
             });
         }
 
-        overlay.addEventListener("click", handleClick, { once: true });
-
-        window.resetEntryOverlay = function () {
-            if (!overlay || overlay.dataset.resetting === "1") return;
-            overlay.dataset.resetting = "1";
-            overlay.style.display = "";
-            overlay.classList.remove("entry-overlay--dismissed");
-            var stale = overlay.querySelectorAll(".entry-overlay__ripple, .entry-overlay__coords");
-            for (var i = 0; i < stale.length; i++) stale[i].remove();
-            scrambleIntervals = initScramble() || [];
-            overlay.addEventListener("click", handleClick, { once: true });
-            overlay.removeAttribute("data-resetting");
-        };
+        rafId = requestAnimationFrame(scramble);
+        overlay.addEventListener("click", dismiss, { once: true });
     })();
 </script>
 {{- end }}
