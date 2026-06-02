@@ -1,10 +1,1 @@
-{{- $hash := "dev" -}}
-{{- $ciSha := os.Getenv "GITHUB_SHA" -}}
-{{- if $ciSha -}}
-  {{- $hash = substr $ciSha 0 7 -}}
-{{- else -}}
-  {{- with .Page.GitInfo -}}
-    {{- $hash = .AbbreviatedHash -}}
-  {{- end -}}
-{{- end -}}
-<small class="site-version">v{{ $hash }} · {{ now.Format "2006-01-02" }}</small>
+<small class="site-version">{{ now.Format "January 2, 2006" }}</small>
