@@ -1,126 +1,115 @@
 # Video Background Setup
 
 ## Overview
-The homepage now has support for a looping video background with audio enabled. The video extends behind the header and footer, with a light TV grain overlay for readability.
 
-## Files Created
-- `layouts/partials/home-video-bg.html` - Video background partial
-- `static/videos/` - Directory for video files
-- CSS in `assets/css/extended/custom.css` - Video styling and grain overlay
+The homepage has a looping video background that starts muted and paused. A "Click Anywhere" entry overlay must be dismissed before the video plays with sound. This is required by browser autoplay policies — video with audio cannot start without a user gesture.
 
-## How to Add Your Video
+## Files
 
-### Step 1: Prepare Your Video Files
-You need to provide video in two formats for maximum browser compatibility:
+- `layouts/partials/home-video-bg.html` — Video element and player logic
+- `layouts/partials/entry-overlay.html` — Click-to-play overlay
+- `layouts/partials/video-mute-button.html` — Mute toggle button (M key)
+- `static/videos/bg-video.mp4` — Video file
+- CSS in `assets/css/extended/custom.css` — Video styling, scanline overlay, mute button
 
-1. **MP4 Format** (H.264 codec)
-   - File: `bg-video.mp4`
-   - Size: Target ~4-5 MB for 1:30 min
-   - Codec: H.264 video, AAC audio
-   - Bitrate: ~2-3 Mbps (good quality/size tradeoff)
+## How to Add a Video
 
-2. **WebM Format** (VP9 codec, optional but recommended)
-   - File: `bg-video.webm`
-   - Size: Target ~2-3 MB for 1:30 min (more efficient)
-   - Codec: VP9 video, Vorbis audio
-   - Bitrate: ~1.5-2 Mbps
+### Prepare the Video
 
-### Step 2: Encode Your Video
+Single MP4 file (H.264 codec):
 
-**For MP4:**
 ```bash
 ffmpeg -i input-video.mov -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k bg-video.mp4
 ```
 
-**For WebM (optional, but smaller file):**
-```bash
-ffmpeg -i input-video.mov -c:v libvpx-vp9 -crf 30 -c:a libopus -b:a 96k bg-video.webm
-```
+Target ~4-5 MB for 1:30 min at 2-3 Mbps.
 
-### Step 3: Place Video Files
-Copy your encoded video files to: `/static/videos/`
+### Place the File
 
-Structure should look like:
 ```
 static/
 └── videos/
-    ├── bg-video.mp4    (required)
-    └── bg-video.webm   (optional, recommended for modern browsers)
+    └── bg-video.mp4
 ```
 
-## Features
+## UX Flow
 
-✅ **Autoplay on Page Load** - Video starts playing automatically
-✅ **Audio On** - Audio is enabled by default on both desktop and mobile
-✅ **Looping** - Video loops seamlessly when it ends
-✅ **Full Viewport Coverage** - Extends behind header and footer
-✅ **Light TV Grain Overlay** - Subtle noise effect for text readability
-✅ **Responsive** - Works on desktop, tablet, and mobile
-✅ **Homepage Only** - Only appears on the homepage; other pages use static backgrounds
+1. Page loads — video is **muted** and **paused**
+2. Entry overlay appears with "Click Anywhere" scramble animation
+3. User clicks overlay — scramble resolves, ripple + coordinate animation plays
+4. Overlay fades out, `window.playVideoWithSound()` unmutes and plays the video
+5. **M key** toggles mute on/off (speaker/muted icons in header)
+6. Switching tabs pauses the video and mutes audio; returning resumes if it was playing
 
 ## Customization
 
-### Adjust Overlay Opacity
-Edit `assets/css/extended/custom.css`, line with `.home-video-bg__overlay`:
-- Current: `opacity: 0.12;` (light grain)
-- Darker: increase to `0.15` or `0.2`
-- Lighter: decrease to `0.08` or `0.1`
+### Adjust Overlay Darkness
 
-### Disable Audio
-If you want to mute audio by default, edit `layouts/partials/home-video-bg.html`:
-Change `muted="false"` to `muted="true"`
+Edit `assets/css/extended/custom.css`:
 
-### Change Mix Blend Mode
-For different visual effects with the grain overlay, try:
-- `mix-blend-mode: overlay;` (current, darkens)
-- `mix-blend-mode: multiply;` (stronger darkening)
-- `mix-blend-mode: screen;` (lightening effect)
-- `mix-blend-mode: normal;` (no blending)
+```css
+.home-video-bg__overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* increase to darken, decrease to lighten */
+}
+```
+
+### Change Scanline Effect
+
+The scanlines and dot pattern use `repeating-linear-gradient` with `mix-blend-mode: multiply` in the same CSS block. Tweak the color stops or remove the `background-image` entirely for a clean overlay.
+
+### Remove Entry Overlay
+
+Delete `layouts/partials/entry-overlay.html` and remove its inclusion from `layouts/baseof.html`. Change `home-video-bg.html` to autoplay muted:
+
+```javascript
+video.muted = true;
+video.play();
+```
 
 ## Browser Support
 
-- ✅ Chrome/Edge 90+
-- ✅ Firefox 88+
-- ✅ Safari 14+
-- ✅ iOS Safari 14+
-- ✅ Android Chrome 90+
+- Chrome/Edge 90+
+- Firefox 88+
+- Safari 14+
+- iOS Safari 14+
+- Android Chrome 90+
 
-Note: The `muted="false"` attribute requires user interaction on some mobile browsers to play audio due to autoplay policies. However, this setup uses `autoplay` and `muted="false"` which should work on modern browsers.
+Autoplay with audio requires a user gesture on all modern browsers. The entry overlay satisfies this requirement.
 
 ## Performance Notes
 
-- Video loads with the page (not lazy-loaded on homepage)
-- Use MP4 as primary format for wider compatibility
-- WebM format is optional but recommended (smaller file size)
-- The grain overlay is pure CSS/SVG (no JavaScript performance impact)
-- Fixed positioning means the video doesn't scroll (efficient)
+- Video loads with the page (not lazy-loaded)
+- `preload="metadata"` avoids downloading the full video until playback starts
+- The grain/scanline overlay is pure CSS — no JavaScript impact
+- Fixed positioning means the video doesn't scroll
+- `requestAnimationFrame` in the entry overlay auto-pauses when the tab is hidden
 
 ## Troubleshooting
 
 ### Video not playing on mobile
-- Ensure you're using HTTPS (required for autoplay on iOS)
-- Check that both MP4 and WebM formats are in `/static/videos/`
-- Try muting first: change `muted="false"` to `muted="true"` temporarily to test
+- Ensure HTTPS (required for autoplay on iOS)
+- Tap the entry overlay to trigger playback
 
-### Audio not playing
-- Verify the video file contains audio track
-- Check browser console for CORS or playback errors
-- On iOS, user gesture may be required to unmute
+### Audio not playing after clicking
+- Verify the MP4 file contains an audio track
+- Check browser console for playback errors
+- Some browsers may still block unmuted autoplay; the script falls back to muted play
 
-### Grain overlay too strong/too light
-- Adjust `opacity` value in `.home-video-bg__overlay` CSS (current: 0.12)
+### Overlay too strong/too light
+- Adjust the `rgba(0, 0, 0, 0.5)` value in `.home-video-bg__overlay` CSS
+- Higher = darker, lower = lighter
 
 ## Testing Locally
 
-Build and serve your Hugo site:
 ```bash
-hugo server
+hugo server -D
 ```
 
 Visit `http://localhost:1313/` and verify:
-- [ ] Video appears on homepage
-- [ ] Video autoplays and loops
-- [ ] Audio plays
+- [ ] Video appears on homepage (paused, muted)
+- [ ] Entry overlay shows with scramble animation
+- [ ] Clicking overlay plays video with audio
+- [ ] M key toggles mute on/off
 - [ ] Text is readable over video
 - [ ] Video doesn't appear on Posts/Archive/About pages
-- [ ] Grain overlay is subtle (not distracting)
+- [ ] Scanline overlay is subtle
