@@ -1010,6 +1010,8 @@ hr {
 }
 
 .site-version {
+    display: block;
+    text-align: right;
     font-family: var(--font-ui);
     font-size: 0.75rem;
     color: var(--secondary);
