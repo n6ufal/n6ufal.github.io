@@ -6,8 +6,8 @@
 
 <script>
     (function () {
-        const API_KEY = "0e7245c9a19b6563e2a301c91f053c54";
-        const USER = "alifnaufal";
+        const API_KEY = "{{ site.Params.lastfmApiKey }}";
+        const USER = "{{ site.Params.lastfmUser }}";
         const container = document.getElementById("lastfm-tracks");
 
         function getBestImage(imageArray) {
