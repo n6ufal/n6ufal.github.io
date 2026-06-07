@@ -3,6 +3,8 @@ title = "What Happens When You Take a Word Game Too Seriously"
 date = 2026-05-16
 draft = false
 tags = ["code"]
+[cover]
+image = "gengar.jpg"
 +++
 
 There’s a word game on Roblox called **Last Letter**. The premise is simple: a group of players sits around a table, almost like Russian roulette. The game gives you a starting letter, someone types a word, and the next player has to continue from the ending of that word.
