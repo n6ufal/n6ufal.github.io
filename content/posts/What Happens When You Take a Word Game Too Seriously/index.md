@@ -25,74 +25,56 @@ It sounds manageable.
 
 ## The “Dummkopf” Incident
 
-Learning the history of linguistics in college didn't teach me many practical skills, but it did teach me one thing that mattered: how to look for the edges of a language. The weird exceptions. The borrowed words that never quite fit. At some point, that instinct found its way into Last Letter.
+Learning the history of linguistics in college didn't teach me many practical skills, but it did teach me how to look for the edges of a language. The odd exceptions, the borrowed words that never quite fit, the little cracks where language behaves in unexpected ways. At some point, that instinct found its way into Last Letter.
 
-I stopped trying to play the game _well_ and started trying to play it _mean_.
+I was playing normally when I typed _dummkopf_ during a round-four match. It's a German word meaning "dumb head," the sort of thing you might hear in an old war movie and never expect to use in Roblox. I half expected the game to reject it.
 
-I figured this out the way most things click: through _embarrassment_, then _curiosity_.
+Instead, it accepted the word and handed my opponent the suffix **pf**.
 
-I was playing normally when I typed _dummkopf_ in a round-four match. German for "dumb head." The kind of word you pick up from old war movies and never expect to use in Roblox.
+Try thinking of an English word that starts with **pf**. There aren't many. The sound barely exists in English. There's _pfft_, which is more of an expression than a word, and _pfennig_, the name of an old German coin, which the game also accepts.
 
-I half-expected the game to reject it.
+That's when I realized I had stumbled onto something. By pure accident, I had handed my opponent one of the most awkward letter combinations in the game's dictionary.
+After that, I started digging through obscure words, looking for more endings that felt equally unnatural. The goal wasn't to find long words or difficult words. It was to find suffixes that left the next player with almost nowhere to go.
 
-It didn't.
-
-It accepted the word and handed my opponent the suffix **pf**.
-
-Try thinking of an English word that starts with **pf**.
-
-Go ahead. I'll wait.
-
-The sound barely fits in an English mouth. There's _pfft_, which is more a noise than a word. There's _pfennig_, an old German coin, which the game also accepts.
-
-That's basically it.
-
-I had accidentally built a perfect trap without realizing it.
-
-Then I started looking for more.
+Some of the best ones were surprisingly simple:
 
 - _Kuvasz_, a Hungarian dog breed, leaves **sz**.
 - _Yangtze_ leaves **tze**.
-- Three-letter rounds open up stranger endings like **tzi**, **dae**, and **mni**.
+- _Bando_ leaves **ndo**.
+- Four-letter suffixes such as **chuk**, **euch**, **krit**, and **tral** force the next player to start from an extremely specific sequence of letters, often leaving only a handful of valid answers.
 
-The kind of stuff that practically requires a hobbyist interest in obscure etymology.
-
-Four-letter rounds got even worse.
+At that point, the game stops being about vocabulary and becomes about setting traps. The goal shifts from finding a valid word to leaving the next player with as few options as possible. The kind of stuff that practically requires a hobbyist interest in obscure etymology.
 
 Greek endings like **odon** and **opod**, borrowed from fossil names, can back opponents into a corner. Find a word starting with _odon_. Without preparation, most people can't.
 
-Some of these are buried in ordinary dictionaries if you're willing to dig. What surprised me was what the game knew that _wasn't_ in anything I'd checked.
+Some of these are buried in ordinary dictionaries if you're willing to dig. What surprised me was what the game knew that wasn't in anything I'd checked.
 
-I'd been testing words against public sources, bouncing between Merriam-Webster, Wiktionary, and spelling bee lists, trying to map the edges of the game's vocabulary. Most of the time, the pattern held.
+I'd been testing words against public sources, bouncing between Merriam-Webster, Wiktionary, and spelling bee lists in an attempt to map the edges of the game's vocabulary. Most of the time, the pattern held. If a word appeared in enough reputable sources, the game would usually accept it.
 
 Then I found _okshoofd_.
 
-It's a unit of liquid measurement. Wiktionary traces it back to Middle Dutch in 1475. It's not in standard Merriam-Webster. It's not in any spelling bee list I'd seen. For all practical purposes, it survives as a dictionary entry for a word nobody has used in centuries.
+It's an old unit of liquid measurement, traced by Wiktionary to Middle Dutch in 1475. It doesn't appear in standard Merriam-Webster, and I'd never seen it in any spelling bee list. For all practical purposes, it's the kind of word that survives only because somebody wrote it down centuries ago.
 
 The game accepted it.
 
-More importantly, _okshoofd_ ends in **fd**.
-
-So I went looking for words that also end in **fd** and found _transfd_, a non-standard abbreviation of _transferred_ buried in Merriam-Webster's abbreviations appendix.
+What caught my attention wasn't the word itself, but how it ended: **fd**. That's an unusually awkward suffix, so I started looking for other words that shared it. Eventually I found _transfd_, a non-standard abbreviation for _transferred_ buried in Merriam-Webster's abbreviations appendix.
 
 The game accepted that too.
 
-Which opened another door.
-
-The game accepts non-standard abbreviations. Crazy, I know.
+That was when I realized the dictionary wasn't limited to ordinary words. It also included at least some non-standard abbreviations. Once you know that, combinations that look impossible suddenly become playable:
 
 - _bkcy_ → bankruptcy
 - _bkgd_ → background
 
-Meaning if you play _yrbk_ (yearbook) or _nabk_ (a type of tree), your opponent inherits **bk**, and the answer turns out to be a bankruptcy abbreviation.
+That means a word like _yrbk_ (yearbook) or _nabk_ (a type of tree) can leave your opponent with **bk**, only for the correct answer to turn out to be a bankruptcy abbreviation.
 
-The game's dictionary is huge. Somewhere north of 480,000 words. We're talking Merriam-Webster Unabridged territory, not the roughly 200,000-word college edition most people mean when they say "the dictionary."
+The deeper I dug, the stranger the dictionary became. It felt much closer to Merriam-Webster Unabridged than the roughly 200,000-word collegiate dictionaries most people think of when they hear "the dictionary." Obscure historical terms, abbreviations, niche technical words, and all kinds of linguistic oddities kept showing up.
 
-But it wasn't exactly the Unabridged either.
+This was one of the first strange things I noticed. The dictionary felt a lot like Merriam-Webster Unabridged, but it wasn't a perfect match. Some words accepted by the game didn't seem to appear in the Unabridged at all, while some words from the Unabridged were rejected outright. There were also accepted entries that I couldn't find in any obvious source.
 
-Some words from the Unabridged were rejected. Some words accepted by the game didn't seem to exist anywhere obvious. And since Merriam-Webster Unabridged isn't open source, it couldn't be the direct source anyway.
+That ruled out the simplest explanation. Since Merriam-Webster Unabridged isn't open source, it couldn't have been copied directly anyway. Whatever dictionary the game was using, it seemed to be its own thing, borrowing from multiple sources or evolving separately over time.
 
-The closest match I found was [dwyl/english-words](https://github.com/dwyl/english-words). A flawed plain text file of 479,000 English words, hosted on GitHub. Jackpot.
+The closest match I found was [dwyl/english-words](https://github.com/dwyl/english-words). A plain text file of 479,000 English words, hosted on GitHub. Jackpot.
 
 The next part gets technical. If you're here for the takeaway, skip ahead to [What I Actually Learned](#what-i-actually-learned).
 
