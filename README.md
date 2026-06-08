@@ -1,14 +1,10 @@
 # ~/n6ufal
 
-Personal blog and digital garden at [alifnaufal.me](https://alifnaufal.me/), built with [Hugo](https://gohugo.io/) and the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, styled in [Nord](https://www.nordtheme.com/).
+**What** — Personal digital garden at [alifnaufal.me](https://alifnaufal.me/).
 
-## Features
+**Why** — A space for personal essays, technical projects, and notes that grow over time.
 
-- **Video background** — looping MP4/WebM on the homepage with audio and a grain overlay
-- **Entry overlay** — "Click Anywhere" scramble-resolve animation on page load
-- **Live Last.fm widget** — real-time recently played tracks with album art
-- **Dark mode only** — no theme toggle, Nord palette throughout
-- **Vanilla JS** — zero npm/Node.js dependencies; all JavaScript is handwritten
+**How** — Built with [Hugo Extended](https://gohugo.io/) + a **[heavily customized PaperMod](https://github.com/adityatelange/hugo-PaperMod)** theme + a **custom Nord palette** (cherry-picked, not strict). Vanilla JS only — zero npm/Node.js. CI/CD via GitHub Actions to GitHub Pages.
 
 ## Quick start
 
@@ -18,23 +14,19 @@ cd n6ufal.github.io
 hugo server -D
 ```
 
-The `-D` flag includes draft posts. Open `http://localhost:1313`.
+The `-D` flag includes drafts. Open `http://localhost:1313`.
 
-### Production build
+## Commands
 
-```bash
-hugo --minify
-```
-
-### Regenerate syntax highlighting CSS
-
-```bash
-hugo gen chromastyles --style=nord
-```
+| To…                      | Run                                  |
+|--------------------------|--------------------------------------|
+| Dev server with drafts   | `hugo server -D`                     |
+| Production build         | `hugo --minify`                      |
+| Regenerate syntax CSS    | `hugo gen chromastyles --style=nord` |
 
 ## Submodule
 
-The PaperMod theme lives at `themes/PaperMod`. If you cloned without `--recursive`:
+If cloned without `--recursive`:
 
 ```bash
 git submodule update --init --recursive
