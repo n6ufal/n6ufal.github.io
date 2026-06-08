@@ -119,7 +119,7 @@ I started building something that could play for me and that project eventually 
 
 I named it that because “Word Assistant” was too honest.
 
-![Letter Demon](image-1.jpg)
+![Letter Demon](image-2.png)
 
 Letter Demon doesn't just suggest words. It finds a valid word, types it out automatically, then waits for the next round. Like any good demon, it only shows up when it's invited.
 
@@ -293,4 +293,4 @@ Ironically, the game itself eventually stopped mattering. The challenge shifted 
 
 None of that changes what it was. I've watched opponents freeze on a suffix, run out of time, lose a heart, and leave the table. They were probably just people trying to enjoy a few rounds after school, after work, or before bed. At its core, it was a tool that gave me an advantage other players didn't have. That's the simplest and most honest way to describe it.
 
-*The full source code is available on GitHub: [n6ufal/Letter-Demon](https://github.com/n6ufal/Letter-Demon).*
+_The full source code is available on GitHub: [n6ufal/Letter-Demon](https://github.com/n6ufal/Letter-Demon)._
