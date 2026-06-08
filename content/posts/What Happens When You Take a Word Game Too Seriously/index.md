@@ -242,7 +242,7 @@ The implementation itself is fairly simple. Every time a key needs to be pressed
 
 Most generated delays stay close to the target typing speed, but occasionally the distribution produces longer pauses. This mirrors how people actually type. We spend most of our time at a steady pace, yet we sometimes slow down on difficult letter combinations, hesitate briefly, or lose our rhythm for a moment.
 
-The amount of variation is controlled by a jitter setting. Higher values create a wider spread of delays, making the typing appear less consistent and more human. To avoid unrealistic results, the code also enforces a minimum delay of 30 milliseconds.
+The amount of variation is controlled by a jitter/humanizer setting. Higher values create a wider spread of delays, making the typing appear less consistent and more human. To avoid unrealistic results, the code also enforces a minimum delay of 30 milliseconds.
 
 ### Threading Nightmares
 
@@ -285,26 +285,12 @@ It sounds like a small detail, but it's one of those things that either works pe
 
 I never really noticed the moment I went from "huh, that's interesting" to staying up way too late fixing bugs, arguing with myself over whether "good enough" was actually good enough, and somehow overengineering a stupid macro.
 
-Still, at the end of the day, it's a macro. A macro that helped me win more than 2,000 matches and go toe-to-toe with some of the best players in the game across online tournaments, all while flying completely under the radar.
+Most people never suspected a thing. A few good players had theories — a word list, a dictionary, maybe AI. But in the later rounds, when the timer drops below five seconds, none of that helps. You either know the word or you don't. Most scripts out there get caught because they're obvious: too fast, too perfect, or faking typos that fool nobody. Letter Demon was built to blend in.
 
-Most people never suspected a thing. A few good players had theories. Maybe I had a word list open. Maybe a dictionary. Maybe AI. But in the later rounds, when the timer drops below five seconds, none of that really helps. You don't have time to look things up. You either know the word or you don't.
+Along the way, I kept running into ideas I'd never heard of before. Binary search was one of them. When I finally understood how it worked, my reaction was basically "Wait, that's it? That's brilliant." That became a recurring theme: discovering some concept I'd never seen, then immediately wanting to learn more about it. If you're not a programmer and you're thinking about building something, start anyway. You don't need to know everything up front.
 
-That raises an obvious question: why not just use one of the many scripts already out there?
+Ironically, the game itself eventually stopped mattering. The challenge shifted from playing to building, then testing it against real players and watching it work. Figuring out what to build, why one approach worked better than another, and how to make everything reliable ended up being more interesting than winning.
 
-Because none of them worked the way I wanted. Most are painfully obvious. They type too fast, too perfectly, or try so hard to look human that they end up looking suspicious in the opposite direction. Some even fake typos by hitting backspace before instantly correcting themselves. Experienced players can spot that stuff from a mile away. Eventually, they get caught.
+None of that changes what it was. I've watched opponents freeze on a suffix, run out of time, lose a heart, and leave the table. They were probably just people trying to enjoy a few rounds after school, after work, or before bed. At its core, it was a tool that gave me an advantage other players didn't have. That's the simplest and most honest way to describe it.
 
-Script injectors are a completely different level. At that point you're not trying to blend in anymore. You're just blatantly cheating, and pros knows it.
-
-What started as a way to win games slowly turned into something else. Along the way, I kept running into ideas I'd never heard of before. Binary search was one of them. When I finally understood how it worked, my reaction was basically, "Wait, that's it? That's brilliant." That became a recurring theme throughout the project: discovering some concept I'd never seen before, then immediately wanting to learn more about it.
-
-That's probably the biggest thing I took away from all this. If you're not a programmer and you're thinking about building something, start anyway. You don't need to know everything up front. Most of what I learned came from trying things, breaking them, and figuring out why.
-
-Ironically, the game itself eventually stopped mattering. Once winning became automatic, it stopped being interesting. The challenge shifted from playing the game to building the tool, then testing it against real players and watching it steamroll match after match. The game became less of a competition and more of a proving ground.
-
-Figuring out what to build, why one approach worked better than another, and how to make everything reliable ended up being more interesting than the game itself.
-
-None of that changes what it was. This wasn't some clever strategy or a new way to play. It was cheating.
-
-I've watched opponents freeze on a suffix, run out of time, lose a heart, and leave the table. They were probably just people trying to enjoy a few rounds after school, after work, or before bed.
-
-I learned a lot while building it, and the technical side was genuinely interesting. But that's separate from what the project actually did. At its core, it was a tool that gave me an advantage other players didn't have. That's the simplest and most honest way to describe it.
+*The full source code is available on GitHub: [n6ufal/Letter-Demon](https://github.com/n6ufal/Letter-Demon).*
