@@ -45,8 +45,8 @@ params:
           url: "mailto:alifnaufal@duck.com"
         - name: github
           url: "https://github.com/n6ufal"
-        - name: discord
-          url: "https://discordapp.com/users/460866504704131084"
+        # - name: discord
+        #   url: "https://discordapp.com/users/460866504704131084"
         - name: instagram
           url: "https://instagram.com/n6ufal"
         - name: lastfm
