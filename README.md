@@ -4,7 +4,7 @@
 
 **Why** — A space for personal essays, technical projects, and notes that grow over time.
 
-**How** — Built with [Hugo Extended](https://gohugo.io/) + a **[heavily customized PaperMod](https://github.com/adityatelange/hugo-PaperMod)** theme + a **custom Nord palette** (cherry-picked, not strict). Vanilla JS only — zero npm/Node.js. CI/CD via GitHub Actions to GitHub Pages.
+**How** — Built with [Hugo Extended](https://gohugo.io/) + a **[heavily customized PaperMod](https://github.com/adityatelange/hugo-PaperMod)** theme + a **custom palette**. Vanilla JS only — zero npm/Node.js. CI/CD via GitHub Actions to GitHub Pages.
 
 ## Quick start
 
